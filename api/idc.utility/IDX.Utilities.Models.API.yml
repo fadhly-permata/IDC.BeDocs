@@ -1,0 +1,91 @@
+### YamlMime:ManagedReference
+items:
+- uid: IDX.Utilities.Models.API
+  commentId: N:IDX.Utilities.Models.API
+  id: API
+  parent: IDX.Utilities.Models
+  children:
+  - IDX.Utilities.Models.API.ApiResponse
+  - IDX.Utilities.Models.API.ApiResponseData`1
+  langs:
+  - csharp
+  - vb
+  name: IDX.Utilities.Models.API
+  nameWithType: IDX.Utilities.Models.API
+  fullName: IDX.Utilities.Models.API
+  type: Namespace
+  assemblies:
+  - IDX.Utilities
+references:
+- uid: IDX.Utilities.Models.API.ApiResponse
+  commentId: T:IDX.Utilities.Models.API.ApiResponse
+  parent: IDX.Utilities.Models.API
+  href: IDX.Utilities.Models.API.ApiResponse.html
+  name: ApiResponse
+  nameWithType: ApiResponse
+  fullName: IDX.Utilities.Models.API.ApiResponse
+- uid: IDX.Utilities.Models.API.ApiResponseData`1
+  commentId: T:IDX.Utilities.Models.API.ApiResponseData`1
+  parent: IDX.Utilities.Models.API
+  href: IDX.Utilities.Models.API.ApiResponseData-1.html
+  name: ApiResponseData<T>
+  nameWithType: ApiResponseData<T>
+  fullName: IDX.Utilities.Models.API.ApiResponseData<T>
+  nameWithType.vb: ApiResponseData(Of T)
+  fullName.vb: IDX.Utilities.Models.API.ApiResponseData(Of T)
+  name.vb: ApiResponseData(Of T)
+  spec.csharp:
+  - uid: IDX.Utilities.Models.API.ApiResponseData`1
+    name: ApiResponseData
+    href: IDX.Utilities.Models.API.ApiResponseData-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: IDX.Utilities.Models.API.ApiResponseData`1
+    name: ApiResponseData
+    href: IDX.Utilities.Models.API.ApiResponseData-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: IDX.Utilities.Models.API
+  commentId: N:IDX.Utilities.Models.API
+  href: IDX.html
+  name: IDX.Utilities.Models.API
+  nameWithType: IDX.Utilities.Models.API
+  fullName: IDX.Utilities.Models.API
+  spec.csharp:
+  - uid: IDX
+    name: IDX
+    href: IDX.html
+  - name: .
+  - uid: IDX.Utilities
+    name: Utilities
+    href: IDX.Utilities.html
+  - name: .
+  - uid: IDX.Utilities.Models
+    name: Models
+    href: IDX.Utilities.Models.html
+  - name: .
+  - uid: IDX.Utilities.Models.API
+    name: API
+    href: IDX.Utilities.Models.API.html
+  spec.vb:
+  - uid: IDX
+    name: IDX
+    href: IDX.html
+  - name: .
+  - uid: IDX.Utilities
+    name: Utilities
+    href: IDX.Utilities.html
+  - name: .
+  - uid: IDX.Utilities.Models
+    name: Models
+    href: IDX.Utilities.Models.html
+  - name: .
+  - uid: IDX.Utilities.Models.API
+    name: API
+    href: IDX.Utilities.Models.API.html
+memberLayout: SeparatePages

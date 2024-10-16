@@ -1,0 +1,96 @@
+### YamlMime:ManagedReference
+items:
+- uid: idc.alert.Utilities.Models.MCA
+  commentId: N:idc.alert.Utilities.Models.MCA
+  id: Models.MCA
+  parent: idc.alert.Utilities
+  children:
+  - idc.alert.Utilities.Models.MCA.AlertMaker
+  - idc.alert.Utilities.Models.MCA.AlertRevise
+  - idc.alert.Utilities.Models.MCA.AlertTracker
+  - idc.alert.Utilities.Models.MCA.AlertUpdate
+  langs:
+  - csharp
+  - vb
+  name: idc.alert.Utilities.Models.MCA
+  nameWithType: idc.alert.Utilities.Models.MCA
+  fullName: idc.alert.Utilities.Models.MCA
+  type: Namespace
+  assemblies:
+  - idc.alert
+references:
+- uid: idc.alert.Utilities.Models.MCA.AlertMaker
+  commentId: T:idc.alert.Utilities.Models.MCA.AlertMaker
+  parent: idc.alert.Utilities.Models.MCA
+  href: idc.alert.Utilities.Models.MCA.AlertMaker.html
+  name: AlertMaker
+  nameWithType: AlertMaker
+  fullName: idc.alert.Utilities.Models.MCA.AlertMaker
+- uid: idc.alert.Utilities.Models.MCA.AlertRevise
+  commentId: T:idc.alert.Utilities.Models.MCA.AlertRevise
+  parent: idc.alert.Utilities.Models.MCA
+  href: idc.alert.Utilities.Models.MCA.AlertRevise.html
+  name: AlertRevise
+  nameWithType: AlertRevise
+  fullName: idc.alert.Utilities.Models.MCA.AlertRevise
+- uid: idc.alert.Utilities.Models.MCA.AlertTracker
+  commentId: T:idc.alert.Utilities.Models.MCA.AlertTracker
+  parent: idc.alert.Utilities.Models.MCA
+  href: idc.alert.Utilities.Models.MCA.AlertTracker.html
+  name: AlertTracker
+  nameWithType: AlertTracker
+  fullName: idc.alert.Utilities.Models.MCA.AlertTracker
+- uid: idc.alert.Utilities.Models.MCA.AlertUpdate
+  commentId: T:idc.alert.Utilities.Models.MCA.AlertUpdate
+  parent: idc.alert.Utilities.Models.MCA
+  href: idc.alert.Utilities.Models.MCA.AlertUpdate.html
+  name: AlertUpdate
+  nameWithType: AlertUpdate
+  fullName: idc.alert.Utilities.Models.MCA.AlertUpdate
+- uid: idc.alert.Utilities.Models.MCA
+  commentId: N:idc.alert.Utilities.Models.MCA
+  href: idc.html
+  name: idc.alert.Utilities.Models.MCA
+  nameWithType: idc.alert.Utilities.Models.MCA
+  fullName: idc.alert.Utilities.Models.MCA
+  spec.csharp:
+  - uid: idc
+    name: idc
+    href: idc.html
+  - name: .
+  - uid: idc.alert
+    name: alert
+    href: idc.alert.html
+  - name: .
+  - uid: idc.alert.Utilities
+    name: Utilities
+    href: idc.alert.Utilities.html
+  - name: .
+  - uid: idc.alert.Utilities.Models
+    name: Models
+    href: idc.alert.Utilities.Models.html
+  - name: .
+  - uid: idc.alert.Utilities.Models.MCA
+    name: MCA
+    href: idc.alert.Utilities.Models.MCA.html
+  spec.vb:
+  - uid: idc
+    name: idc
+    href: idc.html
+  - name: .
+  - uid: idc.alert
+    name: alert
+    href: idc.alert.html
+  - name: .
+  - uid: idc.alert.Utilities
+    name: Utilities
+    href: idc.alert.Utilities.html
+  - name: .
+  - uid: idc.alert.Utilities.Models
+    name: Models
+    href: idc.alert.Utilities.Models.html
+  - name: .
+  - uid: idc.alert.Utilities.Models.MCA
+    name: MCA
+    href: idc.alert.Utilities.Models.MCA.html
+memberLayout: SeparatePages

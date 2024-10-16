@@ -1,0 +1,1671 @@
+### YamlMime:ManagedReference
+items:
+- uid: IDX.Utilities.Models.API.ApiResponse
+  commentId: T:IDX.Utilities.Models.API.ApiResponse
+  id: ApiResponse
+  parent: IDX.Utilities.Models.API
+  children:
+  - IDX.Utilities.Models.API.ApiResponse.ChangeMessage(Newtonsoft.Json.Linq.JToken,System.String)
+  - IDX.Utilities.Models.API.ApiResponse.ChangeMessage(System.Exception,IDX.Utilities.SystemLogging,System.Boolean)
+  - IDX.Utilities.Models.API.ApiResponse.ChangeMessage(System.Exception,Newtonsoft.Json.Linq.JToken,IDX.Utilities.SystemLogging,System.Boolean)
+  - IDX.Utilities.Models.API.ApiResponse.ChangeMessage(System.Exception,Newtonsoft.Json.Linq.JToken,System.Boolean)
+  - IDX.Utilities.Models.API.ApiResponse.ChangeMessage(System.Exception,System.Boolean)
+  - IDX.Utilities.Models.API.ApiResponse.ChangeMessage(System.String)
+  - IDX.Utilities.Models.API.ApiResponse.ChangeStatus(Newtonsoft.Json.Linq.JToken,System.String)
+  - IDX.Utilities.Models.API.ApiResponse.ChangeStatus(System.String)
+  - IDX.Utilities.Models.API.ApiResponse.Message
+  - IDX.Utilities.Models.API.ApiResponse.Status
+  langs:
+  - csharp
+  - vb
+  name: ApiResponse
+  nameWithType: ApiResponse
+  fullName: IDX.Utilities.Models.API.ApiResponse
+  type: Class
+  source:
+    remote:
+      path: Models/API/ApiResponse.cs
+      branch: Research_Documentation
+      repo: https://scm.idecision.ai/idecision_source_net8/idc.utility.git
+    id: ApiResponse
+    path: ../../../-Repo/idc.utility/Models/API/ApiResponse.cs
+    startLine: 22
+  assemblies:
+  - IDX.Utilities
+  namespace: IDX.Utilities.Models.API
+  summary: Represents the model for an API response.
+  example:
+  - >-
+    <pre><code class="lang-csharp">var response = new ApiResponse
+
+    {
+        Status = "Success",
+        Message = "The operation completed successfully.",
+        Data = JsonConvert.DeserializeObject&lt;JObject&gt;("{\"name\":\"John Doe\"}")
+    };
+
+    string json = JsonConvert.SerializeObject(response);
+
+    Console.WriteLine(json);
+
+    // Output: {"status":"Success","message":"The operation completed successfully.","data":{"name":"John Doe"}}</code></pre>
+  syntax:
+    content: public class ApiResponse
+    content.vb: Public Class ApiResponse
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - IDX.Utilities.Models.API.ApiResponseData`1
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  extensionMethods:
+  - System.Object.IDX.Utilities.Extensions.ObjectExtensions.CastToBoolean(System.Boolean)
+  - System.Object.IDX.Utilities.Extensions.ObjectExtensions.CastToDateTime(System.DateTime)
+  - System.Object.IDX.Utilities.Extensions.ObjectExtensions.CastToDecimal(System.Decimal)
+  - System.Object.IDX.Utilities.Extensions.ObjectExtensions.CastToDouble(System.Double)
+  - System.Object.IDX.Utilities.Extensions.ObjectExtensions.CastToInteger(System.Int32)
+  - System.Object.IDX.Utilities.Extensions.ObjectExtensions.CastToString(System.String)
+  - System.Object.IDX.Utilities.Validations.Common.EnsureNotNull(System.String,System.String)
+- uid: IDX.Utilities.Models.API.ApiResponse.Status
+  commentId: P:IDX.Utilities.Models.API.ApiResponse.Status
+  id: Status
+  parent: IDX.Utilities.Models.API.ApiResponse
+  langs:
+  - csharp
+  - vb
+  name: Status
+  nameWithType: ApiResponse.Status
+  fullName: IDX.Utilities.Models.API.ApiResponse.Status
+  type: Property
+  source:
+    remote:
+      path: Models/API/ApiResponse.cs
+      branch: Research_Documentation
+      repo: https://scm.idecision.ai/idecision_source_net8/idc.utility.git
+    id: Status
+    path: ../../../-Repo/idc.utility/Models/API/ApiResponse.cs
+    startLine: 38
+  assemblies:
+  - IDX.Utilities
+  namespace: IDX.Utilities.Models.API
+  summary: Gets or sets the status.
+  remarks: The default value is "Success".
+  example:
+  - >-
+    <pre><code class="lang-csharp">var response = new ApiResponse();
+
+    response.Status = "Failed";
+
+    Console.WriteLine(response.Status); // Output: Failed</code></pre>
+  syntax:
+    content: public string? Status { get; }
+    parameters: []
+    return:
+      type: System.String
+      description: The status.
+    content.vb: Public Property Status As String
+  overload: IDX.Utilities.Models.API.ApiResponse.Status*
+- uid: IDX.Utilities.Models.API.ApiResponse.Message
+  commentId: P:IDX.Utilities.Models.API.ApiResponse.Message
+  id: Message
+  parent: IDX.Utilities.Models.API.ApiResponse
+  langs:
+  - csharp
+  - vb
+  name: Message
+  nameWithType: ApiResponse.Message
+  fullName: IDX.Utilities.Models.API.ApiResponse.Message
+  type: Property
+  source:
+    remote:
+      path: Models/API/ApiResponse.cs
+      branch: Research_Documentation
+      repo: https://scm.idecision.ai/idecision_source_net8/idc.utility.git
+    id: Message
+    path: ../../../-Repo/idc.utility/Models/API/ApiResponse.cs
+    startLine: 54
+  assemblies:
+  - IDX.Utilities
+  namespace: IDX.Utilities.Models.API
+  summary: Gets or sets the message.
+  remarks: The default value is "API processing is completed.".
+  example:
+  - >-
+    <pre><code class="lang-csharp">var response = new ApiResponse();
+
+    response.Message = "API processing is done successfully.";
+
+    Console.WriteLine(response.Message); // Output: API processing is done successfully.</code></pre>
+  syntax:
+    content: public string? Message { get; }
+    parameters: []
+    return:
+      type: System.String
+      description: The message.
+    content.vb: Public Property Message As String
+  overload: IDX.Utilities.Models.API.ApiResponse.Message*
+- uid: IDX.Utilities.Models.API.ApiResponse.ChangeStatus(System.String)
+  commentId: M:IDX.Utilities.Models.API.ApiResponse.ChangeStatus(System.String)
+  id: ChangeStatus(System.String)
+  parent: IDX.Utilities.Models.API.ApiResponse
+  langs:
+  - csharp
+  - vb
+  name: ChangeStatus(string?)
+  nameWithType: ApiResponse.ChangeStatus(string?)
+  fullName: IDX.Utilities.Models.API.ApiResponse.ChangeStatus(string?)
+  type: Method
+  source:
+    remote:
+      path: Models/API/ApiResponse.cs
+      branch: Research_Documentation
+      repo: https://scm.idecision.ai/idecision_source_net8/idc.utility.git
+    id: ChangeStatus
+    path: ../../../-Repo/idc.utility/Models/API/ApiResponse.cs
+    startLine: 68
+  assemblies:
+  - IDX.Utilities
+  namespace: IDX.Utilities.Models.API
+  summary: Changes the status of the API response.
+  example:
+  - >-
+    <pre><code class="lang-csharp">var response = new ApiResponse();
+
+    response = response.ChangeStatus("Failed");
+
+    Console.WriteLine(response.Status); // Output: Failed</code></pre>
+  syntax:
+    content: public virtual ApiResponse ChangeStatus(string? status)
+    parameters:
+    - id: status
+      type: System.String
+      description: The new status to be set.
+    return:
+      type: IDX.Utilities.Models.API.ApiResponse
+      description: The modified API response model.
+    content.vb: Public Overridable Function ChangeStatus(status As String) As ApiResponse
+  overload: IDX.Utilities.Models.API.ApiResponse.ChangeStatus*
+  nameWithType.vb: ApiResponse.ChangeStatus(String)
+  fullName.vb: IDX.Utilities.Models.API.ApiResponse.ChangeStatus(String)
+  name.vb: ChangeStatus(String)
+- uid: IDX.Utilities.Models.API.ApiResponse.ChangeStatus(Newtonsoft.Json.Linq.JToken,System.String)
+  commentId: M:IDX.Utilities.Models.API.ApiResponse.ChangeStatus(Newtonsoft.Json.Linq.JToken,System.String)
+  id: ChangeStatus(Newtonsoft.Json.Linq.JToken,System.String)
+  parent: IDX.Utilities.Models.API.ApiResponse
+  langs:
+  - csharp
+  - vb
+  name: ChangeStatus(JToken, string)
+  nameWithType: ApiResponse.ChangeStatus(JToken, string)
+  fullName: IDX.Utilities.Models.API.ApiResponse.ChangeStatus(Newtonsoft.Json.Linq.JToken, string)
+  type: Method
+  source:
+    remote:
+      path: Models/API/ApiResponse.cs
+      branch: Research_Documentation
+      repo: https://scm.idecision.ai/idecision_source_net8/idc.utility.git
+    id: ChangeStatus
+    path: ../../../-Repo/idc.utility/Models/API/ApiResponse.cs
+    startLine: 88
+  assemblies:
+  - IDX.Utilities
+  namespace: IDX.Utilities.Models.API
+  summary: Changes the status of the API based on the provided language token and property name.
+  example:
+  - >-
+    <pre><code class="lang-csharp">var response = new ApiResponse();
+
+    var languageToken = JToken.Parse("{\"Status\":\"Failed\"}");
+
+    response = response.ChangeStatus(languageToken, "Status");
+
+    Console.WriteLine(response.Status); // Output: Failed</code></pre>
+  syntax:
+    content: public virtual ApiResponse ChangeStatus(JToken languageToken, string propertyName)
+    parameters:
+    - id: languageToken
+      type: Newtonsoft.Json.Linq.JToken
+      description: The language token to retrieve the status value from.
+    - id: propertyName
+      type: System.String
+      description: The name of the property to retrieve the status value from.
+    return:
+      type: IDX.Utilities.Models.API.ApiResponse
+      description: The modified ApiResponse object.
+    content.vb: Public Overridable Function ChangeStatus(languageToken As JToken, propertyName As String) As ApiResponse
+  overload: IDX.Utilities.Models.API.ApiResponse.ChangeStatus*
+  nameWithType.vb: ApiResponse.ChangeStatus(JToken, String)
+  fullName.vb: IDX.Utilities.Models.API.ApiResponse.ChangeStatus(Newtonsoft.Json.Linq.JToken, String)
+  name.vb: ChangeStatus(JToken, String)
+- uid: IDX.Utilities.Models.API.ApiResponse.ChangeMessage(System.String)
+  commentId: M:IDX.Utilities.Models.API.ApiResponse.ChangeMessage(System.String)
+  id: ChangeMessage(System.String)
+  parent: IDX.Utilities.Models.API.ApiResponse
+  langs:
+  - csharp
+  - vb
+  name: ChangeMessage(string?)
+  nameWithType: ApiResponse.ChangeMessage(string?)
+  fullName: IDX.Utilities.Models.API.ApiResponse.ChangeMessage(string?)
+  type: Method
+  source:
+    remote:
+      path: Models/API/ApiResponse.cs
+      branch: Research_Documentation
+      repo: https://scm.idecision.ai/idecision_source_net8/idc.utility.git
+    id: ChangeMessage
+    path: ../../../-Repo/idc.utility/Models/API/ApiResponse.cs
+    startLine: 106
+  assemblies:
+  - IDX.Utilities
+  namespace: IDX.Utilities.Models.API
+  summary: Changes the message associated with the API response.
+  example:
+  - >-
+    <pre><code class="lang-csharp">var response = new ApiResponse();
+
+    response = response.ChangeMessage("Failed to execute the request.");
+
+    Console.WriteLine(response.Message); // Output: Failed to execute the request.</code></pre>
+  syntax:
+    content: public virtual ApiResponse ChangeMessage(string? message)
+    parameters:
+    - id: message
+      type: System.String
+      description: The new message to be set.
+    return:
+      type: IDX.Utilities.Models.API.ApiResponse
+      description: The modified API response model.
+    content.vb: Public Overridable Function ChangeMessage(message As String) As ApiResponse
+  overload: IDX.Utilities.Models.API.ApiResponse.ChangeMessage*
+  nameWithType.vb: ApiResponse.ChangeMessage(String)
+  fullName.vb: IDX.Utilities.Models.API.ApiResponse.ChangeMessage(String)
+  name.vb: ChangeMessage(String)
+- uid: IDX.Utilities.Models.API.ApiResponse.ChangeMessage(Newtonsoft.Json.Linq.JToken,System.String)
+  commentId: M:IDX.Utilities.Models.API.ApiResponse.ChangeMessage(Newtonsoft.Json.Linq.JToken,System.String)
+  id: ChangeMessage(Newtonsoft.Json.Linq.JToken,System.String)
+  parent: IDX.Utilities.Models.API.ApiResponse
+  langs:
+  - csharp
+  - vb
+  name: ChangeMessage(JToken, string)
+  nameWithType: ApiResponse.ChangeMessage(JToken, string)
+  fullName: IDX.Utilities.Models.API.ApiResponse.ChangeMessage(Newtonsoft.Json.Linq.JToken, string)
+  type: Method
+  source:
+    remote:
+      path: Models/API/ApiResponse.cs
+      branch: Research_Documentation
+      repo: https://scm.idecision.ai/idecision_source_net8/idc.utility.git
+    id: ChangeMessage
+    path: ../../../-Repo/idc.utility/Models/API/ApiResponse.cs
+    startLine: 126
+  assemblies:
+  - IDX.Utilities
+  namespace: IDX.Utilities.Models.API
+  summary: Changes the value of the message property based on the provided languageToken and propertyName.
+  example:
+  - >-
+    <pre><code class="lang-csharp">var response = new ApiResponse();
+
+    var languageToken = JToken.Parse("{\"Message\":\"Failed to execute the request.\"}");
+
+    response = response.ChangeMessage(languageToken, "Message");
+
+    Console.WriteLine(response.Message); // Output: Failed to execute the request.</code></pre>
+  syntax:
+    content: public virtual ApiResponse ChangeMessage(JToken languageToken, string propertyName)
+    parameters:
+    - id: languageToken
+      type: Newtonsoft.Json.Linq.JToken
+      description: The languageToken containing the message value.
+    - id: propertyName
+      type: System.String
+      description: The name of the property to retrieve from the languageToken.
+    return:
+      type: IDX.Utilities.Models.API.ApiResponse
+      description: The updated ApiResponse instance.
+    content.vb: Public Overridable Function ChangeMessage(languageToken As JToken, propertyName As String) As ApiResponse
+  overload: IDX.Utilities.Models.API.ApiResponse.ChangeMessage*
+  nameWithType.vb: ApiResponse.ChangeMessage(JToken, String)
+  fullName.vb: IDX.Utilities.Models.API.ApiResponse.ChangeMessage(Newtonsoft.Json.Linq.JToken, String)
+  name.vb: ChangeMessage(JToken, String)
+- uid: IDX.Utilities.Models.API.ApiResponse.ChangeMessage(System.Exception,System.Boolean)
+  commentId: M:IDX.Utilities.Models.API.ApiResponse.ChangeMessage(System.Exception,System.Boolean)
+  id: ChangeMessage(System.Exception,System.Boolean)
+  parent: IDX.Utilities.Models.API.ApiResponse
+  langs:
+  - csharp
+  - vb
+  name: ChangeMessage(Exception, bool)
+  nameWithType: ApiResponse.ChangeMessage(Exception, bool)
+  fullName: IDX.Utilities.Models.API.ApiResponse.ChangeMessage(System.Exception, bool)
+  type: Method
+  source:
+    remote:
+      path: Models/API/ApiResponse.cs
+      branch: Research_Documentation
+      repo: https://scm.idecision.ai/idecision_source_net8/idc.utility.git
+    id: ChangeMessage
+    path: ../../../-Repo/idc.utility/Models/API/ApiResponse.cs
+    startLine: 149
+  assemblies:
+  - IDX.Utilities
+  namespace: IDX.Utilities.Models.API
+  summary: Changes the message of the API response based on the given exception.
+  example:
+  - >-
+    <pre><code class="lang-csharp">var response = new ApiResponse();
+
+    var exception = new Exception("Failed to execute the request.");
+
+    response = response.ChangeMessage(exception);
+
+    Console.WriteLine(response.Message); // Output: Failed to execute the request.
+
+
+    response = response.ChangeMessage(exception, includeStackTrace: true);
+
+    Console.WriteLine(response.Message); // Output: Failed to execute the request.</code></pre>
+  syntax:
+    content: public virtual ApiResponse ChangeMessage(Exception exception, bool includeStackTrace = false)
+    parameters:
+    - id: exception
+      type: System.Exception
+      description: The exception that occurred.
+    - id: includeStackTrace
+      type: System.Boolean
+      description: Whether to include the exception stack trace in the message.
+    return:
+      type: IDX.Utilities.Models.API.ApiResponse
+      description: The modified API response.
+    content.vb: Public Overridable Function ChangeMessage(exception As Exception, includeStackTrace As Boolean = False) As ApiResponse
+  overload: IDX.Utilities.Models.API.ApiResponse.ChangeMessage*
+  nameWithType.vb: ApiResponse.ChangeMessage(Exception, Boolean)
+  fullName.vb: IDX.Utilities.Models.API.ApiResponse.ChangeMessage(System.Exception, Boolean)
+  name.vb: ChangeMessage(Exception, Boolean)
+- uid: IDX.Utilities.Models.API.ApiResponse.ChangeMessage(System.Exception,IDX.Utilities.SystemLogging,System.Boolean)
+  commentId: M:IDX.Utilities.Models.API.ApiResponse.ChangeMessage(System.Exception,IDX.Utilities.SystemLogging,System.Boolean)
+  id: ChangeMessage(System.Exception,IDX.Utilities.SystemLogging,System.Boolean)
+  parent: IDX.Utilities.Models.API.ApiResponse
+  langs:
+  - csharp
+  - vb
+  name: ChangeMessage(Exception, SystemLogging, bool)
+  nameWithType: ApiResponse.ChangeMessage(Exception, SystemLogging, bool)
+  fullName: IDX.Utilities.Models.API.ApiResponse.ChangeMessage(System.Exception, IDX.Utilities.SystemLogging, bool)
+  type: Method
+  source:
+    remote:
+      path: Models/API/ApiResponse.cs
+      branch: Research_Documentation
+      repo: https://scm.idecision.ai/idecision_source_net8/idc.utility.git
+    id: ChangeMessage
+    path: ../../../-Repo/idc.utility/Models/API/ApiResponse.cs
+    startLine: 176
+  assemblies:
+  - IDX.Utilities
+  namespace: IDX.Utilities.Models.API
+  summary: Changes the message of the API response based on the given exception.
+  example:
+  - >-
+    <pre><code class="lang-csharp">var response = new ApiResponse();
+
+    var exception = new Exception("Failed to execute the request.");
+
+    var logging = new SystemLogging("UnitTest");
+
+    response = response.ChangeMessage(exception, logging);
+
+    Console.WriteLine(response.Message); // Output: Failed to execute the request.
+
+
+    response = response.ChangeMessage(exception, logging, includeStackTrace: true);
+
+    Console.WriteLine(response.Message); // Output: Failed to execute the request.</code></pre>
+  syntax:
+    content: public virtual ApiResponse ChangeMessage(Exception exception, SystemLogging logging, bool includeStackTrace = false)
+    parameters:
+    - id: exception
+      type: System.Exception
+      description: The exception that occurred.
+    - id: logging
+      type: IDX.Utilities.SystemLogging
+      description: The system logging instance.
+    - id: includeStackTrace
+      type: System.Boolean
+      description: Indicates whether to include the stack trace in the message.
+    return:
+      type: IDX.Utilities.Models.API.ApiResponse
+      description: The modified API response.
+    content.vb: Public Overridable Function ChangeMessage(exception As Exception, logging As SystemLogging, includeStackTrace As Boolean = False) As ApiResponse
+  overload: IDX.Utilities.Models.API.ApiResponse.ChangeMessage*
+  nameWithType.vb: ApiResponse.ChangeMessage(Exception, SystemLogging, Boolean)
+  fullName.vb: IDX.Utilities.Models.API.ApiResponse.ChangeMessage(System.Exception, IDX.Utilities.SystemLogging, Boolean)
+  name.vb: ChangeMessage(Exception, SystemLogging, Boolean)
+- uid: IDX.Utilities.Models.API.ApiResponse.ChangeMessage(System.Exception,Newtonsoft.Json.Linq.JToken,System.Boolean)
+  commentId: M:IDX.Utilities.Models.API.ApiResponse.ChangeMessage(System.Exception,Newtonsoft.Json.Linq.JToken,System.Boolean)
+  id: ChangeMessage(System.Exception,Newtonsoft.Json.Linq.JToken,System.Boolean)
+  parent: IDX.Utilities.Models.API.ApiResponse
+  langs:
+  - csharp
+  - vb
+  name: ChangeMessage(Exception, JToken, bool)
+  nameWithType: ApiResponse.ChangeMessage(Exception, JToken, bool)
+  fullName: IDX.Utilities.Models.API.ApiResponse.ChangeMessage(System.Exception, Newtonsoft.Json.Linq.JToken, bool)
+  type: Method
+  source:
+    remote:
+      path: Models/API/ApiResponse.cs
+      branch: Research_Documentation
+      repo: https://scm.idecision.ai/idecision_source_net8/idc.utility.git
+    id: ChangeMessage
+    path: ../../../-Repo/idc.utility/Models/API/ApiResponse.cs
+    startLine: 203
+  assemblies:
+  - IDX.Utilities
+  namespace: IDX.Utilities.Models.API
+  summary: Changes the message of the API response based on the provided exception and language token.
+  example:
+  - >-
+    <pre><code class="lang-csharp">var response = new ApiResponse();
+
+    var exception = new Exception("Failed to execute the request.");
+
+    var languageToken = JToken.Parse("{\"Failed to execute the request\":\"Gagal mengeksekusi perintah.\"}");
+
+    response = response.ChangeMessage(exception, languageToken);
+
+    Console.WriteLine(response.Message); // Output: Gagal mengeksekusi perintah.
+
+
+    response = response.ChangeMessage(exception, languageToken, includeStackTrace: true);
+
+    Console.WriteLine(response.Message); // Output: Gagal mengeksekusi perintah. @</code></pre>
+  syntax:
+    content: public virtual ApiResponse ChangeMessage(Exception exception, JToken languageToken, bool includeStackTrace = false)
+    parameters:
+    - id: exception
+      type: System.Exception
+      description: The exception that occurred.
+    - id: languageToken
+      type: Newtonsoft.Json.Linq.JToken
+      description: The language token used to retrieve the message value.
+    - id: includeStackTrace
+      type: System.Boolean
+      description: Whether to include the exception stack trace in the message.
+    return:
+      type: IDX.Utilities.Models.API.ApiResponse
+      description: The modified API response.
+    content.vb: Public Overridable Function ChangeMessage(exception As Exception, languageToken As JToken, includeStackTrace As Boolean = False) As ApiResponse
+  overload: IDX.Utilities.Models.API.ApiResponse.ChangeMessage*
+  nameWithType.vb: ApiResponse.ChangeMessage(Exception, JToken, Boolean)
+  fullName.vb: IDX.Utilities.Models.API.ApiResponse.ChangeMessage(System.Exception, Newtonsoft.Json.Linq.JToken, Boolean)
+  name.vb: ChangeMessage(Exception, JToken, Boolean)
+- uid: IDX.Utilities.Models.API.ApiResponse.ChangeMessage(System.Exception,Newtonsoft.Json.Linq.JToken,IDX.Utilities.SystemLogging,System.Boolean)
+  commentId: M:IDX.Utilities.Models.API.ApiResponse.ChangeMessage(System.Exception,Newtonsoft.Json.Linq.JToken,IDX.Utilities.SystemLogging,System.Boolean)
+  id: ChangeMessage(System.Exception,Newtonsoft.Json.Linq.JToken,IDX.Utilities.SystemLogging,System.Boolean)
+  parent: IDX.Utilities.Models.API.ApiResponse
+  langs:
+  - csharp
+  - vb
+  name: ChangeMessage(Exception, JToken, SystemLogging, bool)
+  nameWithType: ApiResponse.ChangeMessage(Exception, JToken, SystemLogging, bool)
+  fullName: IDX.Utilities.Models.API.ApiResponse.ChangeMessage(System.Exception, Newtonsoft.Json.Linq.JToken, IDX.Utilities.SystemLogging, bool)
+  type: Method
+  source:
+    remote:
+      path: Models/API/ApiResponse.cs
+      branch: Research_Documentation
+      repo: https://scm.idecision.ai/idecision_source_net8/idc.utility.git
+    id: ChangeMessage
+    path: ../../../-Repo/idc.utility/Models/API/ApiResponse.cs
+    startLine: 232
+  assemblies:
+  - IDX.Utilities
+  namespace: IDX.Utilities.Models.API
+  summary: Changes the message of the API response based on the provided exception and language token.
+  example:
+  - >-
+    <pre><code class="lang-csharp">var response = new ApiResponse();
+
+    var exception = new Exception("Failed to execute the request.");
+
+    var languageToken = JToken.Parse("{\"Failed to execute the request\":\"Gagal mengeksekusi perintah.\"}");
+
+    var logging = new SystemLogging();
+
+    response = response.ChangeMessage(exception, languageToken, logging);
+
+    Console.WriteLine(response.Message); // Output: Gagal mengeksekusi perintah.
+
+
+    response = response.ChangeMessage(exception, languageToken, logging, includeStackTrace: true);
+
+    Console.WriteLine(response.Message); // Output: Gagal mengeksekusi perintah. @</code></pre>
+  syntax:
+    content: public virtual ApiResponse ChangeMessage(Exception exception, JToken languageToken, SystemLogging logging, bool includeStackTrace = false)
+    parameters:
+    - id: exception
+      type: System.Exception
+      description: The exception that occurred.
+    - id: languageToken
+      type: Newtonsoft.Json.Linq.JToken
+      description: The language token used to retrieve the message value.
+    - id: logging
+      type: IDX.Utilities.SystemLogging
+      description: The system logging instance.
+    - id: includeStackTrace
+      type: System.Boolean
+      description: Whether to include the exception stack trace in the message.
+    return:
+      type: IDX.Utilities.Models.API.ApiResponse
+      description: The modified API response.
+    content.vb: Public Overridable Function ChangeMessage(exception As Exception, languageToken As JToken, logging As SystemLogging, includeStackTrace As Boolean = False) As ApiResponse
+  overload: IDX.Utilities.Models.API.ApiResponse.ChangeMessage*
+  nameWithType.vb: ApiResponse.ChangeMessage(Exception, JToken, SystemLogging, Boolean)
+  fullName.vb: IDX.Utilities.Models.API.ApiResponse.ChangeMessage(System.Exception, Newtonsoft.Json.Linq.JToken, IDX.Utilities.SystemLogging, Boolean)
+  name.vb: ChangeMessage(Exception, JToken, SystemLogging, Boolean)
+references:
+- uid: IDX.Utilities.Models.API
+  commentId: N:IDX.Utilities.Models.API
+  href: IDX.html
+  name: IDX.Utilities.Models.API
+  nameWithType: IDX.Utilities.Models.API
+  fullName: IDX.Utilities.Models.API
+  spec.csharp:
+  - uid: IDX
+    name: IDX
+    href: IDX.html
+  - name: .
+  - uid: IDX.Utilities
+    name: Utilities
+    href: IDX.Utilities.html
+  - name: .
+  - uid: IDX.Utilities.Models
+    name: Models
+    href: IDX.Utilities.Models.html
+  - name: .
+  - uid: IDX.Utilities.Models.API
+    name: API
+    href: IDX.Utilities.Models.API.html
+  spec.vb:
+  - uid: IDX
+    name: IDX
+    href: IDX.html
+  - name: .
+  - uid: IDX.Utilities
+    name: Utilities
+    href: IDX.Utilities.html
+  - name: .
+  - uid: IDX.Utilities.Models
+    name: Models
+    href: IDX.Utilities.Models.html
+  - name: .
+  - uid: IDX.Utilities.Models.API
+    name: API
+    href: IDX.Utilities.Models.API.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.IDX.Utilities.Extensions.ObjectExtensions.CastToBoolean(System.Boolean)
+  commentId: M:IDX.Utilities.Extensions.ObjectExtensions.CastToBoolean(System.Object,System.Boolean)
+  parent: IDX.Utilities.Extensions.ObjectExtensions
+  definition: IDX.Utilities.Extensions.ObjectExtensions.CastToBoolean(System.Object,System.Boolean)
+  href: IDX.Utilities.Extensions.ObjectExtensions.CastToBoolean.html#IDX_Utilities_Extensions_ObjectExtensions_CastToBoolean_System_Object_System_Boolean_
+  name: CastToBoolean(object, bool)
+  nameWithType: ObjectExtensions.CastToBoolean(object, bool)
+  fullName: IDX.Utilities.Extensions.ObjectExtensions.CastToBoolean(object, bool)
+  nameWithType.vb: ObjectExtensions.CastToBoolean(Object, Boolean)
+  fullName.vb: IDX.Utilities.Extensions.ObjectExtensions.CastToBoolean(Object, Boolean)
+  name.vb: CastToBoolean(Object, Boolean)
+  spec.csharp:
+  - uid: IDX.Utilities.Extensions.ObjectExtensions.CastToBoolean(System.Object,System.Boolean)
+    name: CastToBoolean
+    href: IDX.Utilities.Extensions.ObjectExtensions.CastToBoolean.html#IDX_Utilities_Extensions_ObjectExtensions_CastToBoolean_System_Object_System_Boolean_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: IDX.Utilities.Extensions.ObjectExtensions.CastToBoolean(System.Object,System.Boolean)
+    name: CastToBoolean
+    href: IDX.Utilities.Extensions.ObjectExtensions.CastToBoolean.html#IDX_Utilities_Extensions_ObjectExtensions_CastToBoolean_System_Object_System_Boolean_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: System.Object.IDX.Utilities.Extensions.ObjectExtensions.CastToDateTime(System.DateTime)
+  commentId: M:IDX.Utilities.Extensions.ObjectExtensions.CastToDateTime(System.Object,System.DateTime)
+  parent: IDX.Utilities.Extensions.ObjectExtensions
+  definition: IDX.Utilities.Extensions.ObjectExtensions.CastToDateTime(System.Object,System.DateTime)
+  href: IDX.Utilities.Extensions.ObjectExtensions.CastToDateTime.html#IDX_Utilities_Extensions_ObjectExtensions_CastToDateTime_System_Object_System_DateTime_
+  name: CastToDateTime(object, DateTime)
+  nameWithType: ObjectExtensions.CastToDateTime(object, DateTime)
+  fullName: IDX.Utilities.Extensions.ObjectExtensions.CastToDateTime(object, System.DateTime)
+  nameWithType.vb: ObjectExtensions.CastToDateTime(Object, Date)
+  fullName.vb: IDX.Utilities.Extensions.ObjectExtensions.CastToDateTime(Object, Date)
+  name.vb: CastToDateTime(Object, Date)
+  spec.csharp:
+  - uid: IDX.Utilities.Extensions.ObjectExtensions.CastToDateTime(System.Object,System.DateTime)
+    name: CastToDateTime
+    href: IDX.Utilities.Extensions.ObjectExtensions.CastToDateTime.html#IDX_Utilities_Extensions_ObjectExtensions_CastToDateTime_System_Object_System_DateTime_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.DateTime
+    name: DateTime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: )
+  spec.vb:
+  - uid: IDX.Utilities.Extensions.ObjectExtensions.CastToDateTime(System.Object,System.DateTime)
+    name: CastToDateTime
+    href: IDX.Utilities.Extensions.ObjectExtensions.CastToDateTime.html#IDX_Utilities_Extensions_ObjectExtensions_CastToDateTime_System_Object_System_DateTime_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.DateTime
+    name: Date
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: )
+- uid: System.Object.IDX.Utilities.Extensions.ObjectExtensions.CastToDecimal(System.Decimal)
+  commentId: M:IDX.Utilities.Extensions.ObjectExtensions.CastToDecimal(System.Object,System.Decimal)
+  parent: IDX.Utilities.Extensions.ObjectExtensions
+  definition: IDX.Utilities.Extensions.ObjectExtensions.CastToDecimal(System.Object,System.Decimal)
+  href: IDX.Utilities.Extensions.ObjectExtensions.CastToDecimal.html#IDX_Utilities_Extensions_ObjectExtensions_CastToDecimal_System_Object_System_Decimal_
+  name: CastToDecimal(object, decimal)
+  nameWithType: ObjectExtensions.CastToDecimal(object, decimal)
+  fullName: IDX.Utilities.Extensions.ObjectExtensions.CastToDecimal(object, decimal)
+  nameWithType.vb: ObjectExtensions.CastToDecimal(Object, Decimal)
+  fullName.vb: IDX.Utilities.Extensions.ObjectExtensions.CastToDecimal(Object, Decimal)
+  name.vb: CastToDecimal(Object, Decimal)
+  spec.csharp:
+  - uid: IDX.Utilities.Extensions.ObjectExtensions.CastToDecimal(System.Object,System.Decimal)
+    name: CastToDecimal
+    href: IDX.Utilities.Extensions.ObjectExtensions.CastToDecimal.html#IDX_Utilities_Extensions_ObjectExtensions_CastToDecimal_System_Object_System_Decimal_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Decimal
+    name: decimal
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.decimal
+  - name: )
+  spec.vb:
+  - uid: IDX.Utilities.Extensions.ObjectExtensions.CastToDecimal(System.Object,System.Decimal)
+    name: CastToDecimal
+    href: IDX.Utilities.Extensions.ObjectExtensions.CastToDecimal.html#IDX_Utilities_Extensions_ObjectExtensions_CastToDecimal_System_Object_System_Decimal_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Decimal
+    name: Decimal
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.decimal
+  - name: )
+- uid: System.Object.IDX.Utilities.Extensions.ObjectExtensions.CastToDouble(System.Double)
+  commentId: M:IDX.Utilities.Extensions.ObjectExtensions.CastToDouble(System.Object,System.Double)
+  parent: IDX.Utilities.Extensions.ObjectExtensions
+  definition: IDX.Utilities.Extensions.ObjectExtensions.CastToDouble(System.Object,System.Double)
+  href: IDX.Utilities.Extensions.ObjectExtensions.CastToDouble.html#IDX_Utilities_Extensions_ObjectExtensions_CastToDouble_System_Object_System_Double_
+  name: CastToDouble(object, double)
+  nameWithType: ObjectExtensions.CastToDouble(object, double)
+  fullName: IDX.Utilities.Extensions.ObjectExtensions.CastToDouble(object, double)
+  nameWithType.vb: ObjectExtensions.CastToDouble(Object, Double)
+  fullName.vb: IDX.Utilities.Extensions.ObjectExtensions.CastToDouble(Object, Double)
+  name.vb: CastToDouble(Object, Double)
+  spec.csharp:
+  - uid: IDX.Utilities.Extensions.ObjectExtensions.CastToDouble(System.Object,System.Double)
+    name: CastToDouble
+    href: IDX.Utilities.Extensions.ObjectExtensions.CastToDouble.html#IDX_Utilities_Extensions_ObjectExtensions_CastToDouble_System_Object_System_Double_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+  spec.vb:
+  - uid: IDX.Utilities.Extensions.ObjectExtensions.CastToDouble(System.Object,System.Double)
+    name: CastToDouble
+    href: IDX.Utilities.Extensions.ObjectExtensions.CastToDouble.html#IDX_Utilities_Extensions_ObjectExtensions_CastToDouble_System_Object_System_Double_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+- uid: System.Object.IDX.Utilities.Extensions.ObjectExtensions.CastToInteger(System.Int32)
+  commentId: M:IDX.Utilities.Extensions.ObjectExtensions.CastToInteger(System.Object,System.Int32)
+  parent: IDX.Utilities.Extensions.ObjectExtensions
+  definition: IDX.Utilities.Extensions.ObjectExtensions.CastToInteger(System.Object,System.Int32)
+  href: IDX.Utilities.Extensions.ObjectExtensions.CastToInteger.html#IDX_Utilities_Extensions_ObjectExtensions_CastToInteger_System_Object_System_Int32_
+  name: CastToInteger(object, int)
+  nameWithType: ObjectExtensions.CastToInteger(object, int)
+  fullName: IDX.Utilities.Extensions.ObjectExtensions.CastToInteger(object, int)
+  nameWithType.vb: ObjectExtensions.CastToInteger(Object, Integer)
+  fullName.vb: IDX.Utilities.Extensions.ObjectExtensions.CastToInteger(Object, Integer)
+  name.vb: CastToInteger(Object, Integer)
+  spec.csharp:
+  - uid: IDX.Utilities.Extensions.ObjectExtensions.CastToInteger(System.Object,System.Int32)
+    name: CastToInteger
+    href: IDX.Utilities.Extensions.ObjectExtensions.CastToInteger.html#IDX_Utilities_Extensions_ObjectExtensions_CastToInteger_System_Object_System_Int32_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: IDX.Utilities.Extensions.ObjectExtensions.CastToInteger(System.Object,System.Int32)
+    name: CastToInteger
+    href: IDX.Utilities.Extensions.ObjectExtensions.CastToInteger.html#IDX_Utilities_Extensions_ObjectExtensions_CastToInteger_System_Object_System_Int32_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Object.IDX.Utilities.Extensions.ObjectExtensions.CastToString(System.String)
+  commentId: M:IDX.Utilities.Extensions.ObjectExtensions.CastToString(System.Object,System.String)
+  parent: IDX.Utilities.Extensions.ObjectExtensions
+  definition: IDX.Utilities.Extensions.ObjectExtensions.CastToString(System.Object,System.String)
+  href: IDX.Utilities.Extensions.ObjectExtensions.CastToString.html#IDX_Utilities_Extensions_ObjectExtensions_CastToString_System_Object_System_String_
+  name: CastToString(object, string)
+  nameWithType: ObjectExtensions.CastToString(object, string)
+  fullName: IDX.Utilities.Extensions.ObjectExtensions.CastToString(object, string)
+  nameWithType.vb: ObjectExtensions.CastToString(Object, String)
+  fullName.vb: IDX.Utilities.Extensions.ObjectExtensions.CastToString(Object, String)
+  name.vb: CastToString(Object, String)
+  spec.csharp:
+  - uid: IDX.Utilities.Extensions.ObjectExtensions.CastToString(System.Object,System.String)
+    name: CastToString
+    href: IDX.Utilities.Extensions.ObjectExtensions.CastToString.html#IDX_Utilities_Extensions_ObjectExtensions_CastToString_System_Object_System_String_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: IDX.Utilities.Extensions.ObjectExtensions.CastToString(System.Object,System.String)
+    name: CastToString
+    href: IDX.Utilities.Extensions.ObjectExtensions.CastToString.html#IDX_Utilities_Extensions_ObjectExtensions_CastToString_System_Object_System_String_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Object.IDX.Utilities.Validations.Common.EnsureNotNull(System.String,System.String)
+  commentId: M:IDX.Utilities.Validations.Common.EnsureNotNull(System.Object,System.String,System.String)
+  parent: IDX.Utilities.Validations.Common
+  definition: IDX.Utilities.Validations.Common.EnsureNotNull(System.Object,System.String,System.String)
+  href: IDX.Utilities.Validations.Common.EnsureNotNull.html#IDX_Utilities_Validations_Common_EnsureNotNull_System_Object_System_String_System_String_
+  name: EnsureNotNull(object, string, string)
+  nameWithType: Common.EnsureNotNull(object, string, string)
+  fullName: IDX.Utilities.Validations.Common.EnsureNotNull(object, string, string)
+  nameWithType.vb: Common.EnsureNotNull(Object, String, String)
+  fullName.vb: IDX.Utilities.Validations.Common.EnsureNotNull(Object, String, String)
+  name.vb: EnsureNotNull(Object, String, String)
+  spec.csharp:
+  - uid: IDX.Utilities.Validations.Common.EnsureNotNull(System.Object,System.String,System.String)
+    name: EnsureNotNull
+    href: IDX.Utilities.Validations.Common.EnsureNotNull.html#IDX_Utilities_Validations_Common_EnsureNotNull_System_Object_System_String_System_String_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: IDX.Utilities.Validations.Common.EnsureNotNull(System.Object,System.String,System.String)
+    name: EnsureNotNull
+    href: IDX.Utilities.Validations.Common.EnsureNotNull.html#IDX_Utilities_Validations_Common_EnsureNotNull_System_Object_System_String_System_String_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: IDX.Utilities.Extensions.ObjectExtensions.CastToBoolean(System.Object,System.Boolean)
+  commentId: M:IDX.Utilities.Extensions.ObjectExtensions.CastToBoolean(System.Object,System.Boolean)
+  isExternal: true
+  href: IDX.Utilities.Extensions.ObjectExtensions.CastToBoolean.html#IDX_Utilities_Extensions_ObjectExtensions_CastToBoolean_System_Object_System_Boolean_
+  name: CastToBoolean(object, bool)
+  nameWithType: ObjectExtensions.CastToBoolean(object, bool)
+  fullName: IDX.Utilities.Extensions.ObjectExtensions.CastToBoolean(object, bool)
+  nameWithType.vb: ObjectExtensions.CastToBoolean(Object, Boolean)
+  fullName.vb: IDX.Utilities.Extensions.ObjectExtensions.CastToBoolean(Object, Boolean)
+  name.vb: CastToBoolean(Object, Boolean)
+  spec.csharp:
+  - uid: IDX.Utilities.Extensions.ObjectExtensions.CastToBoolean(System.Object,System.Boolean)
+    name: CastToBoolean
+    href: IDX.Utilities.Extensions.ObjectExtensions.CastToBoolean.html#IDX_Utilities_Extensions_ObjectExtensions_CastToBoolean_System_Object_System_Boolean_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: IDX.Utilities.Extensions.ObjectExtensions.CastToBoolean(System.Object,System.Boolean)
+    name: CastToBoolean
+    href: IDX.Utilities.Extensions.ObjectExtensions.CastToBoolean.html#IDX_Utilities_Extensions_ObjectExtensions_CastToBoolean_System_Object_System_Boolean_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: IDX.Utilities.Extensions.ObjectExtensions
+  commentId: T:IDX.Utilities.Extensions.ObjectExtensions
+  parent: IDX.Utilities.Extensions
+  href: IDX.Utilities.Extensions.ObjectExtensions.html
+  name: ObjectExtensions
+  nameWithType: ObjectExtensions
+  fullName: IDX.Utilities.Extensions.ObjectExtensions
+- uid: IDX.Utilities.Extensions.ObjectExtensions.CastToDateTime(System.Object,System.DateTime)
+  commentId: M:IDX.Utilities.Extensions.ObjectExtensions.CastToDateTime(System.Object,System.DateTime)
+  isExternal: true
+  href: IDX.Utilities.Extensions.ObjectExtensions.CastToDateTime.html#IDX_Utilities_Extensions_ObjectExtensions_CastToDateTime_System_Object_System_DateTime_
+  name: CastToDateTime(object, DateTime)
+  nameWithType: ObjectExtensions.CastToDateTime(object, DateTime)
+  fullName: IDX.Utilities.Extensions.ObjectExtensions.CastToDateTime(object, System.DateTime)
+  nameWithType.vb: ObjectExtensions.CastToDateTime(Object, Date)
+  fullName.vb: IDX.Utilities.Extensions.ObjectExtensions.CastToDateTime(Object, Date)
+  name.vb: CastToDateTime(Object, Date)
+  spec.csharp:
+  - uid: IDX.Utilities.Extensions.ObjectExtensions.CastToDateTime(System.Object,System.DateTime)
+    name: CastToDateTime
+    href: IDX.Utilities.Extensions.ObjectExtensions.CastToDateTime.html#IDX_Utilities_Extensions_ObjectExtensions_CastToDateTime_System_Object_System_DateTime_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.DateTime
+    name: DateTime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: )
+  spec.vb:
+  - uid: IDX.Utilities.Extensions.ObjectExtensions.CastToDateTime(System.Object,System.DateTime)
+    name: CastToDateTime
+    href: IDX.Utilities.Extensions.ObjectExtensions.CastToDateTime.html#IDX_Utilities_Extensions_ObjectExtensions_CastToDateTime_System_Object_System_DateTime_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.DateTime
+    name: Date
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: )
+- uid: IDX.Utilities.Extensions.ObjectExtensions.CastToDecimal(System.Object,System.Decimal)
+  commentId: M:IDX.Utilities.Extensions.ObjectExtensions.CastToDecimal(System.Object,System.Decimal)
+  isExternal: true
+  href: IDX.Utilities.Extensions.ObjectExtensions.CastToDecimal.html#IDX_Utilities_Extensions_ObjectExtensions_CastToDecimal_System_Object_System_Decimal_
+  name: CastToDecimal(object, decimal)
+  nameWithType: ObjectExtensions.CastToDecimal(object, decimal)
+  fullName: IDX.Utilities.Extensions.ObjectExtensions.CastToDecimal(object, decimal)
+  nameWithType.vb: ObjectExtensions.CastToDecimal(Object, Decimal)
+  fullName.vb: IDX.Utilities.Extensions.ObjectExtensions.CastToDecimal(Object, Decimal)
+  name.vb: CastToDecimal(Object, Decimal)
+  spec.csharp:
+  - uid: IDX.Utilities.Extensions.ObjectExtensions.CastToDecimal(System.Object,System.Decimal)
+    name: CastToDecimal
+    href: IDX.Utilities.Extensions.ObjectExtensions.CastToDecimal.html#IDX_Utilities_Extensions_ObjectExtensions_CastToDecimal_System_Object_System_Decimal_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Decimal
+    name: decimal
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.decimal
+  - name: )
+  spec.vb:
+  - uid: IDX.Utilities.Extensions.ObjectExtensions.CastToDecimal(System.Object,System.Decimal)
+    name: CastToDecimal
+    href: IDX.Utilities.Extensions.ObjectExtensions.CastToDecimal.html#IDX_Utilities_Extensions_ObjectExtensions_CastToDecimal_System_Object_System_Decimal_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Decimal
+    name: Decimal
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.decimal
+  - name: )
+- uid: IDX.Utilities.Extensions.ObjectExtensions.CastToDouble(System.Object,System.Double)
+  commentId: M:IDX.Utilities.Extensions.ObjectExtensions.CastToDouble(System.Object,System.Double)
+  isExternal: true
+  href: IDX.Utilities.Extensions.ObjectExtensions.CastToDouble.html#IDX_Utilities_Extensions_ObjectExtensions_CastToDouble_System_Object_System_Double_
+  name: CastToDouble(object, double)
+  nameWithType: ObjectExtensions.CastToDouble(object, double)
+  fullName: IDX.Utilities.Extensions.ObjectExtensions.CastToDouble(object, double)
+  nameWithType.vb: ObjectExtensions.CastToDouble(Object, Double)
+  fullName.vb: IDX.Utilities.Extensions.ObjectExtensions.CastToDouble(Object, Double)
+  name.vb: CastToDouble(Object, Double)
+  spec.csharp:
+  - uid: IDX.Utilities.Extensions.ObjectExtensions.CastToDouble(System.Object,System.Double)
+    name: CastToDouble
+    href: IDX.Utilities.Extensions.ObjectExtensions.CastToDouble.html#IDX_Utilities_Extensions_ObjectExtensions_CastToDouble_System_Object_System_Double_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+  spec.vb:
+  - uid: IDX.Utilities.Extensions.ObjectExtensions.CastToDouble(System.Object,System.Double)
+    name: CastToDouble
+    href: IDX.Utilities.Extensions.ObjectExtensions.CastToDouble.html#IDX_Utilities_Extensions_ObjectExtensions_CastToDouble_System_Object_System_Double_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+- uid: IDX.Utilities.Extensions.ObjectExtensions.CastToInteger(System.Object,System.Int32)
+  commentId: M:IDX.Utilities.Extensions.ObjectExtensions.CastToInteger(System.Object,System.Int32)
+  isExternal: true
+  href: IDX.Utilities.Extensions.ObjectExtensions.CastToInteger.html#IDX_Utilities_Extensions_ObjectExtensions_CastToInteger_System_Object_System_Int32_
+  name: CastToInteger(object, int)
+  nameWithType: ObjectExtensions.CastToInteger(object, int)
+  fullName: IDX.Utilities.Extensions.ObjectExtensions.CastToInteger(object, int)
+  nameWithType.vb: ObjectExtensions.CastToInteger(Object, Integer)
+  fullName.vb: IDX.Utilities.Extensions.ObjectExtensions.CastToInteger(Object, Integer)
+  name.vb: CastToInteger(Object, Integer)
+  spec.csharp:
+  - uid: IDX.Utilities.Extensions.ObjectExtensions.CastToInteger(System.Object,System.Int32)
+    name: CastToInteger
+    href: IDX.Utilities.Extensions.ObjectExtensions.CastToInteger.html#IDX_Utilities_Extensions_ObjectExtensions_CastToInteger_System_Object_System_Int32_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: IDX.Utilities.Extensions.ObjectExtensions.CastToInteger(System.Object,System.Int32)
+    name: CastToInteger
+    href: IDX.Utilities.Extensions.ObjectExtensions.CastToInteger.html#IDX_Utilities_Extensions_ObjectExtensions_CastToInteger_System_Object_System_Int32_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: IDX.Utilities.Extensions.ObjectExtensions.CastToString(System.Object,System.String)
+  commentId: M:IDX.Utilities.Extensions.ObjectExtensions.CastToString(System.Object,System.String)
+  isExternal: true
+  href: IDX.Utilities.Extensions.ObjectExtensions.CastToString.html#IDX_Utilities_Extensions_ObjectExtensions_CastToString_System_Object_System_String_
+  name: CastToString(object, string)
+  nameWithType: ObjectExtensions.CastToString(object, string)
+  fullName: IDX.Utilities.Extensions.ObjectExtensions.CastToString(object, string)
+  nameWithType.vb: ObjectExtensions.CastToString(Object, String)
+  fullName.vb: IDX.Utilities.Extensions.ObjectExtensions.CastToString(Object, String)
+  name.vb: CastToString(Object, String)
+  spec.csharp:
+  - uid: IDX.Utilities.Extensions.ObjectExtensions.CastToString(System.Object,System.String)
+    name: CastToString
+    href: IDX.Utilities.Extensions.ObjectExtensions.CastToString.html#IDX_Utilities_Extensions_ObjectExtensions_CastToString_System_Object_System_String_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: IDX.Utilities.Extensions.ObjectExtensions.CastToString(System.Object,System.String)
+    name: CastToString
+    href: IDX.Utilities.Extensions.ObjectExtensions.CastToString.html#IDX_Utilities_Extensions_ObjectExtensions_CastToString_System_Object_System_String_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: IDX.Utilities.Validations.Common.EnsureNotNull(System.Object,System.String,System.String)
+  commentId: M:IDX.Utilities.Validations.Common.EnsureNotNull(System.Object,System.String,System.String)
+  isExternal: true
+  href: IDX.Utilities.Validations.Common.EnsureNotNull.html#IDX_Utilities_Validations_Common_EnsureNotNull_System_Object_System_String_System_String_
+  name: EnsureNotNull(object, string, string)
+  nameWithType: Common.EnsureNotNull(object, string, string)
+  fullName: IDX.Utilities.Validations.Common.EnsureNotNull(object, string, string)
+  nameWithType.vb: Common.EnsureNotNull(Object, String, String)
+  fullName.vb: IDX.Utilities.Validations.Common.EnsureNotNull(Object, String, String)
+  name.vb: EnsureNotNull(Object, String, String)
+  spec.csharp:
+  - uid: IDX.Utilities.Validations.Common.EnsureNotNull(System.Object,System.String,System.String)
+    name: EnsureNotNull
+    href: IDX.Utilities.Validations.Common.EnsureNotNull.html#IDX_Utilities_Validations_Common_EnsureNotNull_System_Object_System_String_System_String_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: IDX.Utilities.Validations.Common.EnsureNotNull(System.Object,System.String,System.String)
+    name: EnsureNotNull
+    href: IDX.Utilities.Validations.Common.EnsureNotNull.html#IDX_Utilities_Validations_Common_EnsureNotNull_System_Object_System_String_System_String_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: IDX.Utilities.Validations.Common
+  commentId: T:IDX.Utilities.Validations.Common
+  parent: IDX.Utilities.Validations
+  href: IDX.Utilities.Validations.Common.html
+  name: Common
+  nameWithType: Common
+  fullName: IDX.Utilities.Validations.Common
+- uid: IDX.Utilities.Extensions
+  commentId: N:IDX.Utilities.Extensions
+  href: IDX.html
+  name: IDX.Utilities.Extensions
+  nameWithType: IDX.Utilities.Extensions
+  fullName: IDX.Utilities.Extensions
+  spec.csharp:
+  - uid: IDX
+    name: IDX
+    href: IDX.html
+  - name: .
+  - uid: IDX.Utilities
+    name: Utilities
+    href: IDX.Utilities.html
+  - name: .
+  - uid: IDX.Utilities.Extensions
+    name: Extensions
+    href: IDX.Utilities.Extensions.html
+  spec.vb:
+  - uid: IDX
+    name: IDX
+    href: IDX.html
+  - name: .
+  - uid: IDX.Utilities
+    name: Utilities
+    href: IDX.Utilities.html
+  - name: .
+  - uid: IDX.Utilities.Extensions
+    name: Extensions
+    href: IDX.Utilities.Extensions.html
+- uid: IDX.Utilities.Validations
+  commentId: N:IDX.Utilities.Validations
+  href: IDX.html
+  name: IDX.Utilities.Validations
+  nameWithType: IDX.Utilities.Validations
+  fullName: IDX.Utilities.Validations
+  spec.csharp:
+  - uid: IDX
+    name: IDX
+    href: IDX.html
+  - name: .
+  - uid: IDX.Utilities
+    name: Utilities
+    href: IDX.Utilities.html
+  - name: .
+  - uid: IDX.Utilities.Validations
+    name: Validations
+    href: IDX.Utilities.Validations.html
+  spec.vb:
+  - uid: IDX
+    name: IDX
+    href: IDX.html
+  - name: .
+  - uid: IDX.Utilities
+    name: Utilities
+    href: IDX.Utilities.html
+  - name: .
+  - uid: IDX.Utilities.Validations
+    name: Validations
+    href: IDX.Utilities.Validations.html
+- uid: IDX.Utilities.Models.API.ApiResponse.Status*
+  commentId: Overload:IDX.Utilities.Models.API.ApiResponse.Status
+  href: IDX.Utilities.Models.API.ApiResponse.Status.html#IDX_Utilities_Models_API_ApiResponse_Status
+  name: Status
+  nameWithType: ApiResponse.Status
+  fullName: IDX.Utilities.Models.API.ApiResponse.Status
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: IDX.Utilities.Models.API.ApiResponse.Message*
+  commentId: Overload:IDX.Utilities.Models.API.ApiResponse.Message
+  href: IDX.Utilities.Models.API.ApiResponse.Message.html#IDX_Utilities_Models_API_ApiResponse_Message
+  name: Message
+  nameWithType: ApiResponse.Message
+  fullName: IDX.Utilities.Models.API.ApiResponse.Message
+- uid: IDX.Utilities.Models.API.ApiResponse.ChangeStatus*
+  commentId: Overload:IDX.Utilities.Models.API.ApiResponse.ChangeStatus
+  href: IDX.Utilities.Models.API.ApiResponse.ChangeStatus.html#IDX_Utilities_Models_API_ApiResponse_ChangeStatus_System_String_
+  name: ChangeStatus
+  nameWithType: ApiResponse.ChangeStatus
+  fullName: IDX.Utilities.Models.API.ApiResponse.ChangeStatus
+- uid: IDX.Utilities.Models.API.ApiResponse
+  commentId: T:IDX.Utilities.Models.API.ApiResponse
+  parent: IDX.Utilities.Models.API
+  href: IDX.Utilities.Models.API.ApiResponse.html
+  name: ApiResponse
+  nameWithType: ApiResponse
+  fullName: IDX.Utilities.Models.API.ApiResponse
+- uid: Newtonsoft.Json.Linq.JToken
+  commentId: T:Newtonsoft.Json.Linq.JToken
+  parent: Newtonsoft.Json.Linq
+  isExternal: true
+  name: JToken
+  nameWithType: JToken
+  fullName: Newtonsoft.Json.Linq.JToken
+- uid: Newtonsoft.Json.Linq
+  commentId: N:Newtonsoft.Json.Linq
+  isExternal: true
+  name: Newtonsoft.Json.Linq
+  nameWithType: Newtonsoft.Json.Linq
+  fullName: Newtonsoft.Json.Linq
+  spec.csharp:
+  - uid: Newtonsoft
+    name: Newtonsoft
+    isExternal: true
+  - name: .
+  - uid: Newtonsoft.Json
+    name: Json
+    isExternal: true
+  - name: .
+  - uid: Newtonsoft.Json.Linq
+    name: Linq
+    isExternal: true
+  spec.vb:
+  - uid: Newtonsoft
+    name: Newtonsoft
+    isExternal: true
+  - name: .
+  - uid: Newtonsoft.Json
+    name: Json
+    isExternal: true
+  - name: .
+  - uid: Newtonsoft.Json.Linq
+    name: Linq
+    isExternal: true
+- uid: IDX.Utilities.Models.API.ApiResponse.ChangeMessage*
+  commentId: Overload:IDX.Utilities.Models.API.ApiResponse.ChangeMessage
+  href: IDX.Utilities.Models.API.ApiResponse.ChangeMessage.html#IDX_Utilities_Models_API_ApiResponse_ChangeMessage_System_String_
+  name: ChangeMessage
+  nameWithType: ApiResponse.ChangeMessage
+  fullName: IDX.Utilities.Models.API.ApiResponse.ChangeMessage
+- uid: System.Exception
+  commentId: T:System.Exception
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception
+  name: Exception
+  nameWithType: Exception
+  fullName: System.Exception
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: IDX.Utilities.SystemLogging
+  commentId: T:IDX.Utilities.SystemLogging
+  parent: IDX.Utilities
+  href: IDX.Utilities.SystemLogging.html
+  name: SystemLogging
+  nameWithType: SystemLogging
+  fullName: IDX.Utilities.SystemLogging
+- uid: IDX.Utilities
+  commentId: N:IDX.Utilities
+  href: IDX.html
+  name: IDX.Utilities
+  nameWithType: IDX.Utilities
+  fullName: IDX.Utilities
+  spec.csharp:
+  - uid: IDX
+    name: IDX
+    href: IDX.html
+  - name: .
+  - uid: IDX.Utilities
+    name: Utilities
+    href: IDX.Utilities.html
+  spec.vb:
+  - uid: IDX
+    name: IDX
+    href: IDX.html
+  - name: .
+  - uid: IDX.Utilities
+    name: Utilities
+    href: IDX.Utilities.html
+memberLayout: SeparatePages

@@ -1,0 +1,88 @@
+### YamlMime:ManagedReference
+items:
+- uid: IDX.Utilities.DataProcessor
+  commentId: N:IDX.Utilities.DataProcessor
+  id: DataProcessor
+  parent: IDX.Utilities
+  children:
+  - IDX.Utilities.DataProcessor.CouchBaseHelper
+  - IDX.Utilities.DataProcessor.PgSqlHelper
+  - IDX.Utilities.DataProcessor.PgSqlHelper.ConStringFromJson
+  langs:
+  - csharp
+  - vb
+  name: IDX.Utilities.DataProcessor
+  nameWithType: IDX.Utilities.DataProcessor
+  fullName: IDX.Utilities.DataProcessor
+  type: Namespace
+  assemblies:
+  - IDX.Utilities
+references:
+- uid: IDX.Utilities.DataProcessor.CouchBaseHelper
+  commentId: T:IDX.Utilities.DataProcessor.CouchBaseHelper
+  parent: IDX.Utilities.DataProcessor
+  href: IDX.Utilities.DataProcessor.CouchBaseHelper.html
+  name: CouchBaseHelper
+  nameWithType: CouchBaseHelper
+  fullName: IDX.Utilities.DataProcessor.CouchBaseHelper
+- uid: IDX.Utilities.DataProcessor.PgSqlHelper
+  commentId: T:IDX.Utilities.DataProcessor.PgSqlHelper
+  parent: IDX.Utilities.DataProcessor
+  href: IDX.Utilities.DataProcessor.PgSqlHelper.html
+  name: PgSqlHelper
+  nameWithType: PgSqlHelper
+  fullName: IDX.Utilities.DataProcessor.PgSqlHelper
+- uid: IDX.Utilities.DataProcessor.PgSqlHelper.ConStringFromJson
+  commentId: T:IDX.Utilities.DataProcessor.PgSqlHelper.ConStringFromJson
+  parent: IDX.Utilities.DataProcessor
+  href: IDX.Utilities.DataProcessor.PgSqlHelper.html
+  name: PgSqlHelper.ConStringFromJson
+  nameWithType: PgSqlHelper.ConStringFromJson
+  fullName: IDX.Utilities.DataProcessor.PgSqlHelper.ConStringFromJson
+  spec.csharp:
+  - uid: IDX.Utilities.DataProcessor.PgSqlHelper
+    name: PgSqlHelper
+    href: IDX.Utilities.DataProcessor.PgSqlHelper.html
+  - name: .
+  - uid: IDX.Utilities.DataProcessor.PgSqlHelper.ConStringFromJson
+    name: ConStringFromJson
+    href: IDX.Utilities.DataProcessor.PgSqlHelper.ConStringFromJson.html
+  spec.vb:
+  - uid: IDX.Utilities.DataProcessor.PgSqlHelper
+    name: PgSqlHelper
+    href: IDX.Utilities.DataProcessor.PgSqlHelper.html
+  - name: .
+  - uid: IDX.Utilities.DataProcessor.PgSqlHelper.ConStringFromJson
+    name: ConStringFromJson
+    href: IDX.Utilities.DataProcessor.PgSqlHelper.ConStringFromJson.html
+- uid: IDX.Utilities.DataProcessor
+  commentId: N:IDX.Utilities.DataProcessor
+  href: IDX.html
+  name: IDX.Utilities.DataProcessor
+  nameWithType: IDX.Utilities.DataProcessor
+  fullName: IDX.Utilities.DataProcessor
+  spec.csharp:
+  - uid: IDX
+    name: IDX
+    href: IDX.html
+  - name: .
+  - uid: IDX.Utilities
+    name: Utilities
+    href: IDX.Utilities.html
+  - name: .
+  - uid: IDX.Utilities.DataProcessor
+    name: DataProcessor
+    href: IDX.Utilities.DataProcessor.html
+  spec.vb:
+  - uid: IDX
+    name: IDX
+    href: IDX.html
+  - name: .
+  - uid: IDX.Utilities
+    name: Utilities
+    href: IDX.Utilities.html
+  - name: .
+  - uid: IDX.Utilities.DataProcessor
+    name: DataProcessor
+    href: IDX.Utilities.DataProcessor.html
+memberLayout: SeparatePages

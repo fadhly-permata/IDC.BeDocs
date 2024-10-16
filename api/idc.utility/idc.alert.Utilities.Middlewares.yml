@@ -1,0 +1,39 @@
+### YamlMime:ManagedReference
+items:
+- uid: idc.alert.Utilities.Middlewares
+  commentId: N:idc.alert.Utilities.Middlewares
+  id: Middlewares
+  parent: idc.alert.Utilities
+  children:
+  - idc.alert.Utilities.Middlewares.AlphabeticalSortDocumentFilter
+  - idc.alert.Utilities.Middlewares.GsmHttpProcessor
+  - idc.alert.Utilities.Middlewares.ModelStateInvalidFilters
+  langs:
+  - csharp
+  - vb
+  name: idc.alert.Utilities.Middlewares
+  nameWithType: idc.alert.Utilities.Middlewares
+  fullName: idc.alert.Utilities.Middlewares
+  type: Namespace
+  assemblies:
+  - idc.alert
+references:
+- uid: idc.alert.Utilities.Middlewares.AlphabeticalSortDocumentFilter
+  commentId: T:idc.alert.Utilities.Middlewares.AlphabeticalSortDocumentFilter
+  href: idc.alert.Utilities.Middlewares.AlphabeticalSortDocumentFilter.html
+  name: AlphabeticalSortDocumentFilter
+  nameWithType: AlphabeticalSortDocumentFilter
+  fullName: idc.alert.Utilities.Middlewares.AlphabeticalSortDocumentFilter
+- uid: idc.alert.Utilities.Middlewares.GsmHttpProcessor
+  commentId: T:idc.alert.Utilities.Middlewares.GsmHttpProcessor
+  href: idc.alert.Utilities.Middlewares.GsmHttpProcessor.html
+  name: GsmHttpProcessor
+  nameWithType: GsmHttpProcessor
+  fullName: idc.alert.Utilities.Middlewares.GsmHttpProcessor
+- uid: idc.alert.Utilities.Middlewares.ModelStateInvalidFilters
+  commentId: T:idc.alert.Utilities.Middlewares.ModelStateInvalidFilters
+  href: idc.alert.Utilities.Middlewares.ModelStateInvalidFilters.html
+  name: ModelStateInvalidFilters
+  nameWithType: ModelStateInvalidFilters
+  fullName: idc.alert.Utilities.Middlewares.ModelStateInvalidFilters
+memberLayout: SeparatePages

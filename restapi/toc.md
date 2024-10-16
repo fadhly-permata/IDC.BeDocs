@@ -1,0 +1,1 @@
+# [Alert Management Rest API](http://27.112.78.84:32045/swagger/V1/swagger.json)

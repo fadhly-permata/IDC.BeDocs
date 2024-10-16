@@ -1,0 +1,104 @@
+### YamlMime:ManagedReference
+items:
+- uid: IDX.Utilities.Models.PgSqlDataProcessor
+  commentId: N:IDX.Utilities.Models.PgSqlDataProcessor
+  id: PgSqlDataProcessor
+  parent: IDX.Utilities.Models
+  children:
+  - IDX.Utilities.Models.PgSqlDataProcessor.PagingRequest
+  - IDX.Utilities.Models.PgSqlDataProcessor.PagingRequest.SourceType
+  - IDX.Utilities.Models.PgSqlDataProcessor.SPCallInfo
+  - IDX.Utilities.Models.PgSqlDataProcessor.SPParameter
+  langs:
+  - csharp
+  - vb
+  name: IDX.Utilities.Models.PgSqlDataProcessor
+  nameWithType: IDX.Utilities.Models.PgSqlDataProcessor
+  fullName: IDX.Utilities.Models.PgSqlDataProcessor
+  type: Namespace
+  assemblies:
+  - IDX.Utilities
+references:
+- uid: IDX.Utilities.Models.PgSqlDataProcessor.PagingRequest
+  commentId: T:IDX.Utilities.Models.PgSqlDataProcessor.PagingRequest
+  parent: IDX.Utilities.Models.PgSqlDataProcessor
+  href: IDX.Utilities.Models.PgSqlDataProcessor.PagingRequest.html
+  name: PagingRequest
+  nameWithType: PagingRequest
+  fullName: IDX.Utilities.Models.PgSqlDataProcessor.PagingRequest
+- uid: IDX.Utilities.Models.PgSqlDataProcessor.PagingRequest.SourceType
+  commentId: T:IDX.Utilities.Models.PgSqlDataProcessor.PagingRequest.SourceType
+  parent: IDX.Utilities.Models.PgSqlDataProcessor
+  href: IDX.Utilities.Models.PgSqlDataProcessor.PagingRequest.html
+  name: PagingRequest.SourceType
+  nameWithType: PagingRequest.SourceType
+  fullName: IDX.Utilities.Models.PgSqlDataProcessor.PagingRequest.SourceType
+  spec.csharp:
+  - uid: IDX.Utilities.Models.PgSqlDataProcessor.PagingRequest
+    name: PagingRequest
+    href: IDX.Utilities.Models.PgSqlDataProcessor.PagingRequest.html
+  - name: .
+  - uid: IDX.Utilities.Models.PgSqlDataProcessor.PagingRequest.SourceType
+    name: SourceType
+    href: IDX.Utilities.Models.PgSqlDataProcessor.PagingRequest.SourceType.html
+  spec.vb:
+  - uid: IDX.Utilities.Models.PgSqlDataProcessor.PagingRequest
+    name: PagingRequest
+    href: IDX.Utilities.Models.PgSqlDataProcessor.PagingRequest.html
+  - name: .
+  - uid: IDX.Utilities.Models.PgSqlDataProcessor.PagingRequest.SourceType
+    name: SourceType
+    href: IDX.Utilities.Models.PgSqlDataProcessor.PagingRequest.SourceType.html
+- uid: IDX.Utilities.Models.PgSqlDataProcessor.SPCallInfo
+  commentId: T:IDX.Utilities.Models.PgSqlDataProcessor.SPCallInfo
+  parent: IDX.Utilities.Models.PgSqlDataProcessor
+  href: IDX.Utilities.Models.PgSqlDataProcessor.SPCallInfo.html
+  name: SPCallInfo
+  nameWithType: SPCallInfo
+  fullName: IDX.Utilities.Models.PgSqlDataProcessor.SPCallInfo
+- uid: IDX.Utilities.Models.PgSqlDataProcessor.SPParameter
+  commentId: T:IDX.Utilities.Models.PgSqlDataProcessor.SPParameter
+  parent: IDX.Utilities.Models.PgSqlDataProcessor
+  href: IDX.Utilities.Models.PgSqlDataProcessor.SPParameter.html
+  name: SPParameter
+  nameWithType: SPParameter
+  fullName: IDX.Utilities.Models.PgSqlDataProcessor.SPParameter
+- uid: IDX.Utilities.Models.PgSqlDataProcessor
+  commentId: N:IDX.Utilities.Models.PgSqlDataProcessor
+  href: IDX.html
+  name: IDX.Utilities.Models.PgSqlDataProcessor
+  nameWithType: IDX.Utilities.Models.PgSqlDataProcessor
+  fullName: IDX.Utilities.Models.PgSqlDataProcessor
+  spec.csharp:
+  - uid: IDX
+    name: IDX
+    href: IDX.html
+  - name: .
+  - uid: IDX.Utilities
+    name: Utilities
+    href: IDX.Utilities.html
+  - name: .
+  - uid: IDX.Utilities.Models
+    name: Models
+    href: IDX.Utilities.Models.html
+  - name: .
+  - uid: IDX.Utilities.Models.PgSqlDataProcessor
+    name: PgSqlDataProcessor
+    href: IDX.Utilities.Models.PgSqlDataProcessor.html
+  spec.vb:
+  - uid: IDX
+    name: IDX
+    href: IDX.html
+  - name: .
+  - uid: IDX.Utilities
+    name: Utilities
+    href: IDX.Utilities.html
+  - name: .
+  - uid: IDX.Utilities.Models
+    name: Models
+    href: IDX.Utilities.Models.html
+  - name: .
+  - uid: IDX.Utilities.Models.PgSqlDataProcessor
+    name: PgSqlDataProcessor
+    href: IDX.Utilities.Models.PgSqlDataProcessor.html
+memberLayout: SeparatePages

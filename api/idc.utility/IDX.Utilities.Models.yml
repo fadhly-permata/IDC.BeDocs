@@ -1,0 +1,181 @@
+### YamlMime:ManagedReference
+items:
+- uid: IDX.Utilities.Models
+  commentId: N:IDX.Utilities.Models
+  id: Models
+  parent: IDX.Utilities
+  children:
+  - IDX.Utilities.Models.API
+  - IDX.Utilities.Models.BootstrapTable
+  - IDX.Utilities.Models.CommonConnectionString
+  - IDX.Utilities.Models.CouchBaseConnectionString
+  - IDX.Utilities.Models.PgSqlDataProcessor
+  langs:
+  - csharp
+  - vb
+  name: IDX.Utilities.Models
+  nameWithType: IDX.Utilities.Models
+  fullName: IDX.Utilities.Models
+  type: Namespace
+  assemblies:
+  - IDX.Utilities
+references:
+- uid: IDX.Utilities.Models.API
+  commentId: N:IDX.Utilities.Models.API
+  href: IDX.html
+  name: IDX.Utilities.Models.API
+  nameWithType: IDX.Utilities.Models.API
+  fullName: IDX.Utilities.Models.API
+  spec.csharp:
+  - uid: IDX
+    name: IDX
+    href: IDX.html
+  - name: .
+  - uid: IDX.Utilities
+    name: Utilities
+    href: IDX.Utilities.html
+  - name: .
+  - uid: IDX.Utilities.Models
+    name: Models
+    href: IDX.Utilities.Models.html
+  - name: .
+  - uid: IDX.Utilities.Models.API
+    name: API
+    href: IDX.Utilities.Models.API.html
+  spec.vb:
+  - uid: IDX
+    name: IDX
+    href: IDX.html
+  - name: .
+  - uid: IDX.Utilities
+    name: Utilities
+    href: IDX.Utilities.html
+  - name: .
+  - uid: IDX.Utilities.Models
+    name: Models
+    href: IDX.Utilities.Models.html
+  - name: .
+  - uid: IDX.Utilities.Models.API
+    name: API
+    href: IDX.Utilities.Models.API.html
+- uid: IDX.Utilities.Models.BootstrapTable
+  commentId: N:IDX.Utilities.Models.BootstrapTable
+  href: IDX.html
+  name: IDX.Utilities.Models.BootstrapTable
+  nameWithType: IDX.Utilities.Models.BootstrapTable
+  fullName: IDX.Utilities.Models.BootstrapTable
+  spec.csharp:
+  - uid: IDX
+    name: IDX
+    href: IDX.html
+  - name: .
+  - uid: IDX.Utilities
+    name: Utilities
+    href: IDX.Utilities.html
+  - name: .
+  - uid: IDX.Utilities.Models
+    name: Models
+    href: IDX.Utilities.Models.html
+  - name: .
+  - uid: IDX.Utilities.Models.BootstrapTable
+    name: BootstrapTable
+    href: IDX.Utilities.Models.BootstrapTable.html
+  spec.vb:
+  - uid: IDX
+    name: IDX
+    href: IDX.html
+  - name: .
+  - uid: IDX.Utilities
+    name: Utilities
+    href: IDX.Utilities.html
+  - name: .
+  - uid: IDX.Utilities.Models
+    name: Models
+    href: IDX.Utilities.Models.html
+  - name: .
+  - uid: IDX.Utilities.Models.BootstrapTable
+    name: BootstrapTable
+    href: IDX.Utilities.Models.BootstrapTable.html
+- uid: IDX.Utilities.Models.PgSqlDataProcessor
+  commentId: N:IDX.Utilities.Models.PgSqlDataProcessor
+  href: IDX.html
+  name: IDX.Utilities.Models.PgSqlDataProcessor
+  nameWithType: IDX.Utilities.Models.PgSqlDataProcessor
+  fullName: IDX.Utilities.Models.PgSqlDataProcessor
+  spec.csharp:
+  - uid: IDX
+    name: IDX
+    href: IDX.html
+  - name: .
+  - uid: IDX.Utilities
+    name: Utilities
+    href: IDX.Utilities.html
+  - name: .
+  - uid: IDX.Utilities.Models
+    name: Models
+    href: IDX.Utilities.Models.html
+  - name: .
+  - uid: IDX.Utilities.Models.PgSqlDataProcessor
+    name: PgSqlDataProcessor
+    href: IDX.Utilities.Models.PgSqlDataProcessor.html
+  spec.vb:
+  - uid: IDX
+    name: IDX
+    href: IDX.html
+  - name: .
+  - uid: IDX.Utilities
+    name: Utilities
+    href: IDX.Utilities.html
+  - name: .
+  - uid: IDX.Utilities.Models
+    name: Models
+    href: IDX.Utilities.Models.html
+  - name: .
+  - uid: IDX.Utilities.Models.PgSqlDataProcessor
+    name: PgSqlDataProcessor
+    href: IDX.Utilities.Models.PgSqlDataProcessor.html
+- uid: IDX.Utilities.Models.CommonConnectionString
+  commentId: T:IDX.Utilities.Models.CommonConnectionString
+  parent: IDX.Utilities.Models
+  href: IDX.Utilities.Models.CommonConnectionString.html
+  name: CommonConnectionString
+  nameWithType: CommonConnectionString
+  fullName: IDX.Utilities.Models.CommonConnectionString
+- uid: IDX.Utilities.Models.CouchBaseConnectionString
+  commentId: T:IDX.Utilities.Models.CouchBaseConnectionString
+  parent: IDX.Utilities.Models
+  href: IDX.Utilities.Models.CouchBaseConnectionString.html
+  name: CouchBaseConnectionString
+  nameWithType: CouchBaseConnectionString
+  fullName: IDX.Utilities.Models.CouchBaseConnectionString
+- uid: IDX.Utilities.Models
+  commentId: N:IDX.Utilities.Models
+  href: IDX.html
+  name: IDX.Utilities.Models
+  nameWithType: IDX.Utilities.Models
+  fullName: IDX.Utilities.Models
+  spec.csharp:
+  - uid: IDX
+    name: IDX
+    href: IDX.html
+  - name: .
+  - uid: IDX.Utilities
+    name: Utilities
+    href: IDX.Utilities.html
+  - name: .
+  - uid: IDX.Utilities.Models
+    name: Models
+    href: IDX.Utilities.Models.html
+  spec.vb:
+  - uid: IDX
+    name: IDX
+    href: IDX.html
+  - name: .
+  - uid: IDX.Utilities
+    name: Utilities
+    href: IDX.Utilities.html
+  - name: .
+  - uid: IDX.Utilities.Models
+    name: Models
+    href: IDX.Utilities.Models.html
+memberLayout: SeparatePages

@@ -1,0 +1,101 @@
+### YamlMime:ManagedReference
+items:
+- uid: IDX.Utilities.Extensions
+  commentId: N:IDX.Utilities.Extensions
+  id: Extensions
+  parent: IDX.Utilities
+  children:
+  - IDX.Utilities.Extensions.HttpClientExtensions
+  - IDX.Utilities.Extensions.JObjectExtensions
+  - IDX.Utilities.Extensions.ObjectExtensions
+  - IDX.Utilities.Extensions.StringExtensions
+  - IDX.Utilities.Extensions.StringExtensions.StringCaseType
+  langs:
+  - csharp
+  - vb
+  name: IDX.Utilities.Extensions
+  nameWithType: IDX.Utilities.Extensions
+  fullName: IDX.Utilities.Extensions
+  type: Namespace
+  assemblies:
+  - IDX.Utilities
+references:
+- uid: IDX.Utilities.Extensions.HttpClientExtensions
+  commentId: T:IDX.Utilities.Extensions.HttpClientExtensions
+  href: IDX.Utilities.Extensions.HttpClientExtensions.html
+  name: HttpClientExtensions
+  nameWithType: HttpClientExtensions
+  fullName: IDX.Utilities.Extensions.HttpClientExtensions
+- uid: IDX.Utilities.Extensions.JObjectExtensions
+  commentId: T:IDX.Utilities.Extensions.JObjectExtensions
+  href: IDX.Utilities.Extensions.JObjectExtensions.html
+  name: JObjectExtensions
+  nameWithType: JObjectExtensions
+  fullName: IDX.Utilities.Extensions.JObjectExtensions
+- uid: IDX.Utilities.Extensions.ObjectExtensions
+  commentId: T:IDX.Utilities.Extensions.ObjectExtensions
+  parent: IDX.Utilities.Extensions
+  href: IDX.Utilities.Extensions.ObjectExtensions.html
+  name: ObjectExtensions
+  nameWithType: ObjectExtensions
+  fullName: IDX.Utilities.Extensions.ObjectExtensions
+- uid: IDX.Utilities.Extensions.StringExtensions
+  commentId: T:IDX.Utilities.Extensions.StringExtensions
+  href: IDX.Utilities.Extensions.StringExtensions.html
+  name: StringExtensions
+  nameWithType: StringExtensions
+  fullName: IDX.Utilities.Extensions.StringExtensions
+- uid: IDX.Utilities.Extensions.StringExtensions.StringCaseType
+  commentId: T:IDX.Utilities.Extensions.StringExtensions.StringCaseType
+  parent: IDX.Utilities.Extensions
+  href: IDX.Utilities.Extensions.StringExtensions.html
+  name: StringExtensions.StringCaseType
+  nameWithType: StringExtensions.StringCaseType
+  fullName: IDX.Utilities.Extensions.StringExtensions.StringCaseType
+  spec.csharp:
+  - uid: IDX.Utilities.Extensions.StringExtensions
+    name: StringExtensions
+    href: IDX.Utilities.Extensions.StringExtensions.html
+  - name: .
+  - uid: IDX.Utilities.Extensions.StringExtensions.StringCaseType
+    name: StringCaseType
+    href: IDX.Utilities.Extensions.StringExtensions.StringCaseType.html
+  spec.vb:
+  - uid: IDX.Utilities.Extensions.StringExtensions
+    name: StringExtensions
+    href: IDX.Utilities.Extensions.StringExtensions.html
+  - name: .
+  - uid: IDX.Utilities.Extensions.StringExtensions.StringCaseType
+    name: StringCaseType
+    href: IDX.Utilities.Extensions.StringExtensions.StringCaseType.html
+- uid: IDX.Utilities.Extensions
+  commentId: N:IDX.Utilities.Extensions
+  href: IDX.html
+  name: IDX.Utilities.Extensions
+  nameWithType: IDX.Utilities.Extensions
+  fullName: IDX.Utilities.Extensions
+  spec.csharp:
+  - uid: IDX
+    name: IDX
+    href: IDX.html
+  - name: .
+  - uid: IDX.Utilities
+    name: Utilities
+    href: IDX.Utilities.html
+  - name: .
+  - uid: IDX.Utilities.Extensions
+    name: Extensions
+    href: IDX.Utilities.Extensions.html
+  spec.vb:
+  - uid: IDX
+    name: IDX
+    href: IDX.html
+  - name: .
+  - uid: IDX.Utilities
+    name: Utilities
+    href: IDX.Utilities.html
+  - name: .
+  - uid: IDX.Utilities.Extensions
+    name: Extensions
+    href: IDX.Utilities.Extensions.html
+memberLayout: SeparatePages

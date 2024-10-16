@@ -1,0 +1,150 @@
+### YamlMime:TableOfContent
+items:
+- uid: IDX.Utilities
+  name: IDX.Utilities
+  items:
+  - uid: IDX.Utilities.DataProcessor
+    name: DataProcessor
+    items:
+    - uid: IDX.Utilities.DataProcessor.CouchBaseHelper
+      name: CouchBaseHelper
+    - uid: IDX.Utilities.DataProcessor.PgSqlHelper
+      name: PgSqlHelper
+    - uid: IDX.Utilities.DataProcessor.PgSqlHelper.ConStringFromJson
+      name: PgSqlHelper.ConStringFromJson
+  - uid: IDX.Utilities.Delegator
+    name: Delegator
+    items:
+    - uid: IDX.Utilities.Delegator.CallbackBTData
+      name: CallbackBTData
+    - uid: IDX.Utilities.Delegator.CallbackExecuteNonQuery
+      name: CallbackExecuteNonQuery
+    - uid: IDX.Utilities.Delegator.CallbackExecuteQuery
+      name: CallbackExecuteQuery
+    - uid: IDX.Utilities.Delegator.CallbackExecuteScalar`1
+      name: CallbackExecuteScalar<T>
+    - uid: IDX.Utilities.Delegator.CallbackValidateQuery
+      name: CallbackValidateQuery
+    - uid: IDX.Utilities.Delegator.CommonCallback
+      name: CommonCallback
+  - uid: IDX.Utilities.Extensions
+    name: Extensions
+    items:
+    - uid: IDX.Utilities.Extensions.HttpClientExtensions
+      name: HttpClientExtensions
+    - uid: IDX.Utilities.Extensions.JObjectExtensions
+      name: JObjectExtensions
+    - uid: IDX.Utilities.Extensions.ObjectExtensions
+      name: ObjectExtensions
+    - uid: IDX.Utilities.Extensions.StringExtensions
+      name: StringExtensions
+    - uid: IDX.Utilities.Extensions.StringExtensions.StringCaseType
+      name: StringExtensions.StringCaseType
+  - uid: IDX.Utilities.Models
+    name: Models
+    items:
+    - uid: IDX.Utilities.Models.API
+      name: API
+      items:
+      - uid: IDX.Utilities.Models.API.ApiResponse
+        name: ApiResponse
+      - uid: IDX.Utilities.Models.API.ApiResponseData`1
+        name: ApiResponseData<T>
+    - uid: IDX.Utilities.Models.BootstrapTable
+      name: BootstrapTable
+      items:
+      - uid: IDX.Utilities.Models.BootstrapTable.BTRequest
+        name: BTRequest
+      - uid: IDX.Utilities.Models.BootstrapTable.BTRequest.BTOrderType
+        name: BTRequest.BTOrderType
+      - uid: IDX.Utilities.Models.BootstrapTable.BTResponse`1
+        name: BTResponse<T>
+    - uid: IDX.Utilities.Models.PgSqlDataProcessor
+      name: PgSqlDataProcessor
+      items:
+      - uid: IDX.Utilities.Models.PgSqlDataProcessor.PagingRequest
+        name: PagingRequest
+      - uid: IDX.Utilities.Models.PgSqlDataProcessor.PagingRequest.SourceType
+        name: PagingRequest.SourceType
+      - uid: IDX.Utilities.Models.PgSqlDataProcessor.SPCallInfo
+        name: SPCallInfo
+      - uid: IDX.Utilities.Models.PgSqlDataProcessor.SPParameter
+        name: SPParameter
+    - uid: IDX.Utilities.Models.CommonConnectionString
+      name: CommonConnectionString
+    - uid: IDX.Utilities.Models.CouchBaseConnectionString
+      name: CouchBaseConnectionString
+  - uid: IDX.Utilities.Validations
+    name: Validations
+    items:
+    - uid: IDX.Utilities.Validations.Common
+      name: Common
+  - uid: IDX.Utilities.Common
+    name: Common
+  - uid: IDX.Utilities.DemoClass
+    name: DemoClass
+  - uid: IDX.Utilities.Encryptor
+    name: Encryptor
+  - uid: IDX.Utilities.MemoryCacheService
+    name: MemoryCacheService
+  - uid: IDX.Utilities.SystemLogging
+    name: SystemLogging
+- uid: idc.alert
+  name: idc.alert
+  items:
+  - uid: idc.alert.Controllers
+    name: Controllers
+    items:
+    - uid: idc.alert.Controllers.AlertMgtController
+      name: AlertMgtController
+    - uid: idc.alert.Controllers.DemoController
+      name: DemoController
+    - uid: idc.alert.Controllers.DemoController.SampleModel
+      name: DemoController.SampleModel
+    - uid: idc.alert.Controllers.TestController
+      name: TestController
+  - uid: idc.alert.Utilities
+    name: Utilities
+    items:
+    - uid: idc.alert.Utilities.Extensions
+      name: Extensions
+      items:
+      - uid: idc.alert.Utilities.Extensions.ListExtensions
+        name: ListExtensions
+    - uid: idc.alert.Utilities.Logics
+      name: Logics
+      items:
+      - uid: idc.alert.Utilities.Logics.AlertManagement
+        name: AlertManagement
+      - uid: idc.alert.Utilities.Logics.AlertManagement.CouchDataLayer
+        name: AlertManagement.CouchDataLayer
+    - uid: idc.alert.Utilities.Middlewares
+      name: Middlewares
+      items:
+      - uid: idc.alert.Utilities.Middlewares.AlphabeticalSortDocumentFilter
+        name: AlphabeticalSortDocumentFilter
+      - uid: idc.alert.Utilities.Middlewares.GsmHttpProcessor
+        name: GsmHttpProcessor
+      - uid: idc.alert.Utilities.Middlewares.ModelStateInvalidFilters
+        name: ModelStateInvalidFilters
+    - uid: idc.alert.Utilities.Models.MCA
+      name: Models.MCA
+      items:
+      - uid: idc.alert.Utilities.Models.MCA.AlertMaker
+        name: AlertMaker
+      - uid: idc.alert.Utilities.Models.MCA.AlertRevise
+        name: AlertRevise
+      - uid: idc.alert.Utilities.Models.MCA.AlertTracker
+        name: AlertTracker
+      - uid: idc.alert.Utilities.Models.MCA.AlertUpdate
+        name: AlertUpdate
+    - uid: idc.alert.Utilities.Validations
+      name: Validations
+      items:
+      - uid: idc.alert.Utilities.Validations.AlertValidations
+        name: AlertValidations
+  - uid: idc.alert.Commons
+    name: Commons
+  - uid: idc.alert.Program
+    name: Program
+memberLayout: SeparatePages

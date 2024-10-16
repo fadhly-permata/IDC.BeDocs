@@ -1,0 +1,65 @@
+### YamlMime:ManagedReference
+items:
+- uid: idc.alert
+  commentId: N:idc.alert
+  id: idc.alert
+  children:
+  - idc.alert.Commons
+  - idc.alert.Controllers
+  - idc.alert.Program
+  - idc.alert.Utilities
+  langs:
+  - csharp
+  - vb
+  name: idc.alert
+  nameWithType: idc.alert
+  fullName: idc.alert
+  type: Namespace
+  assemblies:
+  - idc.alert
+references:
+- uid: idc.alert.Controllers
+  commentId: N:idc.alert.Controllers
+  href: idc.html
+  name: idc.alert.Controllers
+  nameWithType: idc.alert.Controllers
+  fullName: idc.alert.Controllers
+  spec.csharp:
+  - uid: idc
+    name: idc
+    href: idc.html
+  - name: .
+  - uid: idc.alert
+    name: alert
+    href: idc.alert.html
+  - name: .
+  - uid: idc.alert.Controllers
+    name: Controllers
+    href: idc.alert.Controllers.html
+  spec.vb:
+  - uid: idc
+    name: idc
+    href: idc.html
+  - name: .
+  - uid: idc.alert
+    name: alert
+    href: idc.alert.html
+  - name: .
+  - uid: idc.alert.Controllers
+    name: Controllers
+    href: idc.alert.Controllers.html
+- uid: idc.alert.Utilities
+  isExternal: true
+- uid: idc.alert.Commons
+  commentId: T:idc.alert.Commons
+  href: idc.alert.Commons.html
+  name: Commons
+  nameWithType: Commons
+  fullName: idc.alert.Commons
+- uid: idc.alert.Program
+  commentId: T:idc.alert.Program
+  href: idc.alert.Program.html
+  name: Program
+  nameWithType: Program
+  fullName: idc.alert.Program
+memberLayout: SeparatePages

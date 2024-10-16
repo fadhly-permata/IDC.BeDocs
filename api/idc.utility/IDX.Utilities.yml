@@ -1,0 +1,232 @@
+### YamlMime:ManagedReference
+items:
+- uid: IDX.Utilities
+  commentId: N:IDX.Utilities
+  id: IDX.Utilities
+  children:
+  - IDX.Utilities.Common
+  - IDX.Utilities.DataProcessor
+  - IDX.Utilities.Delegator
+  - IDX.Utilities.DemoClass
+  - IDX.Utilities.Encryptor
+  - IDX.Utilities.Extensions
+  - IDX.Utilities.MemoryCacheService
+  - IDX.Utilities.Models
+  - IDX.Utilities.SystemLogging
+  - IDX.Utilities.Validations
+  langs:
+  - csharp
+  - vb
+  name: IDX.Utilities
+  nameWithType: IDX.Utilities
+  fullName: IDX.Utilities
+  type: Namespace
+  assemblies:
+  - IDX.Utilities
+references:
+- uid: IDX.Utilities.DataProcessor
+  commentId: N:IDX.Utilities.DataProcessor
+  href: IDX.html
+  name: IDX.Utilities.DataProcessor
+  nameWithType: IDX.Utilities.DataProcessor
+  fullName: IDX.Utilities.DataProcessor
+  spec.csharp:
+  - uid: IDX
+    name: IDX
+    href: IDX.html
+  - name: .
+  - uid: IDX.Utilities
+    name: Utilities
+    href: IDX.Utilities.html
+  - name: .
+  - uid: IDX.Utilities.DataProcessor
+    name: DataProcessor
+    href: IDX.Utilities.DataProcessor.html
+  spec.vb:
+  - uid: IDX
+    name: IDX
+    href: IDX.html
+  - name: .
+  - uid: IDX.Utilities
+    name: Utilities
+    href: IDX.Utilities.html
+  - name: .
+  - uid: IDX.Utilities.DataProcessor
+    name: DataProcessor
+    href: IDX.Utilities.DataProcessor.html
+- uid: IDX.Utilities.Delegator
+  commentId: N:IDX.Utilities.Delegator
+  href: IDX.html
+  name: IDX.Utilities.Delegator
+  nameWithType: IDX.Utilities.Delegator
+  fullName: IDX.Utilities.Delegator
+  spec.csharp:
+  - uid: IDX
+    name: IDX
+    href: IDX.html
+  - name: .
+  - uid: IDX.Utilities
+    name: Utilities
+    href: IDX.Utilities.html
+  - name: .
+  - uid: IDX.Utilities.Delegator
+    name: Delegator
+    href: IDX.Utilities.Delegator.html
+  spec.vb:
+  - uid: IDX
+    name: IDX
+    href: IDX.html
+  - name: .
+  - uid: IDX.Utilities
+    name: Utilities
+    href: IDX.Utilities.html
+  - name: .
+  - uid: IDX.Utilities.Delegator
+    name: Delegator
+    href: IDX.Utilities.Delegator.html
+- uid: IDX.Utilities.Extensions
+  commentId: N:IDX.Utilities.Extensions
+  href: IDX.html
+  name: IDX.Utilities.Extensions
+  nameWithType: IDX.Utilities.Extensions
+  fullName: IDX.Utilities.Extensions
+  spec.csharp:
+  - uid: IDX
+    name: IDX
+    href: IDX.html
+  - name: .
+  - uid: IDX.Utilities
+    name: Utilities
+    href: IDX.Utilities.html
+  - name: .
+  - uid: IDX.Utilities.Extensions
+    name: Extensions
+    href: IDX.Utilities.Extensions.html
+  spec.vb:
+  - uid: IDX
+    name: IDX
+    href: IDX.html
+  - name: .
+  - uid: IDX.Utilities
+    name: Utilities
+    href: IDX.Utilities.html
+  - name: .
+  - uid: IDX.Utilities.Extensions
+    name: Extensions
+    href: IDX.Utilities.Extensions.html
+- uid: IDX.Utilities.Models
+  commentId: N:IDX.Utilities.Models
+  href: IDX.html
+  name: IDX.Utilities.Models
+  nameWithType: IDX.Utilities.Models
+  fullName: IDX.Utilities.Models
+  spec.csharp:
+  - uid: IDX
+    name: IDX
+    href: IDX.html
+  - name: .
+  - uid: IDX.Utilities
+    name: Utilities
+    href: IDX.Utilities.html
+  - name: .
+  - uid: IDX.Utilities.Models
+    name: Models
+    href: IDX.Utilities.Models.html
+  spec.vb:
+  - uid: IDX
+    name: IDX
+    href: IDX.html
+  - name: .
+  - uid: IDX.Utilities
+    name: Utilities
+    href: IDX.Utilities.html
+  - name: .
+  - uid: IDX.Utilities.Models
+    name: Models
+    href: IDX.Utilities.Models.html
+- uid: IDX.Utilities.Validations
+  commentId: N:IDX.Utilities.Validations
+  href: IDX.html
+  name: IDX.Utilities.Validations
+  nameWithType: IDX.Utilities.Validations
+  fullName: IDX.Utilities.Validations
+  spec.csharp:
+  - uid: IDX
+    name: IDX
+    href: IDX.html
+  - name: .
+  - uid: IDX.Utilities
+    name: Utilities
+    href: IDX.Utilities.html
+  - name: .
+  - uid: IDX.Utilities.Validations
+    name: Validations
+    href: IDX.Utilities.Validations.html
+  spec.vb:
+  - uid: IDX
+    name: IDX
+    href: IDX.html
+  - name: .
+  - uid: IDX.Utilities
+    name: Utilities
+    href: IDX.Utilities.html
+  - name: .
+  - uid: IDX.Utilities.Validations
+    name: Validations
+    href: IDX.Utilities.Validations.html
+- uid: IDX.Utilities.Common
+  commentId: T:IDX.Utilities.Common
+  href: IDX.Utilities.Common.html
+  name: Common
+  nameWithType: Common
+  fullName: IDX.Utilities.Common
+- uid: IDX.Utilities.DemoClass
+  commentId: T:IDX.Utilities.DemoClass
+  href: IDX.Utilities.DemoClass.html
+  name: DemoClass
+  nameWithType: DemoClass
+  fullName: IDX.Utilities.DemoClass
+- uid: IDX.Utilities.Encryptor
+  commentId: T:IDX.Utilities.Encryptor
+  parent: IDX.Utilities
+  href: IDX.Utilities.Encryptor.html
+  name: Encryptor
+  nameWithType: Encryptor
+  fullName: IDX.Utilities.Encryptor
+- uid: IDX.Utilities.MemoryCacheService
+  commentId: T:IDX.Utilities.MemoryCacheService
+  parent: IDX.Utilities
+  href: IDX.Utilities.MemoryCacheService.html
+  name: MemoryCacheService
+  nameWithType: MemoryCacheService
+  fullName: IDX.Utilities.MemoryCacheService
+- uid: IDX.Utilities.SystemLogging
+  commentId: T:IDX.Utilities.SystemLogging
+  parent: IDX.Utilities
+  href: IDX.Utilities.SystemLogging.html
+  name: SystemLogging
+  nameWithType: SystemLogging
+  fullName: IDX.Utilities.SystemLogging
+- uid: IDX.Utilities
+  commentId: N:IDX.Utilities
+  href: IDX.html
+  name: IDX.Utilities
+  nameWithType: IDX.Utilities
+  fullName: IDX.Utilities
+  spec.csharp:
+  - uid: IDX
+    name: IDX
+    href: IDX.html
+  - name: .
+  - uid: IDX.Utilities
+    name: Utilities
+    href: IDX.Utilities.html
+  spec.vb:
+  - uid: IDX
+    name: IDX
+    href: IDX.html
+  - name: .
+  - uid: IDX.Utilities
+    name: Utilities
+    href: IDX.Utilities.html
+memberLayout: SeparatePages

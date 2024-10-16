@@ -1,0 +1,25 @@
+### YamlMime:ManagedReference
+items:
+- uid: idc.alert.Utilities.Validations
+  commentId: N:idc.alert.Utilities.Validations
+  id: Validations
+  parent: idc.alert.Utilities
+  children:
+  - idc.alert.Utilities.Validations.AlertValidations
+  langs:
+  - csharp
+  - vb
+  name: idc.alert.Utilities.Validations
+  nameWithType: idc.alert.Utilities.Validations
+  fullName: idc.alert.Utilities.Validations
+  type: Namespace
+  assemblies:
+  - idc.alert
+references:
+- uid: idc.alert.Utilities.Validations.AlertValidations
+  commentId: T:idc.alert.Utilities.Validations.AlertValidations
+  href: idc.alert.Utilities.Validations.AlertValidations.html
+  name: AlertValidations
+  nameWithType: AlertValidations
+  fullName: idc.alert.Utilities.Validations.AlertValidations
+memberLayout: SeparatePages

@@ -1,0 +1,1145 @@
+### YamlMime:ManagedReference
+items:
+- uid: idc.alert.Utilities.Models.MCA.AlertUpdate
+  commentId: T:idc.alert.Utilities.Models.MCA.AlertUpdate
+  id: AlertUpdate
+  parent: idc.alert.Utilities.Models.MCA
+  children:
+  - idc.alert.Utilities.Models.MCA.AlertUpdate.Id
+  langs:
+  - csharp
+  - vb
+  name: AlertUpdate
+  nameWithType: AlertUpdate
+  fullName: idc.alert.Utilities.Models.MCA.AlertUpdate
+  type: Class
+  source:
+    remote:
+      path: Utilities/Models/MCA/AlertMcaUpdate.cs
+      branch: enh/exclude_search_field
+      repo: https://scm.idecision.ai/idecision_source_net8/idc.alert.git
+    id: AlertUpdate
+    path: ../../../-Repo/idc.alert/Utilities/Models/MCA/AlertMcaUpdate.cs
+    startLine: 7
+  assemblies:
+  - idc.alert
+  namespace: idc.alert.Utilities.Models.MCA
+  summary: Represents an alert MCA update.
+  example: []
+  syntax:
+    content: 'public class AlertUpdate : AlertMaker'
+    content.vb: Public Class AlertUpdate Inherits AlertMaker
+  inheritance:
+  - System.Object
+  - idc.alert.Utilities.Models.MCA.AlertMaker
+  inheritedMembers:
+  - idc.alert.Utilities.Models.MCA.AlertMaker.User
+  - idc.alert.Utilities.Models.MCA.AlertMaker.Code
+  - idc.alert.Utilities.Models.MCA.AlertMaker.Name
+  - idc.alert.Utilities.Models.MCA.AlertMaker.Module
+  - idc.alert.Utilities.Models.MCA.AlertMaker.LinkField
+  - idc.alert.Utilities.Models.MCA.AlertMaker.Details
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  extensionMethods:
+  - System.Object.IDX.Utilities.Extensions.ObjectExtensions.CastToBoolean(System.Boolean)
+  - System.Object.IDX.Utilities.Extensions.ObjectExtensions.CastToDateTime(System.DateTime)
+  - System.Object.IDX.Utilities.Extensions.ObjectExtensions.CastToDecimal(System.Decimal)
+  - System.Object.IDX.Utilities.Extensions.ObjectExtensions.CastToDouble(System.Double)
+  - System.Object.IDX.Utilities.Extensions.ObjectExtensions.CastToInteger(System.Int32)
+  - System.Object.IDX.Utilities.Extensions.ObjectExtensions.CastToString(System.String)
+  - System.Object.IDX.Utilities.Validations.Common.EnsureNotNull(System.String,System.String)
+- uid: idc.alert.Utilities.Models.MCA.AlertUpdate.Id
+  commentId: P:idc.alert.Utilities.Models.MCA.AlertUpdate.Id
+  id: Id
+  parent: idc.alert.Utilities.Models.MCA.AlertUpdate
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: AlertUpdate.Id
+  fullName: idc.alert.Utilities.Models.MCA.AlertUpdate.Id
+  type: Property
+  source:
+    remote:
+      path: Utilities/Models/MCA/AlertMcaUpdate.cs
+      branch: enh/exclude_search_field
+      repo: https://scm.idecision.ai/idecision_source_net8/idc.alert.git
+    id: Id
+    path: ../../../-Repo/idc.alert/Utilities/Models/MCA/AlertMcaUpdate.cs
+    startLine: 12
+  assemblies:
+  - idc.alert
+  namespace: idc.alert.Utilities.Models.MCA
+  summary: Gets or sets the ID.
+  example: []
+  syntax:
+    content: >-
+      [Required(ErrorMessage = "langToken:alert_id_required")]
+
+      public required long Id { get; set; }
+    parameters: []
+    return:
+      type: System.Int64
+    content.vb: >-
+      <Required(ErrorMessage:="langToken:alert_id_required")>
+
+      Public Property Id As Long
+  overload: idc.alert.Utilities.Models.MCA.AlertUpdate.Id*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.RequiredAttribute
+    ctor: System.ComponentModel.DataAnnotations.RequiredAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: ErrorMessage
+      type: System.String
+      value: langToken:alert_id_required
+references:
+- uid: idc.alert.Utilities.Models.MCA
+  commentId: N:idc.alert.Utilities.Models.MCA
+  href: idc.html
+  name: idc.alert.Utilities.Models.MCA
+  nameWithType: idc.alert.Utilities.Models.MCA
+  fullName: idc.alert.Utilities.Models.MCA
+  spec.csharp:
+  - uid: idc
+    name: idc
+    href: idc.html
+  - name: .
+  - uid: idc.alert
+    name: alert
+    href: idc.alert.html
+  - name: .
+  - uid: idc.alert.Utilities
+    name: Utilities
+    href: idc.alert.Utilities.html
+  - name: .
+  - uid: idc.alert.Utilities.Models
+    name: Models
+    href: idc.alert.Utilities.Models.html
+  - name: .
+  - uid: idc.alert.Utilities.Models.MCA
+    name: MCA
+    href: idc.alert.Utilities.Models.MCA.html
+  spec.vb:
+  - uid: idc
+    name: idc
+    href: idc.html
+  - name: .
+  - uid: idc.alert
+    name: alert
+    href: idc.alert.html
+  - name: .
+  - uid: idc.alert.Utilities
+    name: Utilities
+    href: idc.alert.Utilities.html
+  - name: .
+  - uid: idc.alert.Utilities.Models
+    name: Models
+    href: idc.alert.Utilities.Models.html
+  - name: .
+  - uid: idc.alert.Utilities.Models.MCA
+    name: MCA
+    href: idc.alert.Utilities.Models.MCA.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: idc.alert.Utilities.Models.MCA.AlertMaker
+  commentId: T:idc.alert.Utilities.Models.MCA.AlertMaker
+  parent: idc.alert.Utilities.Models.MCA
+  href: idc.alert.Utilities.Models.MCA.AlertMaker.html
+  name: AlertMaker
+  nameWithType: AlertMaker
+  fullName: idc.alert.Utilities.Models.MCA.AlertMaker
+- uid: idc.alert.Utilities.Models.MCA.AlertMaker.User
+  commentId: P:idc.alert.Utilities.Models.MCA.AlertMaker.User
+  parent: idc.alert.Utilities.Models.MCA.AlertMaker
+  href: idc.alert.Utilities.Models.MCA.AlertMaker.User.html#idc_alert_Utilities_Models_MCA_AlertMaker_User
+  name: User
+  nameWithType: AlertMaker.User
+  fullName: idc.alert.Utilities.Models.MCA.AlertMaker.User
+- uid: idc.alert.Utilities.Models.MCA.AlertMaker.Code
+  commentId: P:idc.alert.Utilities.Models.MCA.AlertMaker.Code
+  parent: idc.alert.Utilities.Models.MCA.AlertMaker
+  href: idc.alert.Utilities.Models.MCA.AlertMaker.Code.html#idc_alert_Utilities_Models_MCA_AlertMaker_Code
+  name: Code
+  nameWithType: AlertMaker.Code
+  fullName: idc.alert.Utilities.Models.MCA.AlertMaker.Code
+- uid: idc.alert.Utilities.Models.MCA.AlertMaker.Name
+  commentId: P:idc.alert.Utilities.Models.MCA.AlertMaker.Name
+  parent: idc.alert.Utilities.Models.MCA.AlertMaker
+  href: idc.alert.Utilities.Models.MCA.AlertMaker.Name.html#idc_alert_Utilities_Models_MCA_AlertMaker_Name
+  name: Name
+  nameWithType: AlertMaker.Name
+  fullName: idc.alert.Utilities.Models.MCA.AlertMaker.Name
+- uid: idc.alert.Utilities.Models.MCA.AlertMaker.Module
+  commentId: P:idc.alert.Utilities.Models.MCA.AlertMaker.Module
+  parent: idc.alert.Utilities.Models.MCA.AlertMaker
+  href: idc.alert.Utilities.Models.MCA.AlertMaker.Module.html#idc_alert_Utilities_Models_MCA_AlertMaker_Module
+  name: Module
+  nameWithType: AlertMaker.Module
+  fullName: idc.alert.Utilities.Models.MCA.AlertMaker.Module
+- uid: idc.alert.Utilities.Models.MCA.AlertMaker.LinkField
+  commentId: P:idc.alert.Utilities.Models.MCA.AlertMaker.LinkField
+  parent: idc.alert.Utilities.Models.MCA.AlertMaker
+  href: idc.alert.Utilities.Models.MCA.AlertMaker.LinkField.html#idc_alert_Utilities_Models_MCA_AlertMaker_LinkField
+  name: LinkField
+  nameWithType: AlertMaker.LinkField
+  fullName: idc.alert.Utilities.Models.MCA.AlertMaker.LinkField
+- uid: idc.alert.Utilities.Models.MCA.AlertMaker.Details
+  commentId: P:idc.alert.Utilities.Models.MCA.AlertMaker.Details
+  parent: idc.alert.Utilities.Models.MCA.AlertMaker
+  href: idc.alert.Utilities.Models.MCA.AlertMaker.Details.html#idc_alert_Utilities_Models_MCA_AlertMaker_Details
+  name: Details
+  nameWithType: AlertMaker.Details
+  fullName: idc.alert.Utilities.Models.MCA.AlertMaker.Details
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.IDX.Utilities.Extensions.ObjectExtensions.CastToBoolean(System.Boolean)
+  commentId: M:IDX.Utilities.Extensions.ObjectExtensions.CastToBoolean(System.Object,System.Boolean)
+  parent: IDX.Utilities.Extensions.ObjectExtensions
+  definition: IDX.Utilities.Extensions.ObjectExtensions.CastToBoolean(System.Object,System.Boolean)
+  href: IDX.Utilities.Extensions.ObjectExtensions.CastToBoolean.html#IDX_Utilities_Extensions_ObjectExtensions_CastToBoolean_System_Object_System_Boolean_
+  name: CastToBoolean(object, bool)
+  nameWithType: ObjectExtensions.CastToBoolean(object, bool)
+  fullName: IDX.Utilities.Extensions.ObjectExtensions.CastToBoolean(object, bool)
+  nameWithType.vb: ObjectExtensions.CastToBoolean(Object, Boolean)
+  fullName.vb: IDX.Utilities.Extensions.ObjectExtensions.CastToBoolean(Object, Boolean)
+  name.vb: CastToBoolean(Object, Boolean)
+  spec.csharp:
+  - uid: IDX.Utilities.Extensions.ObjectExtensions.CastToBoolean(System.Object,System.Boolean)
+    name: CastToBoolean
+    href: IDX.Utilities.Extensions.ObjectExtensions.CastToBoolean.html#IDX_Utilities_Extensions_ObjectExtensions_CastToBoolean_System_Object_System_Boolean_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: IDX.Utilities.Extensions.ObjectExtensions.CastToBoolean(System.Object,System.Boolean)
+    name: CastToBoolean
+    href: IDX.Utilities.Extensions.ObjectExtensions.CastToBoolean.html#IDX_Utilities_Extensions_ObjectExtensions_CastToBoolean_System_Object_System_Boolean_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: System.Object.IDX.Utilities.Extensions.ObjectExtensions.CastToDateTime(System.DateTime)
+  commentId: M:IDX.Utilities.Extensions.ObjectExtensions.CastToDateTime(System.Object,System.DateTime)
+  parent: IDX.Utilities.Extensions.ObjectExtensions
+  definition: IDX.Utilities.Extensions.ObjectExtensions.CastToDateTime(System.Object,System.DateTime)
+  href: IDX.Utilities.Extensions.ObjectExtensions.CastToDateTime.html#IDX_Utilities_Extensions_ObjectExtensions_CastToDateTime_System_Object_System_DateTime_
+  name: CastToDateTime(object, DateTime)
+  nameWithType: ObjectExtensions.CastToDateTime(object, DateTime)
+  fullName: IDX.Utilities.Extensions.ObjectExtensions.CastToDateTime(object, System.DateTime)
+  nameWithType.vb: ObjectExtensions.CastToDateTime(Object, Date)
+  fullName.vb: IDX.Utilities.Extensions.ObjectExtensions.CastToDateTime(Object, Date)
+  name.vb: CastToDateTime(Object, Date)
+  spec.csharp:
+  - uid: IDX.Utilities.Extensions.ObjectExtensions.CastToDateTime(System.Object,System.DateTime)
+    name: CastToDateTime
+    href: IDX.Utilities.Extensions.ObjectExtensions.CastToDateTime.html#IDX_Utilities_Extensions_ObjectExtensions_CastToDateTime_System_Object_System_DateTime_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.DateTime
+    name: DateTime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: )
+  spec.vb:
+  - uid: IDX.Utilities.Extensions.ObjectExtensions.CastToDateTime(System.Object,System.DateTime)
+    name: CastToDateTime
+    href: IDX.Utilities.Extensions.ObjectExtensions.CastToDateTime.html#IDX_Utilities_Extensions_ObjectExtensions_CastToDateTime_System_Object_System_DateTime_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.DateTime
+    name: Date
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: )
+- uid: System.Object.IDX.Utilities.Extensions.ObjectExtensions.CastToDecimal(System.Decimal)
+  commentId: M:IDX.Utilities.Extensions.ObjectExtensions.CastToDecimal(System.Object,System.Decimal)
+  parent: IDX.Utilities.Extensions.ObjectExtensions
+  definition: IDX.Utilities.Extensions.ObjectExtensions.CastToDecimal(System.Object,System.Decimal)
+  href: IDX.Utilities.Extensions.ObjectExtensions.CastToDecimal.html#IDX_Utilities_Extensions_ObjectExtensions_CastToDecimal_System_Object_System_Decimal_
+  name: CastToDecimal(object, decimal)
+  nameWithType: ObjectExtensions.CastToDecimal(object, decimal)
+  fullName: IDX.Utilities.Extensions.ObjectExtensions.CastToDecimal(object, decimal)
+  nameWithType.vb: ObjectExtensions.CastToDecimal(Object, Decimal)
+  fullName.vb: IDX.Utilities.Extensions.ObjectExtensions.CastToDecimal(Object, Decimal)
+  name.vb: CastToDecimal(Object, Decimal)
+  spec.csharp:
+  - uid: IDX.Utilities.Extensions.ObjectExtensions.CastToDecimal(System.Object,System.Decimal)
+    name: CastToDecimal
+    href: IDX.Utilities.Extensions.ObjectExtensions.CastToDecimal.html#IDX_Utilities_Extensions_ObjectExtensions_CastToDecimal_System_Object_System_Decimal_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Decimal
+    name: decimal
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.decimal
+  - name: )
+  spec.vb:
+  - uid: IDX.Utilities.Extensions.ObjectExtensions.CastToDecimal(System.Object,System.Decimal)
+    name: CastToDecimal
+    href: IDX.Utilities.Extensions.ObjectExtensions.CastToDecimal.html#IDX_Utilities_Extensions_ObjectExtensions_CastToDecimal_System_Object_System_Decimal_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Decimal
+    name: Decimal
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.decimal
+  - name: )
+- uid: System.Object.IDX.Utilities.Extensions.ObjectExtensions.CastToDouble(System.Double)
+  commentId: M:IDX.Utilities.Extensions.ObjectExtensions.CastToDouble(System.Object,System.Double)
+  parent: IDX.Utilities.Extensions.ObjectExtensions
+  definition: IDX.Utilities.Extensions.ObjectExtensions.CastToDouble(System.Object,System.Double)
+  href: IDX.Utilities.Extensions.ObjectExtensions.CastToDouble.html#IDX_Utilities_Extensions_ObjectExtensions_CastToDouble_System_Object_System_Double_
+  name: CastToDouble(object, double)
+  nameWithType: ObjectExtensions.CastToDouble(object, double)
+  fullName: IDX.Utilities.Extensions.ObjectExtensions.CastToDouble(object, double)
+  nameWithType.vb: ObjectExtensions.CastToDouble(Object, Double)
+  fullName.vb: IDX.Utilities.Extensions.ObjectExtensions.CastToDouble(Object, Double)
+  name.vb: CastToDouble(Object, Double)
+  spec.csharp:
+  - uid: IDX.Utilities.Extensions.ObjectExtensions.CastToDouble(System.Object,System.Double)
+    name: CastToDouble
+    href: IDX.Utilities.Extensions.ObjectExtensions.CastToDouble.html#IDX_Utilities_Extensions_ObjectExtensions_CastToDouble_System_Object_System_Double_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+  spec.vb:
+  - uid: IDX.Utilities.Extensions.ObjectExtensions.CastToDouble(System.Object,System.Double)
+    name: CastToDouble
+    href: IDX.Utilities.Extensions.ObjectExtensions.CastToDouble.html#IDX_Utilities_Extensions_ObjectExtensions_CastToDouble_System_Object_System_Double_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+- uid: System.Object.IDX.Utilities.Extensions.ObjectExtensions.CastToInteger(System.Int32)
+  commentId: M:IDX.Utilities.Extensions.ObjectExtensions.CastToInteger(System.Object,System.Int32)
+  parent: IDX.Utilities.Extensions.ObjectExtensions
+  definition: IDX.Utilities.Extensions.ObjectExtensions.CastToInteger(System.Object,System.Int32)
+  href: IDX.Utilities.Extensions.ObjectExtensions.CastToInteger.html#IDX_Utilities_Extensions_ObjectExtensions_CastToInteger_System_Object_System_Int32_
+  name: CastToInteger(object, int)
+  nameWithType: ObjectExtensions.CastToInteger(object, int)
+  fullName: IDX.Utilities.Extensions.ObjectExtensions.CastToInteger(object, int)
+  nameWithType.vb: ObjectExtensions.CastToInteger(Object, Integer)
+  fullName.vb: IDX.Utilities.Extensions.ObjectExtensions.CastToInteger(Object, Integer)
+  name.vb: CastToInteger(Object, Integer)
+  spec.csharp:
+  - uid: IDX.Utilities.Extensions.ObjectExtensions.CastToInteger(System.Object,System.Int32)
+    name: CastToInteger
+    href: IDX.Utilities.Extensions.ObjectExtensions.CastToInteger.html#IDX_Utilities_Extensions_ObjectExtensions_CastToInteger_System_Object_System_Int32_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: IDX.Utilities.Extensions.ObjectExtensions.CastToInteger(System.Object,System.Int32)
+    name: CastToInteger
+    href: IDX.Utilities.Extensions.ObjectExtensions.CastToInteger.html#IDX_Utilities_Extensions_ObjectExtensions_CastToInteger_System_Object_System_Int32_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Object.IDX.Utilities.Extensions.ObjectExtensions.CastToString(System.String)
+  commentId: M:IDX.Utilities.Extensions.ObjectExtensions.CastToString(System.Object,System.String)
+  parent: IDX.Utilities.Extensions.ObjectExtensions
+  definition: IDX.Utilities.Extensions.ObjectExtensions.CastToString(System.Object,System.String)
+  href: IDX.Utilities.Extensions.ObjectExtensions.CastToString.html#IDX_Utilities_Extensions_ObjectExtensions_CastToString_System_Object_System_String_
+  name: CastToString(object, string)
+  nameWithType: ObjectExtensions.CastToString(object, string)
+  fullName: IDX.Utilities.Extensions.ObjectExtensions.CastToString(object, string)
+  nameWithType.vb: ObjectExtensions.CastToString(Object, String)
+  fullName.vb: IDX.Utilities.Extensions.ObjectExtensions.CastToString(Object, String)
+  name.vb: CastToString(Object, String)
+  spec.csharp:
+  - uid: IDX.Utilities.Extensions.ObjectExtensions.CastToString(System.Object,System.String)
+    name: CastToString
+    href: IDX.Utilities.Extensions.ObjectExtensions.CastToString.html#IDX_Utilities_Extensions_ObjectExtensions_CastToString_System_Object_System_String_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: IDX.Utilities.Extensions.ObjectExtensions.CastToString(System.Object,System.String)
+    name: CastToString
+    href: IDX.Utilities.Extensions.ObjectExtensions.CastToString.html#IDX_Utilities_Extensions_ObjectExtensions_CastToString_System_Object_System_String_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Object.IDX.Utilities.Validations.Common.EnsureNotNull(System.String,System.String)
+  commentId: M:IDX.Utilities.Validations.Common.EnsureNotNull(System.Object,System.String,System.String)
+  parent: IDX.Utilities.Validations.Common
+  definition: IDX.Utilities.Validations.Common.EnsureNotNull(System.Object,System.String,System.String)
+  href: IDX.Utilities.Validations.Common.EnsureNotNull.html#IDX_Utilities_Validations_Common_EnsureNotNull_System_Object_System_String_System_String_
+  name: EnsureNotNull(object, string, string)
+  nameWithType: Common.EnsureNotNull(object, string, string)
+  fullName: IDX.Utilities.Validations.Common.EnsureNotNull(object, string, string)
+  nameWithType.vb: Common.EnsureNotNull(Object, String, String)
+  fullName.vb: IDX.Utilities.Validations.Common.EnsureNotNull(Object, String, String)
+  name.vb: EnsureNotNull(Object, String, String)
+  spec.csharp:
+  - uid: IDX.Utilities.Validations.Common.EnsureNotNull(System.Object,System.String,System.String)
+    name: EnsureNotNull
+    href: IDX.Utilities.Validations.Common.EnsureNotNull.html#IDX_Utilities_Validations_Common_EnsureNotNull_System_Object_System_String_System_String_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: IDX.Utilities.Validations.Common.EnsureNotNull(System.Object,System.String,System.String)
+    name: EnsureNotNull
+    href: IDX.Utilities.Validations.Common.EnsureNotNull.html#IDX_Utilities_Validations_Common_EnsureNotNull_System_Object_System_String_System_String_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: IDX.Utilities.Extensions.ObjectExtensions.CastToBoolean(System.Object,System.Boolean)
+  commentId: M:IDX.Utilities.Extensions.ObjectExtensions.CastToBoolean(System.Object,System.Boolean)
+  isExternal: true
+  href: IDX.Utilities.Extensions.ObjectExtensions.CastToBoolean.html#IDX_Utilities_Extensions_ObjectExtensions_CastToBoolean_System_Object_System_Boolean_
+  name: CastToBoolean(object, bool)
+  nameWithType: ObjectExtensions.CastToBoolean(object, bool)
+  fullName: IDX.Utilities.Extensions.ObjectExtensions.CastToBoolean(object, bool)
+  nameWithType.vb: ObjectExtensions.CastToBoolean(Object, Boolean)
+  fullName.vb: IDX.Utilities.Extensions.ObjectExtensions.CastToBoolean(Object, Boolean)
+  name.vb: CastToBoolean(Object, Boolean)
+  spec.csharp:
+  - uid: IDX.Utilities.Extensions.ObjectExtensions.CastToBoolean(System.Object,System.Boolean)
+    name: CastToBoolean
+    href: IDX.Utilities.Extensions.ObjectExtensions.CastToBoolean.html#IDX_Utilities_Extensions_ObjectExtensions_CastToBoolean_System_Object_System_Boolean_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: IDX.Utilities.Extensions.ObjectExtensions.CastToBoolean(System.Object,System.Boolean)
+    name: CastToBoolean
+    href: IDX.Utilities.Extensions.ObjectExtensions.CastToBoolean.html#IDX_Utilities_Extensions_ObjectExtensions_CastToBoolean_System_Object_System_Boolean_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: IDX.Utilities.Extensions.ObjectExtensions
+  commentId: T:IDX.Utilities.Extensions.ObjectExtensions
+  parent: IDX.Utilities.Extensions
+  href: IDX.Utilities.Extensions.ObjectExtensions.html
+  name: ObjectExtensions
+  nameWithType: ObjectExtensions
+  fullName: IDX.Utilities.Extensions.ObjectExtensions
+- uid: IDX.Utilities.Extensions.ObjectExtensions.CastToDateTime(System.Object,System.DateTime)
+  commentId: M:IDX.Utilities.Extensions.ObjectExtensions.CastToDateTime(System.Object,System.DateTime)
+  isExternal: true
+  href: IDX.Utilities.Extensions.ObjectExtensions.CastToDateTime.html#IDX_Utilities_Extensions_ObjectExtensions_CastToDateTime_System_Object_System_DateTime_
+  name: CastToDateTime(object, DateTime)
+  nameWithType: ObjectExtensions.CastToDateTime(object, DateTime)
+  fullName: IDX.Utilities.Extensions.ObjectExtensions.CastToDateTime(object, System.DateTime)
+  nameWithType.vb: ObjectExtensions.CastToDateTime(Object, Date)
+  fullName.vb: IDX.Utilities.Extensions.ObjectExtensions.CastToDateTime(Object, Date)
+  name.vb: CastToDateTime(Object, Date)
+  spec.csharp:
+  - uid: IDX.Utilities.Extensions.ObjectExtensions.CastToDateTime(System.Object,System.DateTime)
+    name: CastToDateTime
+    href: IDX.Utilities.Extensions.ObjectExtensions.CastToDateTime.html#IDX_Utilities_Extensions_ObjectExtensions_CastToDateTime_System_Object_System_DateTime_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.DateTime
+    name: DateTime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: )
+  spec.vb:
+  - uid: IDX.Utilities.Extensions.ObjectExtensions.CastToDateTime(System.Object,System.DateTime)
+    name: CastToDateTime
+    href: IDX.Utilities.Extensions.ObjectExtensions.CastToDateTime.html#IDX_Utilities_Extensions_ObjectExtensions_CastToDateTime_System_Object_System_DateTime_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.DateTime
+    name: Date
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: )
+- uid: IDX.Utilities.Extensions.ObjectExtensions.CastToDecimal(System.Object,System.Decimal)
+  commentId: M:IDX.Utilities.Extensions.ObjectExtensions.CastToDecimal(System.Object,System.Decimal)
+  isExternal: true
+  href: IDX.Utilities.Extensions.ObjectExtensions.CastToDecimal.html#IDX_Utilities_Extensions_ObjectExtensions_CastToDecimal_System_Object_System_Decimal_
+  name: CastToDecimal(object, decimal)
+  nameWithType: ObjectExtensions.CastToDecimal(object, decimal)
+  fullName: IDX.Utilities.Extensions.ObjectExtensions.CastToDecimal(object, decimal)
+  nameWithType.vb: ObjectExtensions.CastToDecimal(Object, Decimal)
+  fullName.vb: IDX.Utilities.Extensions.ObjectExtensions.CastToDecimal(Object, Decimal)
+  name.vb: CastToDecimal(Object, Decimal)
+  spec.csharp:
+  - uid: IDX.Utilities.Extensions.ObjectExtensions.CastToDecimal(System.Object,System.Decimal)
+    name: CastToDecimal
+    href: IDX.Utilities.Extensions.ObjectExtensions.CastToDecimal.html#IDX_Utilities_Extensions_ObjectExtensions_CastToDecimal_System_Object_System_Decimal_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Decimal
+    name: decimal
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.decimal
+  - name: )
+  spec.vb:
+  - uid: IDX.Utilities.Extensions.ObjectExtensions.CastToDecimal(System.Object,System.Decimal)
+    name: CastToDecimal
+    href: IDX.Utilities.Extensions.ObjectExtensions.CastToDecimal.html#IDX_Utilities_Extensions_ObjectExtensions_CastToDecimal_System_Object_System_Decimal_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Decimal
+    name: Decimal
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.decimal
+  - name: )
+- uid: IDX.Utilities.Extensions.ObjectExtensions.CastToDouble(System.Object,System.Double)
+  commentId: M:IDX.Utilities.Extensions.ObjectExtensions.CastToDouble(System.Object,System.Double)
+  isExternal: true
+  href: IDX.Utilities.Extensions.ObjectExtensions.CastToDouble.html#IDX_Utilities_Extensions_ObjectExtensions_CastToDouble_System_Object_System_Double_
+  name: CastToDouble(object, double)
+  nameWithType: ObjectExtensions.CastToDouble(object, double)
+  fullName: IDX.Utilities.Extensions.ObjectExtensions.CastToDouble(object, double)
+  nameWithType.vb: ObjectExtensions.CastToDouble(Object, Double)
+  fullName.vb: IDX.Utilities.Extensions.ObjectExtensions.CastToDouble(Object, Double)
+  name.vb: CastToDouble(Object, Double)
+  spec.csharp:
+  - uid: IDX.Utilities.Extensions.ObjectExtensions.CastToDouble(System.Object,System.Double)
+    name: CastToDouble
+    href: IDX.Utilities.Extensions.ObjectExtensions.CastToDouble.html#IDX_Utilities_Extensions_ObjectExtensions_CastToDouble_System_Object_System_Double_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+  spec.vb:
+  - uid: IDX.Utilities.Extensions.ObjectExtensions.CastToDouble(System.Object,System.Double)
+    name: CastToDouble
+    href: IDX.Utilities.Extensions.ObjectExtensions.CastToDouble.html#IDX_Utilities_Extensions_ObjectExtensions_CastToDouble_System_Object_System_Double_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+- uid: IDX.Utilities.Extensions.ObjectExtensions.CastToInteger(System.Object,System.Int32)
+  commentId: M:IDX.Utilities.Extensions.ObjectExtensions.CastToInteger(System.Object,System.Int32)
+  isExternal: true
+  href: IDX.Utilities.Extensions.ObjectExtensions.CastToInteger.html#IDX_Utilities_Extensions_ObjectExtensions_CastToInteger_System_Object_System_Int32_
+  name: CastToInteger(object, int)
+  nameWithType: ObjectExtensions.CastToInteger(object, int)
+  fullName: IDX.Utilities.Extensions.ObjectExtensions.CastToInteger(object, int)
+  nameWithType.vb: ObjectExtensions.CastToInteger(Object, Integer)
+  fullName.vb: IDX.Utilities.Extensions.ObjectExtensions.CastToInteger(Object, Integer)
+  name.vb: CastToInteger(Object, Integer)
+  spec.csharp:
+  - uid: IDX.Utilities.Extensions.ObjectExtensions.CastToInteger(System.Object,System.Int32)
+    name: CastToInteger
+    href: IDX.Utilities.Extensions.ObjectExtensions.CastToInteger.html#IDX_Utilities_Extensions_ObjectExtensions_CastToInteger_System_Object_System_Int32_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: IDX.Utilities.Extensions.ObjectExtensions.CastToInteger(System.Object,System.Int32)
+    name: CastToInteger
+    href: IDX.Utilities.Extensions.ObjectExtensions.CastToInteger.html#IDX_Utilities_Extensions_ObjectExtensions_CastToInteger_System_Object_System_Int32_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: IDX.Utilities.Extensions.ObjectExtensions.CastToString(System.Object,System.String)
+  commentId: M:IDX.Utilities.Extensions.ObjectExtensions.CastToString(System.Object,System.String)
+  isExternal: true
+  href: IDX.Utilities.Extensions.ObjectExtensions.CastToString.html#IDX_Utilities_Extensions_ObjectExtensions_CastToString_System_Object_System_String_
+  name: CastToString(object, string)
+  nameWithType: ObjectExtensions.CastToString(object, string)
+  fullName: IDX.Utilities.Extensions.ObjectExtensions.CastToString(object, string)
+  nameWithType.vb: ObjectExtensions.CastToString(Object, String)
+  fullName.vb: IDX.Utilities.Extensions.ObjectExtensions.CastToString(Object, String)
+  name.vb: CastToString(Object, String)
+  spec.csharp:
+  - uid: IDX.Utilities.Extensions.ObjectExtensions.CastToString(System.Object,System.String)
+    name: CastToString
+    href: IDX.Utilities.Extensions.ObjectExtensions.CastToString.html#IDX_Utilities_Extensions_ObjectExtensions_CastToString_System_Object_System_String_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: IDX.Utilities.Extensions.ObjectExtensions.CastToString(System.Object,System.String)
+    name: CastToString
+    href: IDX.Utilities.Extensions.ObjectExtensions.CastToString.html#IDX_Utilities_Extensions_ObjectExtensions_CastToString_System_Object_System_String_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: IDX.Utilities.Validations.Common.EnsureNotNull(System.Object,System.String,System.String)
+  commentId: M:IDX.Utilities.Validations.Common.EnsureNotNull(System.Object,System.String,System.String)
+  isExternal: true
+  href: IDX.Utilities.Validations.Common.EnsureNotNull.html#IDX_Utilities_Validations_Common_EnsureNotNull_System_Object_System_String_System_String_
+  name: EnsureNotNull(object, string, string)
+  nameWithType: Common.EnsureNotNull(object, string, string)
+  fullName: IDX.Utilities.Validations.Common.EnsureNotNull(object, string, string)
+  nameWithType.vb: Common.EnsureNotNull(Object, String, String)
+  fullName.vb: IDX.Utilities.Validations.Common.EnsureNotNull(Object, String, String)
+  name.vb: EnsureNotNull(Object, String, String)
+  spec.csharp:
+  - uid: IDX.Utilities.Validations.Common.EnsureNotNull(System.Object,System.String,System.String)
+    name: EnsureNotNull
+    href: IDX.Utilities.Validations.Common.EnsureNotNull.html#IDX_Utilities_Validations_Common_EnsureNotNull_System_Object_System_String_System_String_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: IDX.Utilities.Validations.Common.EnsureNotNull(System.Object,System.String,System.String)
+    name: EnsureNotNull
+    href: IDX.Utilities.Validations.Common.EnsureNotNull.html#IDX_Utilities_Validations_Common_EnsureNotNull_System_Object_System_String_System_String_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: IDX.Utilities.Validations.Common
+  commentId: T:IDX.Utilities.Validations.Common
+  parent: IDX.Utilities.Validations
+  href: IDX.Utilities.Validations.Common.html
+  name: Common
+  nameWithType: Common
+  fullName: IDX.Utilities.Validations.Common
+- uid: IDX.Utilities.Extensions
+  commentId: N:IDX.Utilities.Extensions
+  href: IDX.html
+  name: IDX.Utilities.Extensions
+  nameWithType: IDX.Utilities.Extensions
+  fullName: IDX.Utilities.Extensions
+  spec.csharp:
+  - uid: IDX
+    name: IDX
+    href: IDX.html
+  - name: .
+  - uid: IDX.Utilities
+    name: Utilities
+    href: IDX.Utilities.html
+  - name: .
+  - uid: IDX.Utilities.Extensions
+    name: Extensions
+    href: IDX.Utilities.Extensions.html
+  spec.vb:
+  - uid: IDX
+    name: IDX
+    href: IDX.html
+  - name: .
+  - uid: IDX.Utilities
+    name: Utilities
+    href: IDX.Utilities.html
+  - name: .
+  - uid: IDX.Utilities.Extensions
+    name: Extensions
+    href: IDX.Utilities.Extensions.html
+- uid: IDX.Utilities.Validations
+  commentId: N:IDX.Utilities.Validations
+  href: IDX.html
+  name: IDX.Utilities.Validations
+  nameWithType: IDX.Utilities.Validations
+  fullName: IDX.Utilities.Validations
+  spec.csharp:
+  - uid: IDX
+    name: IDX
+    href: IDX.html
+  - name: .
+  - uid: IDX.Utilities
+    name: Utilities
+    href: IDX.Utilities.html
+  - name: .
+  - uid: IDX.Utilities.Validations
+    name: Validations
+    href: IDX.Utilities.Validations.html
+  spec.vb:
+  - uid: IDX
+    name: IDX
+    href: IDX.html
+  - name: .
+  - uid: IDX.Utilities
+    name: Utilities
+    href: IDX.Utilities.html
+  - name: .
+  - uid: IDX.Utilities.Validations
+    name: Validations
+    href: IDX.Utilities.Validations.html
+- uid: idc.alert.Utilities.Models.MCA.AlertUpdate.Id*
+  commentId: Overload:idc.alert.Utilities.Models.MCA.AlertUpdate.Id
+  href: idc.alert.Utilities.Models.MCA.AlertUpdate.Id.html#idc_alert_Utilities_Models_MCA_AlertUpdate_Id
+  name: Id
+  nameWithType: AlertUpdate.Id
+  fullName: idc.alert.Utilities.Models.MCA.AlertUpdate.Id
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+memberLayout: SeparatePages

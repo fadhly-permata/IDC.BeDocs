@@ -1,0 +1,114 @@
+### YamlMime:ManagedReference
+items:
+- uid: IDX.Utilities.Delegator
+  commentId: N:IDX.Utilities.Delegator
+  id: Delegator
+  parent: IDX.Utilities
+  children:
+  - IDX.Utilities.Delegator.CallbackBTData
+  - IDX.Utilities.Delegator.CallbackExecuteNonQuery
+  - IDX.Utilities.Delegator.CallbackExecuteQuery
+  - IDX.Utilities.Delegator.CallbackExecuteScalar`1
+  - IDX.Utilities.Delegator.CallbackValidateQuery
+  - IDX.Utilities.Delegator.CommonCallback
+  langs:
+  - csharp
+  - vb
+  name: IDX.Utilities.Delegator
+  nameWithType: IDX.Utilities.Delegator
+  fullName: IDX.Utilities.Delegator
+  type: Namespace
+  assemblies:
+  - IDX.Utilities
+references:
+- uid: IDX.Utilities.Delegator.CallbackBTData
+  commentId: T:IDX.Utilities.Delegator.CallbackBTData
+  parent: IDX.Utilities.Delegator
+  href: IDX.Utilities.Delegator.CallbackBTData.html
+  name: CallbackBTData
+  nameWithType: CallbackBTData
+  fullName: IDX.Utilities.Delegator.CallbackBTData
+- uid: IDX.Utilities.Delegator.CallbackExecuteNonQuery
+  commentId: T:IDX.Utilities.Delegator.CallbackExecuteNonQuery
+  parent: IDX.Utilities.Delegator
+  href: IDX.Utilities.Delegator.CallbackExecuteNonQuery.html
+  name: CallbackExecuteNonQuery
+  nameWithType: CallbackExecuteNonQuery
+  fullName: IDX.Utilities.Delegator.CallbackExecuteNonQuery
+- uid: IDX.Utilities.Delegator.CallbackExecuteQuery
+  commentId: T:IDX.Utilities.Delegator.CallbackExecuteQuery
+  parent: IDX.Utilities.Delegator
+  href: IDX.Utilities.Delegator.CallbackExecuteQuery.html
+  name: CallbackExecuteQuery
+  nameWithType: CallbackExecuteQuery
+  fullName: IDX.Utilities.Delegator.CallbackExecuteQuery
+- uid: IDX.Utilities.Delegator.CallbackExecuteScalar`1
+  commentId: T:IDX.Utilities.Delegator.CallbackExecuteScalar`1
+  href: IDX.Utilities.Delegator.CallbackExecuteScalar-1.html
+  name: CallbackExecuteScalar<T>
+  nameWithType: CallbackExecuteScalar<T>
+  fullName: IDX.Utilities.Delegator.CallbackExecuteScalar<T>
+  nameWithType.vb: CallbackExecuteScalar(Of T)
+  fullName.vb: IDX.Utilities.Delegator.CallbackExecuteScalar(Of T)
+  name.vb: CallbackExecuteScalar(Of T)
+  spec.csharp:
+  - uid: IDX.Utilities.Delegator.CallbackExecuteScalar`1
+    name: CallbackExecuteScalar
+    href: IDX.Utilities.Delegator.CallbackExecuteScalar-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: IDX.Utilities.Delegator.CallbackExecuteScalar`1
+    name: CallbackExecuteScalar
+    href: IDX.Utilities.Delegator.CallbackExecuteScalar-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: IDX.Utilities.Delegator.CallbackValidateQuery
+  commentId: T:IDX.Utilities.Delegator.CallbackValidateQuery
+  parent: IDX.Utilities.Delegator
+  href: IDX.Utilities.Delegator.CallbackValidateQuery.html
+  name: CallbackValidateQuery
+  nameWithType: CallbackValidateQuery
+  fullName: IDX.Utilities.Delegator.CallbackValidateQuery
+- uid: IDX.Utilities.Delegator.CommonCallback
+  commentId: T:IDX.Utilities.Delegator.CommonCallback
+  parent: IDX.Utilities.Delegator
+  href: IDX.Utilities.Delegator.CommonCallback.html
+  name: CommonCallback
+  nameWithType: CommonCallback
+  fullName: IDX.Utilities.Delegator.CommonCallback
+- uid: IDX.Utilities.Delegator
+  commentId: N:IDX.Utilities.Delegator
+  href: IDX.html
+  name: IDX.Utilities.Delegator
+  nameWithType: IDX.Utilities.Delegator
+  fullName: IDX.Utilities.Delegator
+  spec.csharp:
+  - uid: IDX
+    name: IDX
+    href: IDX.html
+  - name: .
+  - uid: IDX.Utilities
+    name: Utilities
+    href: IDX.Utilities.html
+  - name: .
+  - uid: IDX.Utilities.Delegator
+    name: Delegator
+    href: IDX.Utilities.Delegator.html
+  spec.vb:
+  - uid: IDX
+    name: IDX
+    href: IDX.html
+  - name: .
+  - uid: IDX.Utilities
+    name: Utilities
+    href: IDX.Utilities.html
+  - name: .
+  - uid: IDX.Utilities.Delegator
+    name: Delegator
+    href: IDX.Utilities.Delegator.html
+memberLayout: SeparatePages

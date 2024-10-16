@@ -1,0 +1,216 @@
+### YamlMime:ManagedReference
+items:
+- uid: idc.alert.Utilities
+  id: Utilities
+  parent: idc.alert
+  children:
+  - idc.alert.Utilities.Extensions
+  - idc.alert.Utilities.Logics
+  - idc.alert.Utilities.Middlewares
+  - idc.alert.Utilities.Models.MCA
+  - idc.alert.Utilities.Validations
+  langs:
+  - csharp
+  - vb
+  name: idc.alert.Utilities
+  type: Namespace
+references:
+- uid: idc.alert.Utilities.Extensions
+  commentId: N:idc.alert.Utilities.Extensions
+  href: idc.html
+  name: idc.alert.Utilities.Extensions
+  nameWithType: idc.alert.Utilities.Extensions
+  fullName: idc.alert.Utilities.Extensions
+  spec.csharp:
+  - uid: idc
+    name: idc
+    href: idc.html
+  - name: .
+  - uid: idc.alert
+    name: alert
+    href: idc.alert.html
+  - name: .
+  - uid: idc.alert.Utilities
+    name: Utilities
+    href: idc.alert.Utilities.html
+  - name: .
+  - uid: idc.alert.Utilities.Extensions
+    name: Extensions
+    href: idc.alert.Utilities.Extensions.html
+  spec.vb:
+  - uid: idc
+    name: idc
+    href: idc.html
+  - name: .
+  - uid: idc.alert
+    name: alert
+    href: idc.alert.html
+  - name: .
+  - uid: idc.alert.Utilities
+    name: Utilities
+    href: idc.alert.Utilities.html
+  - name: .
+  - uid: idc.alert.Utilities.Extensions
+    name: Extensions
+    href: idc.alert.Utilities.Extensions.html
+- uid: idc.alert.Utilities.Logics
+  commentId: N:idc.alert.Utilities.Logics
+  href: idc.html
+  name: idc.alert.Utilities.Logics
+  nameWithType: idc.alert.Utilities.Logics
+  fullName: idc.alert.Utilities.Logics
+  spec.csharp:
+  - uid: idc
+    name: idc
+    href: idc.html
+  - name: .
+  - uid: idc.alert
+    name: alert
+    href: idc.alert.html
+  - name: .
+  - uid: idc.alert.Utilities
+    name: Utilities
+    href: idc.alert.Utilities.html
+  - name: .
+  - uid: idc.alert.Utilities.Logics
+    name: Logics
+    href: idc.alert.Utilities.Logics.html
+  spec.vb:
+  - uid: idc
+    name: idc
+    href: idc.html
+  - name: .
+  - uid: idc.alert
+    name: alert
+    href: idc.alert.html
+  - name: .
+  - uid: idc.alert.Utilities
+    name: Utilities
+    href: idc.alert.Utilities.html
+  - name: .
+  - uid: idc.alert.Utilities.Logics
+    name: Logics
+    href: idc.alert.Utilities.Logics.html
+- uid: idc.alert.Utilities.Middlewares
+  commentId: N:idc.alert.Utilities.Middlewares
+  href: idc.html
+  name: idc.alert.Utilities.Middlewares
+  nameWithType: idc.alert.Utilities.Middlewares
+  fullName: idc.alert.Utilities.Middlewares
+  spec.csharp:
+  - uid: idc
+    name: idc
+    href: idc.html
+  - name: .
+  - uid: idc.alert
+    name: alert
+    href: idc.alert.html
+  - name: .
+  - uid: idc.alert.Utilities
+    name: Utilities
+    href: idc.alert.Utilities.html
+  - name: .
+  - uid: idc.alert.Utilities.Middlewares
+    name: Middlewares
+    href: idc.alert.Utilities.Middlewares.html
+  spec.vb:
+  - uid: idc
+    name: idc
+    href: idc.html
+  - name: .
+  - uid: idc.alert
+    name: alert
+    href: idc.alert.html
+  - name: .
+  - uid: idc.alert.Utilities
+    name: Utilities
+    href: idc.alert.Utilities.html
+  - name: .
+  - uid: idc.alert.Utilities.Middlewares
+    name: Middlewares
+    href: idc.alert.Utilities.Middlewares.html
+- uid: idc.alert.Utilities.Validations
+  commentId: N:idc.alert.Utilities.Validations
+  href: idc.html
+  name: idc.alert.Utilities.Validations
+  nameWithType: idc.alert.Utilities.Validations
+  fullName: idc.alert.Utilities.Validations
+  spec.csharp:
+  - uid: idc
+    name: idc
+    href: idc.html
+  - name: .
+  - uid: idc.alert
+    name: alert
+    href: idc.alert.html
+  - name: .
+  - uid: idc.alert.Utilities
+    name: Utilities
+    href: idc.alert.Utilities.html
+  - name: .
+  - uid: idc.alert.Utilities.Validations
+    name: Validations
+    href: idc.alert.Utilities.Validations.html
+  spec.vb:
+  - uid: idc
+    name: idc
+    href: idc.html
+  - name: .
+  - uid: idc.alert
+    name: alert
+    href: idc.alert.html
+  - name: .
+  - uid: idc.alert.Utilities
+    name: Utilities
+    href: idc.alert.Utilities.html
+  - name: .
+  - uid: idc.alert.Utilities.Validations
+    name: Validations
+    href: idc.alert.Utilities.Validations.html
+- uid: idc.alert.Utilities.Models.MCA
+  commentId: N:idc.alert.Utilities.Models.MCA
+  href: idc.html
+  name: idc.alert.Utilities.Models.MCA
+  nameWithType: idc.alert.Utilities.Models.MCA
+  fullName: idc.alert.Utilities.Models.MCA
+  spec.csharp:
+  - uid: idc
+    name: idc
+    href: idc.html
+  - name: .
+  - uid: idc.alert
+    name: alert
+    href: idc.alert.html
+  - name: .
+  - uid: idc.alert.Utilities
+    name: Utilities
+    href: idc.alert.Utilities.html
+  - name: .
+  - uid: idc.alert.Utilities.Models
+    name: Models
+    href: idc.alert.Utilities.Models.html
+  - name: .
+  - uid: idc.alert.Utilities.Models.MCA
+    name: MCA
+    href: idc.alert.Utilities.Models.MCA.html
+  spec.vb:
+  - uid: idc
+    name: idc
+    href: idc.html
+  - name: .
+  - uid: idc.alert
+    name: alert
+    href: idc.alert.html
+  - name: .
+  - uid: idc.alert.Utilities
+    name: Utilities
+    href: idc.alert.Utilities.html
+  - name: .
+  - uid: idc.alert.Utilities.Models
+    name: Models
+    href: idc.alert.Utilities.Models.html
+  - name: .
+  - uid: idc.alert.Utilities.Models.MCA
+    name: MCA
+    href: idc.alert.Utilities.Models.MCA.html
+memberLayout: SeparatePages

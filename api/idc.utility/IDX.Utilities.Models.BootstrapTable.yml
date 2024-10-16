@@ -1,0 +1,114 @@
+### YamlMime:ManagedReference
+items:
+- uid: IDX.Utilities.Models.BootstrapTable
+  commentId: N:IDX.Utilities.Models.BootstrapTable
+  id: BootstrapTable
+  parent: IDX.Utilities.Models
+  children:
+  - IDX.Utilities.Models.BootstrapTable.BTRequest
+  - IDX.Utilities.Models.BootstrapTable.BTRequest.BTOrderType
+  - IDX.Utilities.Models.BootstrapTable.BTResponse`1
+  langs:
+  - csharp
+  - vb
+  name: IDX.Utilities.Models.BootstrapTable
+  nameWithType: IDX.Utilities.Models.BootstrapTable
+  fullName: IDX.Utilities.Models.BootstrapTable
+  type: Namespace
+  assemblies:
+  - IDX.Utilities
+references:
+- uid: IDX.Utilities.Models.BootstrapTable.BTRequest
+  commentId: T:IDX.Utilities.Models.BootstrapTable.BTRequest
+  parent: IDX.Utilities.Models.BootstrapTable
+  href: IDX.Utilities.Models.BootstrapTable.BTRequest.html
+  name: BTRequest
+  nameWithType: BTRequest
+  fullName: IDX.Utilities.Models.BootstrapTable.BTRequest
+- uid: IDX.Utilities.Models.BootstrapTable.BTRequest.BTOrderType
+  commentId: T:IDX.Utilities.Models.BootstrapTable.BTRequest.BTOrderType
+  parent: IDX.Utilities.Models.BootstrapTable
+  href: IDX.Utilities.Models.BootstrapTable.BTRequest.html
+  name: BTRequest.BTOrderType
+  nameWithType: BTRequest.BTOrderType
+  fullName: IDX.Utilities.Models.BootstrapTable.BTRequest.BTOrderType
+  spec.csharp:
+  - uid: IDX.Utilities.Models.BootstrapTable.BTRequest
+    name: BTRequest
+    href: IDX.Utilities.Models.BootstrapTable.BTRequest.html
+  - name: .
+  - uid: IDX.Utilities.Models.BootstrapTable.BTRequest.BTOrderType
+    name: BTOrderType
+    href: IDX.Utilities.Models.BootstrapTable.BTRequest.BTOrderType.html
+  spec.vb:
+  - uid: IDX.Utilities.Models.BootstrapTable.BTRequest
+    name: BTRequest
+    href: IDX.Utilities.Models.BootstrapTable.BTRequest.html
+  - name: .
+  - uid: IDX.Utilities.Models.BootstrapTable.BTRequest.BTOrderType
+    name: BTOrderType
+    href: IDX.Utilities.Models.BootstrapTable.BTRequest.BTOrderType.html
+- uid: IDX.Utilities.Models.BootstrapTable.BTResponse`1
+  commentId: T:IDX.Utilities.Models.BootstrapTable.BTResponse`1
+  href: IDX.Utilities.Models.BootstrapTable.BTResponse-1.html
+  name: BTResponse<T>
+  nameWithType: BTResponse<T>
+  fullName: IDX.Utilities.Models.BootstrapTable.BTResponse<T>
+  nameWithType.vb: BTResponse(Of T)
+  fullName.vb: IDX.Utilities.Models.BootstrapTable.BTResponse(Of T)
+  name.vb: BTResponse(Of T)
+  spec.csharp:
+  - uid: IDX.Utilities.Models.BootstrapTable.BTResponse`1
+    name: BTResponse
+    href: IDX.Utilities.Models.BootstrapTable.BTResponse-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: IDX.Utilities.Models.BootstrapTable.BTResponse`1
+    name: BTResponse
+    href: IDX.Utilities.Models.BootstrapTable.BTResponse-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: IDX.Utilities.Models.BootstrapTable
+  commentId: N:IDX.Utilities.Models.BootstrapTable
+  href: IDX.html
+  name: IDX.Utilities.Models.BootstrapTable
+  nameWithType: IDX.Utilities.Models.BootstrapTable
+  fullName: IDX.Utilities.Models.BootstrapTable
+  spec.csharp:
+  - uid: IDX
+    name: IDX
+    href: IDX.html
+  - name: .
+  - uid: IDX.Utilities
+    name: Utilities
+    href: IDX.Utilities.html
+  - name: .
+  - uid: IDX.Utilities.Models
+    name: Models
+    href: IDX.Utilities.Models.html
+  - name: .
+  - uid: IDX.Utilities.Models.BootstrapTable
+    name: BootstrapTable
+    href: IDX.Utilities.Models.BootstrapTable.html
+  spec.vb:
+  - uid: IDX
+    name: IDX
+    href: IDX.html
+  - name: .
+  - uid: IDX.Utilities
+    name: Utilities
+    href: IDX.Utilities.html
+  - name: .
+  - uid: IDX.Utilities.Models
+    name: Models
+    href: IDX.Utilities.Models.html
+  - name: .
+  - uid: IDX.Utilities.Models.BootstrapTable
+    name: BootstrapTable
+    href: IDX.Utilities.Models.BootstrapTable.html
+memberLayout: SeparatePages

@@ -1,0 +1,720 @@
+### YamlMime:ManagedReference
+items:
+- uid: IDX.Utilities.Extensions.ObjectExtensions
+  commentId: T:IDX.Utilities.Extensions.ObjectExtensions
+  id: ObjectExtensions
+  parent: IDX.Utilities.Extensions
+  children:
+  - IDX.Utilities.Extensions.ObjectExtensions.CastToBoolean(System.Object,System.Boolean)
+  - IDX.Utilities.Extensions.ObjectExtensions.CastToDateTime(System.Object,System.DateTime)
+  - IDX.Utilities.Extensions.ObjectExtensions.CastToDecimal(System.Object,System.Decimal)
+  - IDX.Utilities.Extensions.ObjectExtensions.CastToDouble(System.Object,System.Double)
+  - IDX.Utilities.Extensions.ObjectExtensions.CastToInteger(System.Object,System.Int32)
+  - IDX.Utilities.Extensions.ObjectExtensions.CastToString(System.Object,System.String)
+  langs:
+  - csharp
+  - vb
+  name: ObjectExtensions
+  nameWithType: ObjectExtensions
+  fullName: IDX.Utilities.Extensions.ObjectExtensions
+  type: Class
+  source:
+    remote:
+      path: Extensions/ObjectExtensions.cs
+      branch: Research_Documentation
+      repo: https://scm.idecision.ai/idecision_source_net8/idc.utility.git
+    id: ObjectExtensions
+    path: ../../../-Repo/idc.utility/Extensions/ObjectExtensions.cs
+    startLine: 5
+  assemblies:
+  - IDX.Utilities
+  namespace: IDX.Utilities.Extensions
+  summary: Provides extension methods for objects.
+  example: []
+  syntax:
+    content: public static class ObjectExtensions
+    content.vb: Public Module ObjectExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: IDX.Utilities.Extensions.ObjectExtensions.CastToInteger(System.Object,System.Int32)
+  commentId: M:IDX.Utilities.Extensions.ObjectExtensions.CastToInteger(System.Object,System.Int32)
+  id: CastToInteger(System.Object,System.Int32)
+  isExtensionMethod: true
+  parent: IDX.Utilities.Extensions.ObjectExtensions
+  langs:
+  - csharp
+  - vb
+  name: CastToInteger(object?, int)
+  nameWithType: ObjectExtensions.CastToInteger(object?, int)
+  fullName: IDX.Utilities.Extensions.ObjectExtensions.CastToInteger(object?, int)
+  type: Method
+  source:
+    remote:
+      path: Extensions/ObjectExtensions.cs
+      branch: Research_Documentation
+      repo: https://scm.idecision.ai/idecision_source_net8/idc.utility.git
+    id: CastToInteger
+    path: ../../../-Repo/idc.utility/Extensions/ObjectExtensions.cs
+    startLine: 21
+  assemblies:
+  - IDX.Utilities
+  namespace: IDX.Utilities.Extensions
+  summary: Casts an object to an integer value.
+  example:
+  - >-
+    <pre><code class="lang-csharp">var obj = "123";
+
+    var result = obj.CastToInteger();
+
+    Console.WriteLine(result); // Output: 123</code></pre>
+  syntax:
+    content: public static int CastToInteger(this object? value, int defaultValue = 0)
+    parameters:
+    - id: value
+      type: System.Object
+      description: The object to be casted.
+    - id: defaultValue
+      type: System.Int32
+      description: The default value to be returned if the object is null.
+    return:
+      type: System.Int32
+      description: The integer value of the object, or the default value if the object is null.
+    content.vb: Public Shared Function CastToInteger(value As Object, defaultValue As Integer = 0) As Integer
+  overload: IDX.Utilities.Extensions.ObjectExtensions.CastToInteger*
+  exceptions:
+  - type: System.InvalidCastException
+    commentId: T:System.InvalidCastException
+    description: Thrown when the object cannot be converted to an integer.
+  nameWithType.vb: ObjectExtensions.CastToInteger(Object, Integer)
+  fullName.vb: IDX.Utilities.Extensions.ObjectExtensions.CastToInteger(Object, Integer)
+  name.vb: CastToInteger(Object, Integer)
+- uid: IDX.Utilities.Extensions.ObjectExtensions.CastToString(System.Object,System.String)
+  commentId: M:IDX.Utilities.Extensions.ObjectExtensions.CastToString(System.Object,System.String)
+  id: CastToString(System.Object,System.String)
+  isExtensionMethod: true
+  parent: IDX.Utilities.Extensions.ObjectExtensions
+  langs:
+  - csharp
+  - vb
+  name: CastToString(object?, string)
+  nameWithType: ObjectExtensions.CastToString(object?, string)
+  fullName: IDX.Utilities.Extensions.ObjectExtensions.CastToString(object?, string)
+  type: Method
+  source:
+    remote:
+      path: Extensions/ObjectExtensions.cs
+      branch: Research_Documentation
+      repo: https://scm.idecision.ai/idecision_source_net8/idc.utility.git
+    id: CastToString
+    path: ../../../-Repo/idc.utility/Extensions/ObjectExtensions.cs
+    startLine: 37
+  assemblies:
+  - IDX.Utilities
+  namespace: IDX.Utilities.Extensions
+  summary: Converts an object to a string representation.
+  example:
+  - >-
+    <pre><code class="lang-csharp">var obj = 123;
+
+    var result = obj.CastToString();
+
+    Console.WriteLine(result); // Output: "123"</code></pre>
+  syntax:
+    content: public static string CastToString(this object? value, string defaultValue = "")
+    parameters:
+    - id: value
+      type: System.Object
+      description: The object to convert.
+    - id: defaultValue
+      type: System.String
+      description: The default value to return if the object is null.
+    return:
+      type: System.String
+      description: The string representation of the object or the default value if the object is null.
+    content.vb: Public Shared Function CastToString(value As Object, defaultValue As String = "") As String
+  overload: IDX.Utilities.Extensions.ObjectExtensions.CastToString*
+  nameWithType.vb: ObjectExtensions.CastToString(Object, String)
+  fullName.vb: IDX.Utilities.Extensions.ObjectExtensions.CastToString(Object, String)
+  name.vb: CastToString(Object, String)
+- uid: IDX.Utilities.Extensions.ObjectExtensions.CastToBoolean(System.Object,System.Boolean)
+  commentId: M:IDX.Utilities.Extensions.ObjectExtensions.CastToBoolean(System.Object,System.Boolean)
+  id: CastToBoolean(System.Object,System.Boolean)
+  isExtensionMethod: true
+  parent: IDX.Utilities.Extensions.ObjectExtensions
+  langs:
+  - csharp
+  - vb
+  name: CastToBoolean(object?, bool)
+  nameWithType: ObjectExtensions.CastToBoolean(object?, bool)
+  fullName: IDX.Utilities.Extensions.ObjectExtensions.CastToBoolean(object?, bool)
+  type: Method
+  source:
+    remote:
+      path: Extensions/ObjectExtensions.cs
+      branch: Research_Documentation
+      repo: https://scm.idecision.ai/idecision_source_net8/idc.utility.git
+    id: CastToBoolean
+    path: ../../../-Repo/idc.utility/Extensions/ObjectExtensions.cs
+    startLine: 53
+  assemblies:
+  - IDX.Utilities
+  namespace: IDX.Utilities.Extensions
+  summary: Converts an object to a boolean value.
+  example:
+  - >-
+    <pre><code class="lang-csharp">var obj = "true";
+
+    var result = obj.CastToBoolean();
+
+    Console.WriteLine(result); // Output: true</code></pre>
+  syntax:
+    content: public static bool CastToBoolean(this object? value, bool defaultValue = false)
+    parameters:
+    - id: value
+      type: System.Object
+      description: The object to convert.
+    - id: defaultValue
+      type: System.Boolean
+      description: The default value to return if the object is null.
+    return:
+      type: System.Boolean
+      description: The converted boolean value.
+    content.vb: Public Shared Function CastToBoolean(value As Object, defaultValue As Boolean = False) As Boolean
+  overload: IDX.Utilities.Extensions.ObjectExtensions.CastToBoolean*
+  nameWithType.vb: ObjectExtensions.CastToBoolean(Object, Boolean)
+  fullName.vb: IDX.Utilities.Extensions.ObjectExtensions.CastToBoolean(Object, Boolean)
+  name.vb: CastToBoolean(Object, Boolean)
+- uid: IDX.Utilities.Extensions.ObjectExtensions.CastToDouble(System.Object,System.Double)
+  commentId: M:IDX.Utilities.Extensions.ObjectExtensions.CastToDouble(System.Object,System.Double)
+  id: CastToDouble(System.Object,System.Double)
+  isExtensionMethod: true
+  parent: IDX.Utilities.Extensions.ObjectExtensions
+  langs:
+  - csharp
+  - vb
+  name: CastToDouble(object?, double)
+  nameWithType: ObjectExtensions.CastToDouble(object?, double)
+  fullName: IDX.Utilities.Extensions.ObjectExtensions.CastToDouble(object?, double)
+  type: Method
+  source:
+    remote:
+      path: Extensions/ObjectExtensions.cs
+      branch: Research_Documentation
+      repo: https://scm.idecision.ai/idecision_source_net8/idc.utility.git
+    id: CastToDouble
+    path: ../../../-Repo/idc.utility/Extensions/ObjectExtensions.cs
+    startLine: 69
+  assemblies:
+  - IDX.Utilities
+  namespace: IDX.Utilities.Extensions
+  summary: Converts the specified value to a double.
+  example:
+  - >-
+    <pre><code class="lang-csharp">var obj = "123.456";
+
+    var result = obj.CastToDouble();
+
+    Console.WriteLine(result); // Output: 123.456</code></pre>
+  syntax:
+    content: public static double CastToDouble(this object? value, double defaultValue = 0)
+    parameters:
+    - id: value
+      type: System.Object
+      description: The value to convert.
+    - id: defaultValue
+      type: System.Double
+      description: The default value to return if the conversion fails.
+    return:
+      type: System.Double
+      description: The converted double value, or the default value if the conversion fails.
+    content.vb: Public Shared Function CastToDouble(value As Object, defaultValue As Double = 0) As Double
+  overload: IDX.Utilities.Extensions.ObjectExtensions.CastToDouble*
+  nameWithType.vb: ObjectExtensions.CastToDouble(Object, Double)
+  fullName.vb: IDX.Utilities.Extensions.ObjectExtensions.CastToDouble(Object, Double)
+  name.vb: CastToDouble(Object, Double)
+- uid: IDX.Utilities.Extensions.ObjectExtensions.CastToDecimal(System.Object,System.Decimal)
+  commentId: M:IDX.Utilities.Extensions.ObjectExtensions.CastToDecimal(System.Object,System.Decimal)
+  id: CastToDecimal(System.Object,System.Decimal)
+  isExtensionMethod: true
+  parent: IDX.Utilities.Extensions.ObjectExtensions
+  langs:
+  - csharp
+  - vb
+  name: CastToDecimal(object?, decimal)
+  nameWithType: ObjectExtensions.CastToDecimal(object?, decimal)
+  fullName: IDX.Utilities.Extensions.ObjectExtensions.CastToDecimal(object?, decimal)
+  type: Method
+  source:
+    remote:
+      path: Extensions/ObjectExtensions.cs
+      branch: Research_Documentation
+      repo: https://scm.idecision.ai/idecision_source_net8/idc.utility.git
+    id: CastToDecimal
+    path: ../../../-Repo/idc.utility/Extensions/ObjectExtensions.cs
+    startLine: 86
+  assemblies:
+  - IDX.Utilities
+  namespace: IDX.Utilities.Extensions
+  summary: Casts the specified value to a decimal.
+  example:
+  - >-
+    <pre><code class="lang-csharp">var obj = "123.456";
+
+    var result = obj.CastToDecimal();
+
+    Console.WriteLine(result); // Output: 123.456</code></pre>
+  syntax:
+    content: public static decimal CastToDecimal(this object? value, decimal defaultValue = 0)
+    parameters:
+    - id: value
+      type: System.Object
+      description: The value to cast.
+    - id: defaultValue
+      type: System.Decimal
+      description: The default value to return if the cast fails.
+    return:
+      type: System.Decimal
+      description: The casted decimal value if the cast is successful; otherwise, the default value.
+    content.vb: Public Shared Function CastToDecimal(value As Object, defaultValue As Decimal = 0) As Decimal
+  overload: IDX.Utilities.Extensions.ObjectExtensions.CastToDecimal*
+  exceptions:
+  - type: System.InvalidCastException
+    commentId: T:System.InvalidCastException
+    description: Thrown when the cast fails and the default value is not a valid decimal.
+  nameWithType.vb: ObjectExtensions.CastToDecimal(Object, Decimal)
+  fullName.vb: IDX.Utilities.Extensions.ObjectExtensions.CastToDecimal(Object, Decimal)
+  name.vb: CastToDecimal(Object, Decimal)
+- uid: IDX.Utilities.Extensions.ObjectExtensions.CastToDateTime(System.Object,System.DateTime)
+  commentId: M:IDX.Utilities.Extensions.ObjectExtensions.CastToDateTime(System.Object,System.DateTime)
+  id: CastToDateTime(System.Object,System.DateTime)
+  isExtensionMethod: true
+  parent: IDX.Utilities.Extensions.ObjectExtensions
+  langs:
+  - csharp
+  - vb
+  name: CastToDateTime(object?, DateTime)
+  nameWithType: ObjectExtensions.CastToDateTime(object?, DateTime)
+  fullName: IDX.Utilities.Extensions.ObjectExtensions.CastToDateTime(object?, System.DateTime)
+  type: Method
+  source:
+    remote:
+      path: Extensions/ObjectExtensions.cs
+      branch: Research_Documentation
+      repo: https://scm.idecision.ai/idecision_source_net8/idc.utility.git
+    id: CastToDateTime
+    path: ../../../-Repo/idc.utility/Extensions/ObjectExtensions.cs
+    startLine: 102
+  assemblies:
+  - IDX.Utilities
+  namespace: IDX.Utilities.Extensions
+  summary: Casts the specified value to a <xref href="System.DateTime" data-throw-if-not-resolved="false"></xref> object.
+  example:
+  - >-
+    <pre><code class="lang-csharp">var obj = "2022-01-01";
+
+    var result = obj.CastToDateTime();
+
+    Console.WriteLine(result); // Output: 1/1/2022 12:00:00 AM</code></pre>
+  syntax:
+    content: public static DateTime CastToDateTime(this object? value, DateTime defaultValue = default)
+    parameters:
+    - id: value
+      type: System.Object
+      description: The value to cast.
+    - id: defaultValue
+      type: System.DateTime
+      description: The default value to return if the cast fails.
+    return:
+      type: System.DateTime
+      description: The casted <xref href="System.DateTime" data-throw-if-not-resolved="false"></xref> value if the cast is successful; otherwise, the specified <code class="paramref">defaultValue</code>.
+    content.vb: Public Shared Function CastToDateTime(value As Object, defaultValue As Date = Nothing) As Date
+  overload: IDX.Utilities.Extensions.ObjectExtensions.CastToDateTime*
+  nameWithType.vb: ObjectExtensions.CastToDateTime(Object, Date)
+  fullName.vb: IDX.Utilities.Extensions.ObjectExtensions.CastToDateTime(Object, Date)
+  name.vb: CastToDateTime(Object, Date)
+references:
+- uid: IDX.Utilities.Extensions
+  commentId: N:IDX.Utilities.Extensions
+  href: IDX.html
+  name: IDX.Utilities.Extensions
+  nameWithType: IDX.Utilities.Extensions
+  fullName: IDX.Utilities.Extensions
+  spec.csharp:
+  - uid: IDX
+    name: IDX
+    href: IDX.html
+  - name: .
+  - uid: IDX.Utilities
+    name: Utilities
+    href: IDX.Utilities.html
+  - name: .
+  - uid: IDX.Utilities.Extensions
+    name: Extensions
+    href: IDX.Utilities.Extensions.html
+  spec.vb:
+  - uid: IDX
+    name: IDX
+    href: IDX.html
+  - name: .
+  - uid: IDX.Utilities
+    name: Utilities
+    href: IDX.Utilities.html
+  - name: .
+  - uid: IDX.Utilities.Extensions
+    name: Extensions
+    href: IDX.Utilities.Extensions.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.InvalidCastException
+  commentId: T:System.InvalidCastException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.invalidcastexception
+  name: InvalidCastException
+  nameWithType: InvalidCastException
+  fullName: System.InvalidCastException
+- uid: IDX.Utilities.Extensions.ObjectExtensions.CastToInteger*
+  commentId: Overload:IDX.Utilities.Extensions.ObjectExtensions.CastToInteger
+  href: IDX.Utilities.Extensions.ObjectExtensions.CastToInteger.html#IDX_Utilities_Extensions_ObjectExtensions_CastToInteger_System_Object_System_Int32_
+  name: CastToInteger
+  nameWithType: ObjectExtensions.CastToInteger
+  fullName: IDX.Utilities.Extensions.ObjectExtensions.CastToInteger
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: IDX.Utilities.Extensions.ObjectExtensions.CastToString*
+  commentId: Overload:IDX.Utilities.Extensions.ObjectExtensions.CastToString
+  href: IDX.Utilities.Extensions.ObjectExtensions.CastToString.html#IDX_Utilities_Extensions_ObjectExtensions_CastToString_System_Object_System_String_
+  name: CastToString
+  nameWithType: ObjectExtensions.CastToString
+  fullName: IDX.Utilities.Extensions.ObjectExtensions.CastToString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: IDX.Utilities.Extensions.ObjectExtensions.CastToBoolean*
+  commentId: Overload:IDX.Utilities.Extensions.ObjectExtensions.CastToBoolean
+  href: IDX.Utilities.Extensions.ObjectExtensions.CastToBoolean.html#IDX_Utilities_Extensions_ObjectExtensions_CastToBoolean_System_Object_System_Boolean_
+  name: CastToBoolean
+  nameWithType: ObjectExtensions.CastToBoolean
+  fullName: IDX.Utilities.Extensions.ObjectExtensions.CastToBoolean
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: IDX.Utilities.Extensions.ObjectExtensions.CastToDouble*
+  commentId: Overload:IDX.Utilities.Extensions.ObjectExtensions.CastToDouble
+  href: IDX.Utilities.Extensions.ObjectExtensions.CastToDouble.html#IDX_Utilities_Extensions_ObjectExtensions_CastToDouble_System_Object_System_Double_
+  name: CastToDouble
+  nameWithType: ObjectExtensions.CastToDouble
+  fullName: IDX.Utilities.Extensions.ObjectExtensions.CastToDouble
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: IDX.Utilities.Extensions.ObjectExtensions.CastToDecimal*
+  commentId: Overload:IDX.Utilities.Extensions.ObjectExtensions.CastToDecimal
+  href: IDX.Utilities.Extensions.ObjectExtensions.CastToDecimal.html#IDX_Utilities_Extensions_ObjectExtensions_CastToDecimal_System_Object_System_Decimal_
+  name: CastToDecimal
+  nameWithType: ObjectExtensions.CastToDecimal
+  fullName: IDX.Utilities.Extensions.ObjectExtensions.CastToDecimal
+- uid: System.Decimal
+  commentId: T:System.Decimal
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.decimal
+  name: decimal
+  nameWithType: decimal
+  fullName: decimal
+  nameWithType.vb: Decimal
+  fullName.vb: Decimal
+  name.vb: Decimal
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetime
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+  nameWithType.vb: Date
+  fullName.vb: Date
+  name.vb: Date
+- uid: IDX.Utilities.Extensions.ObjectExtensions.CastToDateTime*
+  commentId: Overload:IDX.Utilities.Extensions.ObjectExtensions.CastToDateTime
+  href: IDX.Utilities.Extensions.ObjectExtensions.CastToDateTime.html#IDX_Utilities_Extensions_ObjectExtensions_CastToDateTime_System_Object_System_DateTime_
+  name: CastToDateTime
+  nameWithType: ObjectExtensions.CastToDateTime
+  fullName: IDX.Utilities.Extensions.ObjectExtensions.CastToDateTime
+memberLayout: SeparatePages

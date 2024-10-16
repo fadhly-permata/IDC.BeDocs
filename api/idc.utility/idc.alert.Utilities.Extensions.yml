@@ -1,0 +1,25 @@
+### YamlMime:ManagedReference
+items:
+- uid: idc.alert.Utilities.Extensions
+  commentId: N:idc.alert.Utilities.Extensions
+  id: Extensions
+  parent: idc.alert.Utilities
+  children:
+  - idc.alert.Utilities.Extensions.ListExtensions
+  langs:
+  - csharp
+  - vb
+  name: idc.alert.Utilities.Extensions
+  nameWithType: idc.alert.Utilities.Extensions
+  fullName: idc.alert.Utilities.Extensions
+  type: Namespace
+  assemblies:
+  - idc.alert
+references:
+- uid: idc.alert.Utilities.Extensions.ListExtensions
+  commentId: T:idc.alert.Utilities.Extensions.ListExtensions
+  href: idc.alert.Utilities.Extensions.ListExtensions.html
+  name: ListExtensions
+  nameWithType: ListExtensions
+  fullName: idc.alert.Utilities.Extensions.ListExtensions
+memberLayout: SeparatePages

@@ -1,0 +1,2057 @@
+### YamlMime:ManagedReference
+items:
+- uid: IDX.Utilities.DataProcessor.CouchBaseHelper
+  commentId: T:IDX.Utilities.DataProcessor.CouchBaseHelper
+  id: CouchBaseHelper
+  parent: IDX.Utilities.DataProcessor
+  children:
+  - IDX.Utilities.DataProcessor.CouchBaseHelper.#ctor(IDX.Utilities.Models.CouchBaseConnectionString,System.String,System.Byte[])
+  - IDX.Utilities.DataProcessor.CouchBaseHelper.#ctor(System.String,System.String,System.String,System.String,System.Byte[])
+  - IDX.Utilities.DataProcessor.CouchBaseHelper.ConnectAsync(IDX.Utilities.Delegator.CommonCallback)
+  - IDX.Utilities.DataProcessor.CouchBaseHelper.Dispose
+  - IDX.Utilities.DataProcessor.CouchBaseHelper.Dispose(System.Boolean)
+  - IDX.Utilities.DataProcessor.CouchBaseHelper.DisposeAsync
+  - IDX.Utilities.DataProcessor.CouchBaseHelper.ExecuteNonQuery(System.String,IDX.Utilities.Delegator.CallbackExecuteNonQuery)
+  - IDX.Utilities.DataProcessor.CouchBaseHelper.ExecuteQuery(System.String,IDX.Utilities.Delegator.CallbackExecuteQuery)
+  - IDX.Utilities.DataProcessor.CouchBaseHelper.ExecuteScalar``1(System.String,IDX.Utilities.Delegator.CallbackExecuteScalar{``0})
+  - IDX.Utilities.DataProcessor.CouchBaseHelper.IsConnected
+  - IDX.Utilities.DataProcessor.CouchBaseHelper.ValidateQuery(System.String,IDX.Utilities.Delegator.CallbackValidateQuery)
+  langs:
+  - csharp
+  - vb
+  name: CouchBaseHelper
+  nameWithType: CouchBaseHelper
+  fullName: IDX.Utilities.DataProcessor.CouchBaseHelper
+  type: Class
+  source:
+    remote:
+      path: DataProcessor/CouchBaseHelper.cs
+      branch: Research_Documentation
+      repo: https://scm.idecision.ai/idecision_source_net8/idc.utility.git
+    id: CouchBaseHelper
+    path: ../../../-Repo/idc.utility/DataProcessor/CouchBaseHelper.cs
+    startLine: 24
+  assemblies:
+  - IDX.Utilities
+  namespace: IDX.Utilities.DataProcessor
+  summary: Provides a helper class for interacting with a Couchbase server.
+  example:
+  - >-
+    <pre><code class="lang-csharp">using var cbh = new CouchBaseHelper("couchbase://localhost", "Administrator", "password");
+
+    await cbh.ConnectAsync(() =&gt; { });
+
+    var result = await cbh.ExecuteQuery("select * from `travel-sample` limit 10", rows =&gt;
+
+    {
+        foreach (var row in rows)
+        {
+            Console.WriteLine(row);
+        }
+    });
+
+    await cbh.DisposeAsync();</code></pre>
+  syntax:
+    content: 'public class CouchBaseHelper : IDisposable, IAsyncDisposable'
+    content.vb: Public Class CouchBaseHelper Implements IDisposable, IAsyncDisposable
+  inheritance:
+  - System.Object
+  implements:
+  - System.IDisposable
+  - System.IAsyncDisposable
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  extensionMethods:
+  - System.Object.IDX.Utilities.Extensions.ObjectExtensions.CastToBoolean(System.Boolean)
+  - System.Object.IDX.Utilities.Extensions.ObjectExtensions.CastToDateTime(System.DateTime)
+  - System.Object.IDX.Utilities.Extensions.ObjectExtensions.CastToDecimal(System.Decimal)
+  - System.Object.IDX.Utilities.Extensions.ObjectExtensions.CastToDouble(System.Double)
+  - System.Object.IDX.Utilities.Extensions.ObjectExtensions.CastToInteger(System.Int32)
+  - System.Object.IDX.Utilities.Extensions.ObjectExtensions.CastToString(System.String)
+  - System.Object.IDX.Utilities.Validations.Common.EnsureNotNull(System.String,System.String)
+- uid: IDX.Utilities.DataProcessor.CouchBaseHelper.IsConnected
+  commentId: P:IDX.Utilities.DataProcessor.CouchBaseHelper.IsConnected
+  id: IsConnected
+  parent: IDX.Utilities.DataProcessor.CouchBaseHelper
+  langs:
+  - csharp
+  - vb
+  name: IsConnected
+  nameWithType: CouchBaseHelper.IsConnected
+  fullName: IDX.Utilities.DataProcessor.CouchBaseHelper.IsConnected
+  type: Property
+  source:
+    remote:
+      path: DataProcessor/CouchBaseHelper.cs
+      branch: Research_Documentation
+      repo: https://scm.idecision.ai/idecision_source_net8/idc.utility.git
+    id: IsConnected
+    path: ../../../-Repo/idc.utility/DataProcessor/CouchBaseHelper.cs
+    startLine: 34
+  assemblies:
+  - IDX.Utilities
+  namespace: IDX.Utilities.DataProcessor
+  syntax:
+    content: public bool IsConnected { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsConnected As Boolean
+  overload: IDX.Utilities.DataProcessor.CouchBaseHelper.IsConnected*
+- uid: IDX.Utilities.DataProcessor.CouchBaseHelper.Dispose(System.Boolean)
+  commentId: M:IDX.Utilities.DataProcessor.CouchBaseHelper.Dispose(System.Boolean)
+  id: Dispose(System.Boolean)
+  parent: IDX.Utilities.DataProcessor.CouchBaseHelper
+  langs:
+  - csharp
+  - vb
+  name: Dispose(bool)
+  nameWithType: CouchBaseHelper.Dispose(bool)
+  fullName: IDX.Utilities.DataProcessor.CouchBaseHelper.Dispose(bool)
+  type: Method
+  source:
+    remote:
+      path: DataProcessor/CouchBaseHelper.cs
+      branch: Research_Documentation
+      repo: https://scm.idecision.ai/idecision_source_net8/idc.utility.git
+    id: Dispose
+    path: ../../../-Repo/idc.utility/DataProcessor/CouchBaseHelper.cs
+    startLine: 53
+  assemblies:
+  - IDX.Utilities
+  namespace: IDX.Utilities.DataProcessor
+  summary: Releases unmanaged and - optionally - managed resources.
+  example:
+  - >-
+    <pre><code class="lang-csharp">using var cbh = new CouchBaseHelper("couchbase://localhost", "Administrator", "password");
+
+    // use the CouchBaseHelper instance</code></pre>
+  syntax:
+    content: protected virtual void Dispose(bool disposing)
+    parameters:
+    - id: disposing
+      type: System.Boolean
+      description: <code>true</code> to release both managed and unmanaged resources; <code>false</code> to release only unmanaged resources.
+    content.vb: Protected Overridable Sub Dispose(disposing As Boolean)
+  overload: IDX.Utilities.DataProcessor.CouchBaseHelper.Dispose*
+  nameWithType.vb: CouchBaseHelper.Dispose(Boolean)
+  fullName.vb: IDX.Utilities.DataProcessor.CouchBaseHelper.Dispose(Boolean)
+  name.vb: Dispose(Boolean)
+- uid: IDX.Utilities.DataProcessor.CouchBaseHelper.Dispose
+  commentId: M:IDX.Utilities.DataProcessor.CouchBaseHelper.Dispose
+  id: Dispose
+  parent: IDX.Utilities.DataProcessor.CouchBaseHelper
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: CouchBaseHelper.Dispose()
+  fullName: IDX.Utilities.DataProcessor.CouchBaseHelper.Dispose()
+  type: Method
+  source:
+    remote:
+      path: DataProcessor/CouchBaseHelper.cs
+      branch: Research_Documentation
+      repo: https://scm.idecision.ai/idecision_source_net8/idc.utility.git
+    id: Dispose
+    path: ../../../-Repo/idc.utility/DataProcessor/CouchBaseHelper.cs
+    startLine: 85
+  assemblies:
+  - IDX.Utilities
+  namespace: IDX.Utilities.DataProcessor
+  summary: Releases unmanaged and - optionally - managed resources.
+  example:
+  - >-
+    <pre><code class="lang-csharp">var cbh = new CouchBaseHelper("couchbase://localhost", "Administrator", "password");
+
+    try
+
+    {
+        // use the CouchBaseHelper instance
+    }
+
+    finally
+
+    {
+        cbh.Dispose();
+    }</code></pre>
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose()
+  overload: IDX.Utilities.DataProcessor.CouchBaseHelper.Dispose*
+  implements:
+  - System.IDisposable.Dispose
+- uid: IDX.Utilities.DataProcessor.CouchBaseHelper.DisposeAsync
+  commentId: M:IDX.Utilities.DataProcessor.CouchBaseHelper.DisposeAsync
+  id: DisposeAsync
+  parent: IDX.Utilities.DataProcessor.CouchBaseHelper
+  langs:
+  - csharp
+  - vb
+  name: DisposeAsync()
+  nameWithType: CouchBaseHelper.DisposeAsync()
+  fullName: IDX.Utilities.DataProcessor.CouchBaseHelper.DisposeAsync()
+  type: Method
+  source:
+    remote:
+      path: DataProcessor/CouchBaseHelper.cs
+      branch: Research_Documentation
+      repo: https://scm.idecision.ai/idecision_source_net8/idc.utility.git
+    id: DisposeAsync
+    path: ../../../-Repo/idc.utility/DataProcessor/CouchBaseHelper.cs
+    startLine: 107
+  assemblies:
+  - IDX.Utilities
+  namespace: IDX.Utilities.DataProcessor
+  summary: Releases unmanaged and - optionally - managed resources asynchronously.
+  example:
+  - >-
+    <pre><code class="lang-csharp">var cbh = new CouchBaseHelper("couchbase://localhost", "Administrator", "password");
+
+    try
+
+    {
+        // use the CouchBaseHelper instance
+    }
+
+    finally
+
+    {
+        await cbh.DisposeAsync();
+    }</code></pre>
+  syntax:
+    content: public ValueTask DisposeAsync()
+    return:
+      type: System.Threading.Tasks.ValueTask
+    content.vb: Public Function DisposeAsync() As ValueTask
+  overload: IDX.Utilities.DataProcessor.CouchBaseHelper.DisposeAsync*
+  implements:
+  - System.IAsyncDisposable.DisposeAsync
+- uid: IDX.Utilities.DataProcessor.CouchBaseHelper.#ctor(System.String,System.String,System.String,System.String,System.Byte[])
+  commentId: M:IDX.Utilities.DataProcessor.CouchBaseHelper.#ctor(System.String,System.String,System.String,System.String,System.Byte[])
+  id: '#ctor(System.String,System.String,System.String,System.String,System.Byte[])'
+  parent: IDX.Utilities.DataProcessor.CouchBaseHelper
+  langs:
+  - csharp
+  - vb
+  name: CouchBaseHelper(string?, string?, string?, string?, byte[]?)
+  nameWithType: CouchBaseHelper.CouchBaseHelper(string?, string?, string?, string?, byte[]?)
+  fullName: IDX.Utilities.DataProcessor.CouchBaseHelper.CouchBaseHelper(string?, string?, string?, string?, byte[]?)
+  type: Constructor
+  source:
+    remote:
+      path: DataProcessor/CouchBaseHelper.cs
+      branch: Research_Documentation
+      repo: https://scm.idecision.ai/idecision_source_net8/idc.utility.git
+    id: .ctor
+    path: ../../../-Repo/idc.utility/DataProcessor/CouchBaseHelper.cs
+    startLine: 189
+  assemblies:
+  - IDX.Utilities
+  namespace: IDX.Utilities.DataProcessor
+  summary: Initializes a new instance of the <xref href="IDX.Utilities.DataProcessor.CouchBaseHelper" data-throw-if-not-resolved="false"></xref> class.
+  example:
+  - <pre><code class="lang-csharp">using cbh = new CouchBaseHelper("localhost", "Administrator", "password", "my secret key", new byte[] { 0x01, 0x02 });</code></pre>
+  syntax:
+    content: public CouchBaseHelper(string? host, string? username, string? password, string? encryptionKey = null, byte[]? encryptionSalts = null)
+    parameters:
+    - id: host
+      type: System.String
+      description: The Couchbase host name.
+    - id: username
+      type: System.String
+      description: The Couchbase username.
+    - id: password
+      type: System.String
+      description: The Couchbase password.
+    - id: encryptionKey
+      type: System.String
+      description: The encryption key for decrypting the password. Optional.
+    - id: encryptionSalts
+      type: System.Byte[]
+      description: The encryption salts for decrypting the password. Optional.
+    content.vb: Public Sub New(host As String, username As String, password As String, encryptionKey As String = Nothing, encryptionSalts As Byte() = Nothing)
+  overload: IDX.Utilities.DataProcessor.CouchBaseHelper.#ctor*
+  nameWithType.vb: CouchBaseHelper.New(String, String, String, String, Byte())
+  fullName.vb: IDX.Utilities.DataProcessor.CouchBaseHelper.New(String, String, String, String, Byte())
+  name.vb: New(String, String, String, String, Byte())
+- uid: IDX.Utilities.DataProcessor.CouchBaseHelper.#ctor(IDX.Utilities.Models.CouchBaseConnectionString,System.String,System.Byte[])
+  commentId: M:IDX.Utilities.DataProcessor.CouchBaseHelper.#ctor(IDX.Utilities.Models.CouchBaseConnectionString,System.String,System.Byte[])
+  id: '#ctor(IDX.Utilities.Models.CouchBaseConnectionString,System.String,System.Byte[])'
+  parent: IDX.Utilities.DataProcessor.CouchBaseHelper
+  langs:
+  - csharp
+  - vb
+  name: CouchBaseHelper(CouchBaseConnectionString, string?, byte[]?)
+  nameWithType: CouchBaseHelper.CouchBaseHelper(CouchBaseConnectionString, string?, byte[]?)
+  fullName: IDX.Utilities.DataProcessor.CouchBaseHelper.CouchBaseHelper(IDX.Utilities.Models.CouchBaseConnectionString, string?, byte[]?)
+  type: Constructor
+  source:
+    remote:
+      path: DataProcessor/CouchBaseHelper.cs
+      branch: Research_Documentation
+      repo: https://scm.idecision.ai/idecision_source_net8/idc.utility.git
+    id: .ctor
+    path: ../../../-Repo/idc.utility/DataProcessor/CouchBaseHelper.cs
+    startLine: 226
+  assemblies:
+  - IDX.Utilities
+  namespace: IDX.Utilities.DataProcessor
+  summary: Initializes a new instance of the <xref href="IDX.Utilities.DataProcessor.CouchBaseHelper" data-throw-if-not-resolved="false"></xref> class.
+  example:
+  - >-
+    <pre><code class="lang-csharp">var connectionString = new CouchBaseConnectionString
+
+    {
+        Host = "localhost",
+        Username = "Administrator",
+        Password = "password",
+    };
+
+    using cbh = new CouchBaseHelper(connectionString, "my secret key", new byte[] { 0x01, 0x02 });</code></pre>
+  syntax:
+    content: public CouchBaseHelper(CouchBaseConnectionString connectionString, string? encryptionKey, byte[]? encryptionSalts)
+    parameters:
+    - id: connectionString
+      type: IDX.Utilities.Models.CouchBaseConnectionString
+      description: The Couchbase connection string.
+    - id: encryptionKey
+      type: System.String
+      description: The encryption key for decrypting the password. Optional.
+    - id: encryptionSalts
+      type: System.Byte[]
+      description: The encryption salts for decrypting the password. Optional.
+    content.vb: Public Sub New(connectionString As CouchBaseConnectionString, encryptionKey As String, encryptionSalts As Byte())
+  overload: IDX.Utilities.DataProcessor.CouchBaseHelper.#ctor*
+  nameWithType.vb: CouchBaseHelper.New(CouchBaseConnectionString, String, Byte())
+  fullName.vb: IDX.Utilities.DataProcessor.CouchBaseHelper.New(IDX.Utilities.Models.CouchBaseConnectionString, String, Byte())
+  name.vb: New(CouchBaseConnectionString, String, Byte())
+- uid: IDX.Utilities.DataProcessor.CouchBaseHelper.ConnectAsync(IDX.Utilities.Delegator.CommonCallback)
+  commentId: M:IDX.Utilities.DataProcessor.CouchBaseHelper.ConnectAsync(IDX.Utilities.Delegator.CommonCallback)
+  id: ConnectAsync(IDX.Utilities.Delegator.CommonCallback)
+  parent: IDX.Utilities.DataProcessor.CouchBaseHelper
+  langs:
+  - csharp
+  - vb
+  name: ConnectAsync(CommonCallback)
+  nameWithType: CouchBaseHelper.ConnectAsync(CommonCallback)
+  fullName: IDX.Utilities.DataProcessor.CouchBaseHelper.ConnectAsync(IDX.Utilities.Delegator.CommonCallback)
+  type: Method
+  source:
+    remote:
+      path: DataProcessor/CouchBaseHelper.cs
+      branch: Research_Documentation
+      repo: https://scm.idecision.ai/idecision_source_net8/idc.utility.git
+    id: ConnectAsync
+    path: ../../../-Repo/idc.utility/DataProcessor/CouchBaseHelper.cs
+    startLine: 268
+  assemblies:
+  - IDX.Utilities
+  namespace: IDX.Utilities.DataProcessor
+  summary: Connects to the Couchbase server asynchronously.
+  example:
+  - >-
+    <pre><code class="lang-csharp">using cbh = new CouchBaseHelper(new CouchBaseConnectionString
+
+    {
+        Host = "localhost",
+        Username = "Administrator",
+        Password = "password",
+    });
+
+    await cbh.ConnectAsync(
+        () =&gt;
+        {
+            Console.WriteLine("Connected to Couchbase.");
+        }
+    );</code></pre>
+  syntax:
+    content: public virtual Task<CouchBaseHelper> ConnectAsync(CommonCallback callback)
+    parameters:
+    - id: callback
+      type: IDX.Utilities.Delegator.CommonCallback
+      description: The callback function to execute after the connection is established.
+    return:
+      type: System.Threading.Tasks.Task{IDX.Utilities.DataProcessor.CouchBaseHelper}
+      description: The <xref href="IDX.Utilities.DataProcessor.CouchBaseHelper" data-throw-if-not-resolved="false"></xref> object.
+    content.vb: Public Overridable Function ConnectAsync(callback As CommonCallback) As Task(Of CouchBaseHelper)
+  overload: IDX.Utilities.DataProcessor.CouchBaseHelper.ConnectAsync*
+- uid: IDX.Utilities.DataProcessor.CouchBaseHelper.ValidateQuery(System.String,IDX.Utilities.Delegator.CallbackValidateQuery)
+  commentId: M:IDX.Utilities.DataProcessor.CouchBaseHelper.ValidateQuery(System.String,IDX.Utilities.Delegator.CallbackValidateQuery)
+  id: ValidateQuery(System.String,IDX.Utilities.Delegator.CallbackValidateQuery)
+  parent: IDX.Utilities.DataProcessor.CouchBaseHelper
+  langs:
+  - csharp
+  - vb
+  name: ValidateQuery(string, CallbackValidateQuery)
+  nameWithType: CouchBaseHelper.ValidateQuery(string, CallbackValidateQuery)
+  fullName: IDX.Utilities.DataProcessor.CouchBaseHelper.ValidateQuery(string, IDX.Utilities.Delegator.CallbackValidateQuery)
+  type: Method
+  source:
+    remote:
+      path: DataProcessor/CouchBaseHelper.cs
+      branch: Research_Documentation
+      repo: https://scm.idecision.ai/idecision_source_net8/idc.utility.git
+    id: ValidateQuery
+    path: ../../../-Repo/idc.utility/DataProcessor/CouchBaseHelper.cs
+    startLine: 314
+  assemblies:
+  - IDX.Utilities
+  namespace: IDX.Utilities.DataProcessor
+  summary: Validates a query for CouchBase.
+  example:
+  - >-
+    <pre><code class="lang-csharp">using cbh = new CouchBaseHelper(new CouchBaseConnectionString
+
+    {
+        Host = "localhost",
+        Username = "Administrator",
+        Password = "password",
+    });
+
+    await cbh.ConnectAsync(
+        () =&gt;
+        {
+            Console.WriteLine("Connected to Couchbase.");
+        }
+    );
+
+
+    await cbh.ValidateQuery(
+        "SELECT * FROM `travel-sample` LIMIT 10",
+        (result) =&gt;
+        {
+            Console.WriteLine(result);
+        }
+    );</code></pre>
+  syntax:
+    content: public virtual Task<CouchBaseHelper> ValidateQuery(string query, CallbackValidateQuery callback)
+    parameters:
+    - id: query
+      type: System.String
+      description: The query to validate.
+    - id: callback
+      type: IDX.Utilities.Delegator.CallbackValidateQuery
+      description: The callback function to execute after validation.
+    return:
+      type: System.Threading.Tasks.Task{IDX.Utilities.DataProcessor.CouchBaseHelper}
+      description: The <xref href="IDX.Utilities.DataProcessor.CouchBaseHelper" data-throw-if-not-resolved="false"></xref> object.
+    content.vb: Public Overridable Function ValidateQuery(query As String, callback As CallbackValidateQuery) As Task(Of CouchBaseHelper)
+  overload: IDX.Utilities.DataProcessor.CouchBaseHelper.ValidateQuery*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: Thrown if the connection is not established.
+  nameWithType.vb: CouchBaseHelper.ValidateQuery(String, CallbackValidateQuery)
+  fullName.vb: IDX.Utilities.DataProcessor.CouchBaseHelper.ValidateQuery(String, IDX.Utilities.Delegator.CallbackValidateQuery)
+  name.vb: ValidateQuery(String, CallbackValidateQuery)
+- uid: IDX.Utilities.DataProcessor.CouchBaseHelper.ExecuteQuery(System.String,IDX.Utilities.Delegator.CallbackExecuteQuery)
+  commentId: M:IDX.Utilities.DataProcessor.CouchBaseHelper.ExecuteQuery(System.String,IDX.Utilities.Delegator.CallbackExecuteQuery)
+  id: ExecuteQuery(System.String,IDX.Utilities.Delegator.CallbackExecuteQuery)
+  parent: IDX.Utilities.DataProcessor.CouchBaseHelper
+  langs:
+  - csharp
+  - vb
+  name: ExecuteQuery(string, CallbackExecuteQuery)
+  nameWithType: CouchBaseHelper.ExecuteQuery(string, CallbackExecuteQuery)
+  fullName: IDX.Utilities.DataProcessor.CouchBaseHelper.ExecuteQuery(string, IDX.Utilities.Delegator.CallbackExecuteQuery)
+  type: Method
+  source:
+    remote:
+      path: DataProcessor/CouchBaseHelper.cs
+      branch: Research_Documentation
+      repo: https://scm.idecision.ai/idecision_source_net8/idc.utility.git
+    id: ExecuteQuery
+    path: ../../../-Repo/idc.utility/DataProcessor/CouchBaseHelper.cs
+    startLine: 364
+  assemblies:
+  - IDX.Utilities
+  namespace: IDX.Utilities.DataProcessor
+  summary: Executes a query asynchronously and invokes the provided callback with the result.
+  example:
+  - >-
+    <pre><code class="lang-csharp">using cbh = new CouchBaseHelper(new CouchBaseConnectionString
+
+    {
+        Host = "localhost",
+        Username = "Administrator",
+        Password = "password",
+    });
+
+    await cbh.ConnectAsync(
+        () =&gt;
+        {
+            Console.WriteLine("Connected to Couchbase.");
+        }
+    );
+
+
+    await cbh.ExecuteQuery(
+        "SELECT * FROM `travel-sample` LIMIT 10",
+        (result) =&gt;
+        {
+            foreach (var row in result)
+            {
+                Console.WriteLine(row);
+            }
+        }
+    );</code></pre>
+  syntax:
+    content: public virtual Task<CouchBaseHelper> ExecuteQuery(string query, CallbackExecuteQuery callback)
+    parameters:
+    - id: query
+      type: System.String
+      description: The query to execute.
+    - id: callback
+      type: IDX.Utilities.Delegator.CallbackExecuteQuery
+      description: The callback function to be invoked with the query result.
+    return:
+      type: System.Threading.Tasks.Task{IDX.Utilities.DataProcessor.CouchBaseHelper}
+      description: The <xref href="IDX.Utilities.DataProcessor.CouchBaseHelper" data-throw-if-not-resolved="false"></xref> object.
+    content.vb: Public Overridable Function ExecuteQuery(query As String, callback As CallbackExecuteQuery) As Task(Of CouchBaseHelper)
+  overload: IDX.Utilities.DataProcessor.CouchBaseHelper.ExecuteQuery*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: Thrown if the connection is not established.
+  nameWithType.vb: CouchBaseHelper.ExecuteQuery(String, CallbackExecuteQuery)
+  fullName.vb: IDX.Utilities.DataProcessor.CouchBaseHelper.ExecuteQuery(String, IDX.Utilities.Delegator.CallbackExecuteQuery)
+  name.vb: ExecuteQuery(String, CallbackExecuteQuery)
+- uid: IDX.Utilities.DataProcessor.CouchBaseHelper.ExecuteScalar``1(System.String,IDX.Utilities.Delegator.CallbackExecuteScalar{``0})
+  commentId: M:IDX.Utilities.DataProcessor.CouchBaseHelper.ExecuteScalar``1(System.String,IDX.Utilities.Delegator.CallbackExecuteScalar{``0})
+  id: ExecuteScalar``1(System.String,IDX.Utilities.Delegator.CallbackExecuteScalar{``0})
+  parent: IDX.Utilities.DataProcessor.CouchBaseHelper
+  langs:
+  - csharp
+  - vb
+  name: ExecuteScalar<T>(string, CallbackExecuteScalar<T>)
+  nameWithType: CouchBaseHelper.ExecuteScalar<T>(string, CallbackExecuteScalar<T>)
+  fullName: IDX.Utilities.DataProcessor.CouchBaseHelper.ExecuteScalar<T>(string, IDX.Utilities.Delegator.CallbackExecuteScalar<T>)
+  type: Method
+  source:
+    remote:
+      path: DataProcessor/CouchBaseHelper.cs
+      branch: Research_Documentation
+      repo: https://scm.idecision.ai/idecision_source_net8/idc.utility.git
+    id: ExecuteScalar
+    path: ../../../-Repo/idc.utility/DataProcessor/CouchBaseHelper.cs
+    startLine: 409
+  assemblies:
+  - IDX.Utilities
+  namespace: IDX.Utilities.DataProcessor
+  summary: Executes a query asynchronously and returns a scalar result.
+  example:
+  - >-
+    <pre><code class="lang-csharp">using cbh = new CouchBaseHelper(new CouchBaseConnectionString
+
+    {
+        Host = "localhost",
+        Username = "Administrator",
+        Password = "password",
+    });
+
+    await cbh.ConnectAsync(
+        () =&gt;
+        {
+            Console.WriteLine("Connected to Couchbase.");
+        }
+    );
+
+
+    await cbh.ExecuteScalar&lt;int&gt;(
+        "SELECT COUNT(*) FROM `travel-sample`",
+        (result) =&gt;
+        {
+            Console.WriteLine($"Found {result} documents in travel-sample bucket.");
+        }
+    );</code></pre>
+  syntax:
+    content: public virtual Task<CouchBaseHelper> ExecuteScalar<T>(string query, CallbackExecuteScalar<T> callback)
+    parameters:
+    - id: query
+      type: System.String
+      description: The query to execute.
+    - id: callback
+      type: IDX.Utilities.Delegator.CallbackExecuteScalar{{T}}
+      description: The callback function to be invoked with the query result.
+    typeParameters:
+    - id: T
+      description: The type of the scalar result.
+    return:
+      type: System.Threading.Tasks.Task{IDX.Utilities.DataProcessor.CouchBaseHelper}
+      description: The modified <xref href="IDX.Utilities.DataProcessor.CouchBaseHelper" data-throw-if-not-resolved="false"></xref> object.
+    content.vb: Public Overridable Function ExecuteScalar(Of T)(query As String, callback As CallbackExecuteScalar(Of T)) As Task(Of CouchBaseHelper)
+  overload: IDX.Utilities.DataProcessor.CouchBaseHelper.ExecuteScalar*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: Thrown if the connection is not established.
+  nameWithType.vb: CouchBaseHelper.ExecuteScalar(Of T)(String, CallbackExecuteScalar(Of T))
+  fullName.vb: IDX.Utilities.DataProcessor.CouchBaseHelper.ExecuteScalar(Of T)(String, IDX.Utilities.Delegator.CallbackExecuteScalar(Of T))
+  name.vb: ExecuteScalar(Of T)(String, CallbackExecuteScalar(Of T))
+- uid: IDX.Utilities.DataProcessor.CouchBaseHelper.ExecuteNonQuery(System.String,IDX.Utilities.Delegator.CallbackExecuteNonQuery)
+  commentId: M:IDX.Utilities.DataProcessor.CouchBaseHelper.ExecuteNonQuery(System.String,IDX.Utilities.Delegator.CallbackExecuteNonQuery)
+  id: ExecuteNonQuery(System.String,IDX.Utilities.Delegator.CallbackExecuteNonQuery)
+  parent: IDX.Utilities.DataProcessor.CouchBaseHelper
+  langs:
+  - csharp
+  - vb
+  name: ExecuteNonQuery(string, CallbackExecuteNonQuery)
+  nameWithType: CouchBaseHelper.ExecuteNonQuery(string, CallbackExecuteNonQuery)
+  fullName: IDX.Utilities.DataProcessor.CouchBaseHelper.ExecuteNonQuery(string, IDX.Utilities.Delegator.CallbackExecuteNonQuery)
+  type: Method
+  source:
+    remote:
+      path: DataProcessor/CouchBaseHelper.cs
+      branch: Research_Documentation
+      repo: https://scm.idecision.ai/idecision_source_net8/idc.utility.git
+    id: ExecuteNonQuery
+    path: ../../../-Repo/idc.utility/DataProcessor/CouchBaseHelper.cs
+    startLine: 452
+  assemblies:
+  - IDX.Utilities
+  namespace: IDX.Utilities.DataProcessor
+  summary: Executes a query asynchronously and invokes the provided callback with the query result.
+  example:
+  - >-
+    <pre><code class="lang-csharp">using cbh = new CouchBaseHelper(new CouchBaseConnectionString
+
+    {
+        Host = "localhost",
+        Username = "Administrator",
+        Password = "password",
+    });
+
+    await cbh.ConnectAsync(
+        () =&gt;
+        {
+            Console.WriteLine("Connected to Couchbase.");
+        }
+    );
+
+
+    await cbh.ExecuteNonQuery(
+        "DELETE FROM `travel-sample` WHERE type = 'hotel'",
+        (result) =&gt;
+        {
+            Console.WriteLine($"Deleted {result} documents from travel-sample bucket.");
+        }
+    );</code></pre>
+  syntax:
+    content: public virtual Task<CouchBaseHelper> ExecuteNonQuery(string query, CallbackExecuteNonQuery callback)
+    parameters:
+    - id: query
+      type: System.String
+      description: The query to execute.
+    - id: callback
+      type: IDX.Utilities.Delegator.CallbackExecuteNonQuery
+      description: The callback function to be invoked with the query result.
+    return:
+      type: System.Threading.Tasks.Task{IDX.Utilities.DataProcessor.CouchBaseHelper}
+      description: The modified <xref href="IDX.Utilities.DataProcessor.CouchBaseHelper" data-throw-if-not-resolved="false"></xref> object.
+    content.vb: Public Overridable Function ExecuteNonQuery(query As String, callback As CallbackExecuteNonQuery) As Task(Of CouchBaseHelper)
+  overload: IDX.Utilities.DataProcessor.CouchBaseHelper.ExecuteNonQuery*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: Thrown if the connection is not established.
+  nameWithType.vb: CouchBaseHelper.ExecuteNonQuery(String, CallbackExecuteNonQuery)
+  fullName.vb: IDX.Utilities.DataProcessor.CouchBaseHelper.ExecuteNonQuery(String, IDX.Utilities.Delegator.CallbackExecuteNonQuery)
+  name.vb: ExecuteNonQuery(String, CallbackExecuteNonQuery)
+references:
+- uid: IDX.Utilities.DataProcessor
+  commentId: N:IDX.Utilities.DataProcessor
+  href: IDX.html
+  name: IDX.Utilities.DataProcessor
+  nameWithType: IDX.Utilities.DataProcessor
+  fullName: IDX.Utilities.DataProcessor
+  spec.csharp:
+  - uid: IDX
+    name: IDX
+    href: IDX.html
+  - name: .
+  - uid: IDX.Utilities
+    name: Utilities
+    href: IDX.Utilities.html
+  - name: .
+  - uid: IDX.Utilities.DataProcessor
+    name: DataProcessor
+    href: IDX.Utilities.DataProcessor.html
+  spec.vb:
+  - uid: IDX
+    name: IDX
+    href: IDX.html
+  - name: .
+  - uid: IDX.Utilities
+    name: Utilities
+    href: IDX.Utilities.html
+  - name: .
+  - uid: IDX.Utilities.DataProcessor
+    name: DataProcessor
+    href: IDX.Utilities.DataProcessor.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.IAsyncDisposable
+  commentId: T:System.IAsyncDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iasyncdisposable
+  name: IAsyncDisposable
+  nameWithType: IAsyncDisposable
+  fullName: System.IAsyncDisposable
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.IDX.Utilities.Extensions.ObjectExtensions.CastToBoolean(System.Boolean)
+  commentId: M:IDX.Utilities.Extensions.ObjectExtensions.CastToBoolean(System.Object,System.Boolean)
+  parent: IDX.Utilities.Extensions.ObjectExtensions
+  definition: IDX.Utilities.Extensions.ObjectExtensions.CastToBoolean(System.Object,System.Boolean)
+  href: IDX.Utilities.Extensions.ObjectExtensions.CastToBoolean.html#IDX_Utilities_Extensions_ObjectExtensions_CastToBoolean_System_Object_System_Boolean_
+  name: CastToBoolean(object, bool)
+  nameWithType: ObjectExtensions.CastToBoolean(object, bool)
+  fullName: IDX.Utilities.Extensions.ObjectExtensions.CastToBoolean(object, bool)
+  nameWithType.vb: ObjectExtensions.CastToBoolean(Object, Boolean)
+  fullName.vb: IDX.Utilities.Extensions.ObjectExtensions.CastToBoolean(Object, Boolean)
+  name.vb: CastToBoolean(Object, Boolean)
+  spec.csharp:
+  - uid: IDX.Utilities.Extensions.ObjectExtensions.CastToBoolean(System.Object,System.Boolean)
+    name: CastToBoolean
+    href: IDX.Utilities.Extensions.ObjectExtensions.CastToBoolean.html#IDX_Utilities_Extensions_ObjectExtensions_CastToBoolean_System_Object_System_Boolean_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: IDX.Utilities.Extensions.ObjectExtensions.CastToBoolean(System.Object,System.Boolean)
+    name: CastToBoolean
+    href: IDX.Utilities.Extensions.ObjectExtensions.CastToBoolean.html#IDX_Utilities_Extensions_ObjectExtensions_CastToBoolean_System_Object_System_Boolean_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: System.Object.IDX.Utilities.Extensions.ObjectExtensions.CastToDateTime(System.DateTime)
+  commentId: M:IDX.Utilities.Extensions.ObjectExtensions.CastToDateTime(System.Object,System.DateTime)
+  parent: IDX.Utilities.Extensions.ObjectExtensions
+  definition: IDX.Utilities.Extensions.ObjectExtensions.CastToDateTime(System.Object,System.DateTime)
+  href: IDX.Utilities.Extensions.ObjectExtensions.CastToDateTime.html#IDX_Utilities_Extensions_ObjectExtensions_CastToDateTime_System_Object_System_DateTime_
+  name: CastToDateTime(object, DateTime)
+  nameWithType: ObjectExtensions.CastToDateTime(object, DateTime)
+  fullName: IDX.Utilities.Extensions.ObjectExtensions.CastToDateTime(object, System.DateTime)
+  nameWithType.vb: ObjectExtensions.CastToDateTime(Object, Date)
+  fullName.vb: IDX.Utilities.Extensions.ObjectExtensions.CastToDateTime(Object, Date)
+  name.vb: CastToDateTime(Object, Date)
+  spec.csharp:
+  - uid: IDX.Utilities.Extensions.ObjectExtensions.CastToDateTime(System.Object,System.DateTime)
+    name: CastToDateTime
+    href: IDX.Utilities.Extensions.ObjectExtensions.CastToDateTime.html#IDX_Utilities_Extensions_ObjectExtensions_CastToDateTime_System_Object_System_DateTime_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.DateTime
+    name: DateTime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: )
+  spec.vb:
+  - uid: IDX.Utilities.Extensions.ObjectExtensions.CastToDateTime(System.Object,System.DateTime)
+    name: CastToDateTime
+    href: IDX.Utilities.Extensions.ObjectExtensions.CastToDateTime.html#IDX_Utilities_Extensions_ObjectExtensions_CastToDateTime_System_Object_System_DateTime_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.DateTime
+    name: Date
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: )
+- uid: System.Object.IDX.Utilities.Extensions.ObjectExtensions.CastToDecimal(System.Decimal)
+  commentId: M:IDX.Utilities.Extensions.ObjectExtensions.CastToDecimal(System.Object,System.Decimal)
+  parent: IDX.Utilities.Extensions.ObjectExtensions
+  definition: IDX.Utilities.Extensions.ObjectExtensions.CastToDecimal(System.Object,System.Decimal)
+  href: IDX.Utilities.Extensions.ObjectExtensions.CastToDecimal.html#IDX_Utilities_Extensions_ObjectExtensions_CastToDecimal_System_Object_System_Decimal_
+  name: CastToDecimal(object, decimal)
+  nameWithType: ObjectExtensions.CastToDecimal(object, decimal)
+  fullName: IDX.Utilities.Extensions.ObjectExtensions.CastToDecimal(object, decimal)
+  nameWithType.vb: ObjectExtensions.CastToDecimal(Object, Decimal)
+  fullName.vb: IDX.Utilities.Extensions.ObjectExtensions.CastToDecimal(Object, Decimal)
+  name.vb: CastToDecimal(Object, Decimal)
+  spec.csharp:
+  - uid: IDX.Utilities.Extensions.ObjectExtensions.CastToDecimal(System.Object,System.Decimal)
+    name: CastToDecimal
+    href: IDX.Utilities.Extensions.ObjectExtensions.CastToDecimal.html#IDX_Utilities_Extensions_ObjectExtensions_CastToDecimal_System_Object_System_Decimal_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Decimal
+    name: decimal
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.decimal
+  - name: )
+  spec.vb:
+  - uid: IDX.Utilities.Extensions.ObjectExtensions.CastToDecimal(System.Object,System.Decimal)
+    name: CastToDecimal
+    href: IDX.Utilities.Extensions.ObjectExtensions.CastToDecimal.html#IDX_Utilities_Extensions_ObjectExtensions_CastToDecimal_System_Object_System_Decimal_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Decimal
+    name: Decimal
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.decimal
+  - name: )
+- uid: System.Object.IDX.Utilities.Extensions.ObjectExtensions.CastToDouble(System.Double)
+  commentId: M:IDX.Utilities.Extensions.ObjectExtensions.CastToDouble(System.Object,System.Double)
+  parent: IDX.Utilities.Extensions.ObjectExtensions
+  definition: IDX.Utilities.Extensions.ObjectExtensions.CastToDouble(System.Object,System.Double)
+  href: IDX.Utilities.Extensions.ObjectExtensions.CastToDouble.html#IDX_Utilities_Extensions_ObjectExtensions_CastToDouble_System_Object_System_Double_
+  name: CastToDouble(object, double)
+  nameWithType: ObjectExtensions.CastToDouble(object, double)
+  fullName: IDX.Utilities.Extensions.ObjectExtensions.CastToDouble(object, double)
+  nameWithType.vb: ObjectExtensions.CastToDouble(Object, Double)
+  fullName.vb: IDX.Utilities.Extensions.ObjectExtensions.CastToDouble(Object, Double)
+  name.vb: CastToDouble(Object, Double)
+  spec.csharp:
+  - uid: IDX.Utilities.Extensions.ObjectExtensions.CastToDouble(System.Object,System.Double)
+    name: CastToDouble
+    href: IDX.Utilities.Extensions.ObjectExtensions.CastToDouble.html#IDX_Utilities_Extensions_ObjectExtensions_CastToDouble_System_Object_System_Double_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+  spec.vb:
+  - uid: IDX.Utilities.Extensions.ObjectExtensions.CastToDouble(System.Object,System.Double)
+    name: CastToDouble
+    href: IDX.Utilities.Extensions.ObjectExtensions.CastToDouble.html#IDX_Utilities_Extensions_ObjectExtensions_CastToDouble_System_Object_System_Double_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+- uid: System.Object.IDX.Utilities.Extensions.ObjectExtensions.CastToInteger(System.Int32)
+  commentId: M:IDX.Utilities.Extensions.ObjectExtensions.CastToInteger(System.Object,System.Int32)
+  parent: IDX.Utilities.Extensions.ObjectExtensions
+  definition: IDX.Utilities.Extensions.ObjectExtensions.CastToInteger(System.Object,System.Int32)
+  href: IDX.Utilities.Extensions.ObjectExtensions.CastToInteger.html#IDX_Utilities_Extensions_ObjectExtensions_CastToInteger_System_Object_System_Int32_
+  name: CastToInteger(object, int)
+  nameWithType: ObjectExtensions.CastToInteger(object, int)
+  fullName: IDX.Utilities.Extensions.ObjectExtensions.CastToInteger(object, int)
+  nameWithType.vb: ObjectExtensions.CastToInteger(Object, Integer)
+  fullName.vb: IDX.Utilities.Extensions.ObjectExtensions.CastToInteger(Object, Integer)
+  name.vb: CastToInteger(Object, Integer)
+  spec.csharp:
+  - uid: IDX.Utilities.Extensions.ObjectExtensions.CastToInteger(System.Object,System.Int32)
+    name: CastToInteger
+    href: IDX.Utilities.Extensions.ObjectExtensions.CastToInteger.html#IDX_Utilities_Extensions_ObjectExtensions_CastToInteger_System_Object_System_Int32_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: IDX.Utilities.Extensions.ObjectExtensions.CastToInteger(System.Object,System.Int32)
+    name: CastToInteger
+    href: IDX.Utilities.Extensions.ObjectExtensions.CastToInteger.html#IDX_Utilities_Extensions_ObjectExtensions_CastToInteger_System_Object_System_Int32_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Object.IDX.Utilities.Extensions.ObjectExtensions.CastToString(System.String)
+  commentId: M:IDX.Utilities.Extensions.ObjectExtensions.CastToString(System.Object,System.String)
+  parent: IDX.Utilities.Extensions.ObjectExtensions
+  definition: IDX.Utilities.Extensions.ObjectExtensions.CastToString(System.Object,System.String)
+  href: IDX.Utilities.Extensions.ObjectExtensions.CastToString.html#IDX_Utilities_Extensions_ObjectExtensions_CastToString_System_Object_System_String_
+  name: CastToString(object, string)
+  nameWithType: ObjectExtensions.CastToString(object, string)
+  fullName: IDX.Utilities.Extensions.ObjectExtensions.CastToString(object, string)
+  nameWithType.vb: ObjectExtensions.CastToString(Object, String)
+  fullName.vb: IDX.Utilities.Extensions.ObjectExtensions.CastToString(Object, String)
+  name.vb: CastToString(Object, String)
+  spec.csharp:
+  - uid: IDX.Utilities.Extensions.ObjectExtensions.CastToString(System.Object,System.String)
+    name: CastToString
+    href: IDX.Utilities.Extensions.ObjectExtensions.CastToString.html#IDX_Utilities_Extensions_ObjectExtensions_CastToString_System_Object_System_String_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: IDX.Utilities.Extensions.ObjectExtensions.CastToString(System.Object,System.String)
+    name: CastToString
+    href: IDX.Utilities.Extensions.ObjectExtensions.CastToString.html#IDX_Utilities_Extensions_ObjectExtensions_CastToString_System_Object_System_String_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Object.IDX.Utilities.Validations.Common.EnsureNotNull(System.String,System.String)
+  commentId: M:IDX.Utilities.Validations.Common.EnsureNotNull(System.Object,System.String,System.String)
+  parent: IDX.Utilities.Validations.Common
+  definition: IDX.Utilities.Validations.Common.EnsureNotNull(System.Object,System.String,System.String)
+  href: IDX.Utilities.Validations.Common.EnsureNotNull.html#IDX_Utilities_Validations_Common_EnsureNotNull_System_Object_System_String_System_String_
+  name: EnsureNotNull(object, string, string)
+  nameWithType: Common.EnsureNotNull(object, string, string)
+  fullName: IDX.Utilities.Validations.Common.EnsureNotNull(object, string, string)
+  nameWithType.vb: Common.EnsureNotNull(Object, String, String)
+  fullName.vb: IDX.Utilities.Validations.Common.EnsureNotNull(Object, String, String)
+  name.vb: EnsureNotNull(Object, String, String)
+  spec.csharp:
+  - uid: IDX.Utilities.Validations.Common.EnsureNotNull(System.Object,System.String,System.String)
+    name: EnsureNotNull
+    href: IDX.Utilities.Validations.Common.EnsureNotNull.html#IDX_Utilities_Validations_Common_EnsureNotNull_System_Object_System_String_System_String_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: IDX.Utilities.Validations.Common.EnsureNotNull(System.Object,System.String,System.String)
+    name: EnsureNotNull
+    href: IDX.Utilities.Validations.Common.EnsureNotNull.html#IDX_Utilities_Validations_Common_EnsureNotNull_System_Object_System_String_System_String_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: IDX.Utilities.Extensions.ObjectExtensions.CastToBoolean(System.Object,System.Boolean)
+  commentId: M:IDX.Utilities.Extensions.ObjectExtensions.CastToBoolean(System.Object,System.Boolean)
+  isExternal: true
+  href: IDX.Utilities.Extensions.ObjectExtensions.CastToBoolean.html#IDX_Utilities_Extensions_ObjectExtensions_CastToBoolean_System_Object_System_Boolean_
+  name: CastToBoolean(object, bool)
+  nameWithType: ObjectExtensions.CastToBoolean(object, bool)
+  fullName: IDX.Utilities.Extensions.ObjectExtensions.CastToBoolean(object, bool)
+  nameWithType.vb: ObjectExtensions.CastToBoolean(Object, Boolean)
+  fullName.vb: IDX.Utilities.Extensions.ObjectExtensions.CastToBoolean(Object, Boolean)
+  name.vb: CastToBoolean(Object, Boolean)
+  spec.csharp:
+  - uid: IDX.Utilities.Extensions.ObjectExtensions.CastToBoolean(System.Object,System.Boolean)
+    name: CastToBoolean
+    href: IDX.Utilities.Extensions.ObjectExtensions.CastToBoolean.html#IDX_Utilities_Extensions_ObjectExtensions_CastToBoolean_System_Object_System_Boolean_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: IDX.Utilities.Extensions.ObjectExtensions.CastToBoolean(System.Object,System.Boolean)
+    name: CastToBoolean
+    href: IDX.Utilities.Extensions.ObjectExtensions.CastToBoolean.html#IDX_Utilities_Extensions_ObjectExtensions_CastToBoolean_System_Object_System_Boolean_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: IDX.Utilities.Extensions.ObjectExtensions
+  commentId: T:IDX.Utilities.Extensions.ObjectExtensions
+  parent: IDX.Utilities.Extensions
+  href: IDX.Utilities.Extensions.ObjectExtensions.html
+  name: ObjectExtensions
+  nameWithType: ObjectExtensions
+  fullName: IDX.Utilities.Extensions.ObjectExtensions
+- uid: IDX.Utilities.Extensions.ObjectExtensions.CastToDateTime(System.Object,System.DateTime)
+  commentId: M:IDX.Utilities.Extensions.ObjectExtensions.CastToDateTime(System.Object,System.DateTime)
+  isExternal: true
+  href: IDX.Utilities.Extensions.ObjectExtensions.CastToDateTime.html#IDX_Utilities_Extensions_ObjectExtensions_CastToDateTime_System_Object_System_DateTime_
+  name: CastToDateTime(object, DateTime)
+  nameWithType: ObjectExtensions.CastToDateTime(object, DateTime)
+  fullName: IDX.Utilities.Extensions.ObjectExtensions.CastToDateTime(object, System.DateTime)
+  nameWithType.vb: ObjectExtensions.CastToDateTime(Object, Date)
+  fullName.vb: IDX.Utilities.Extensions.ObjectExtensions.CastToDateTime(Object, Date)
+  name.vb: CastToDateTime(Object, Date)
+  spec.csharp:
+  - uid: IDX.Utilities.Extensions.ObjectExtensions.CastToDateTime(System.Object,System.DateTime)
+    name: CastToDateTime
+    href: IDX.Utilities.Extensions.ObjectExtensions.CastToDateTime.html#IDX_Utilities_Extensions_ObjectExtensions_CastToDateTime_System_Object_System_DateTime_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.DateTime
+    name: DateTime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: )
+  spec.vb:
+  - uid: IDX.Utilities.Extensions.ObjectExtensions.CastToDateTime(System.Object,System.DateTime)
+    name: CastToDateTime
+    href: IDX.Utilities.Extensions.ObjectExtensions.CastToDateTime.html#IDX_Utilities_Extensions_ObjectExtensions_CastToDateTime_System_Object_System_DateTime_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.DateTime
+    name: Date
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: )
+- uid: IDX.Utilities.Extensions.ObjectExtensions.CastToDecimal(System.Object,System.Decimal)
+  commentId: M:IDX.Utilities.Extensions.ObjectExtensions.CastToDecimal(System.Object,System.Decimal)
+  isExternal: true
+  href: IDX.Utilities.Extensions.ObjectExtensions.CastToDecimal.html#IDX_Utilities_Extensions_ObjectExtensions_CastToDecimal_System_Object_System_Decimal_
+  name: CastToDecimal(object, decimal)
+  nameWithType: ObjectExtensions.CastToDecimal(object, decimal)
+  fullName: IDX.Utilities.Extensions.ObjectExtensions.CastToDecimal(object, decimal)
+  nameWithType.vb: ObjectExtensions.CastToDecimal(Object, Decimal)
+  fullName.vb: IDX.Utilities.Extensions.ObjectExtensions.CastToDecimal(Object, Decimal)
+  name.vb: CastToDecimal(Object, Decimal)
+  spec.csharp:
+  - uid: IDX.Utilities.Extensions.ObjectExtensions.CastToDecimal(System.Object,System.Decimal)
+    name: CastToDecimal
+    href: IDX.Utilities.Extensions.ObjectExtensions.CastToDecimal.html#IDX_Utilities_Extensions_ObjectExtensions_CastToDecimal_System_Object_System_Decimal_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Decimal
+    name: decimal
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.decimal
+  - name: )
+  spec.vb:
+  - uid: IDX.Utilities.Extensions.ObjectExtensions.CastToDecimal(System.Object,System.Decimal)
+    name: CastToDecimal
+    href: IDX.Utilities.Extensions.ObjectExtensions.CastToDecimal.html#IDX_Utilities_Extensions_ObjectExtensions_CastToDecimal_System_Object_System_Decimal_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Decimal
+    name: Decimal
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.decimal
+  - name: )
+- uid: IDX.Utilities.Extensions.ObjectExtensions.CastToDouble(System.Object,System.Double)
+  commentId: M:IDX.Utilities.Extensions.ObjectExtensions.CastToDouble(System.Object,System.Double)
+  isExternal: true
+  href: IDX.Utilities.Extensions.ObjectExtensions.CastToDouble.html#IDX_Utilities_Extensions_ObjectExtensions_CastToDouble_System_Object_System_Double_
+  name: CastToDouble(object, double)
+  nameWithType: ObjectExtensions.CastToDouble(object, double)
+  fullName: IDX.Utilities.Extensions.ObjectExtensions.CastToDouble(object, double)
+  nameWithType.vb: ObjectExtensions.CastToDouble(Object, Double)
+  fullName.vb: IDX.Utilities.Extensions.ObjectExtensions.CastToDouble(Object, Double)
+  name.vb: CastToDouble(Object, Double)
+  spec.csharp:
+  - uid: IDX.Utilities.Extensions.ObjectExtensions.CastToDouble(System.Object,System.Double)
+    name: CastToDouble
+    href: IDX.Utilities.Extensions.ObjectExtensions.CastToDouble.html#IDX_Utilities_Extensions_ObjectExtensions_CastToDouble_System_Object_System_Double_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+  spec.vb:
+  - uid: IDX.Utilities.Extensions.ObjectExtensions.CastToDouble(System.Object,System.Double)
+    name: CastToDouble
+    href: IDX.Utilities.Extensions.ObjectExtensions.CastToDouble.html#IDX_Utilities_Extensions_ObjectExtensions_CastToDouble_System_Object_System_Double_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+- uid: IDX.Utilities.Extensions.ObjectExtensions.CastToInteger(System.Object,System.Int32)
+  commentId: M:IDX.Utilities.Extensions.ObjectExtensions.CastToInteger(System.Object,System.Int32)
+  isExternal: true
+  href: IDX.Utilities.Extensions.ObjectExtensions.CastToInteger.html#IDX_Utilities_Extensions_ObjectExtensions_CastToInteger_System_Object_System_Int32_
+  name: CastToInteger(object, int)
+  nameWithType: ObjectExtensions.CastToInteger(object, int)
+  fullName: IDX.Utilities.Extensions.ObjectExtensions.CastToInteger(object, int)
+  nameWithType.vb: ObjectExtensions.CastToInteger(Object, Integer)
+  fullName.vb: IDX.Utilities.Extensions.ObjectExtensions.CastToInteger(Object, Integer)
+  name.vb: CastToInteger(Object, Integer)
+  spec.csharp:
+  - uid: IDX.Utilities.Extensions.ObjectExtensions.CastToInteger(System.Object,System.Int32)
+    name: CastToInteger
+    href: IDX.Utilities.Extensions.ObjectExtensions.CastToInteger.html#IDX_Utilities_Extensions_ObjectExtensions_CastToInteger_System_Object_System_Int32_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: IDX.Utilities.Extensions.ObjectExtensions.CastToInteger(System.Object,System.Int32)
+    name: CastToInteger
+    href: IDX.Utilities.Extensions.ObjectExtensions.CastToInteger.html#IDX_Utilities_Extensions_ObjectExtensions_CastToInteger_System_Object_System_Int32_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: IDX.Utilities.Extensions.ObjectExtensions.CastToString(System.Object,System.String)
+  commentId: M:IDX.Utilities.Extensions.ObjectExtensions.CastToString(System.Object,System.String)
+  isExternal: true
+  href: IDX.Utilities.Extensions.ObjectExtensions.CastToString.html#IDX_Utilities_Extensions_ObjectExtensions_CastToString_System_Object_System_String_
+  name: CastToString(object, string)
+  nameWithType: ObjectExtensions.CastToString(object, string)
+  fullName: IDX.Utilities.Extensions.ObjectExtensions.CastToString(object, string)
+  nameWithType.vb: ObjectExtensions.CastToString(Object, String)
+  fullName.vb: IDX.Utilities.Extensions.ObjectExtensions.CastToString(Object, String)
+  name.vb: CastToString(Object, String)
+  spec.csharp:
+  - uid: IDX.Utilities.Extensions.ObjectExtensions.CastToString(System.Object,System.String)
+    name: CastToString
+    href: IDX.Utilities.Extensions.ObjectExtensions.CastToString.html#IDX_Utilities_Extensions_ObjectExtensions_CastToString_System_Object_System_String_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: IDX.Utilities.Extensions.ObjectExtensions.CastToString(System.Object,System.String)
+    name: CastToString
+    href: IDX.Utilities.Extensions.ObjectExtensions.CastToString.html#IDX_Utilities_Extensions_ObjectExtensions_CastToString_System_Object_System_String_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: IDX.Utilities.Validations.Common.EnsureNotNull(System.Object,System.String,System.String)
+  commentId: M:IDX.Utilities.Validations.Common.EnsureNotNull(System.Object,System.String,System.String)
+  isExternal: true
+  href: IDX.Utilities.Validations.Common.EnsureNotNull.html#IDX_Utilities_Validations_Common_EnsureNotNull_System_Object_System_String_System_String_
+  name: EnsureNotNull(object, string, string)
+  nameWithType: Common.EnsureNotNull(object, string, string)
+  fullName: IDX.Utilities.Validations.Common.EnsureNotNull(object, string, string)
+  nameWithType.vb: Common.EnsureNotNull(Object, String, String)
+  fullName.vb: IDX.Utilities.Validations.Common.EnsureNotNull(Object, String, String)
+  name.vb: EnsureNotNull(Object, String, String)
+  spec.csharp:
+  - uid: IDX.Utilities.Validations.Common.EnsureNotNull(System.Object,System.String,System.String)
+    name: EnsureNotNull
+    href: IDX.Utilities.Validations.Common.EnsureNotNull.html#IDX_Utilities_Validations_Common_EnsureNotNull_System_Object_System_String_System_String_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: IDX.Utilities.Validations.Common.EnsureNotNull(System.Object,System.String,System.String)
+    name: EnsureNotNull
+    href: IDX.Utilities.Validations.Common.EnsureNotNull.html#IDX_Utilities_Validations_Common_EnsureNotNull_System_Object_System_String_System_String_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: IDX.Utilities.Validations.Common
+  commentId: T:IDX.Utilities.Validations.Common
+  parent: IDX.Utilities.Validations
+  href: IDX.Utilities.Validations.Common.html
+  name: Common
+  nameWithType: Common
+  fullName: IDX.Utilities.Validations.Common
+- uid: IDX.Utilities.Extensions
+  commentId: N:IDX.Utilities.Extensions
+  href: IDX.html
+  name: IDX.Utilities.Extensions
+  nameWithType: IDX.Utilities.Extensions
+  fullName: IDX.Utilities.Extensions
+  spec.csharp:
+  - uid: IDX
+    name: IDX
+    href: IDX.html
+  - name: .
+  - uid: IDX.Utilities
+    name: Utilities
+    href: IDX.Utilities.html
+  - name: .
+  - uid: IDX.Utilities.Extensions
+    name: Extensions
+    href: IDX.Utilities.Extensions.html
+  spec.vb:
+  - uid: IDX
+    name: IDX
+    href: IDX.html
+  - name: .
+  - uid: IDX.Utilities
+    name: Utilities
+    href: IDX.Utilities.html
+  - name: .
+  - uid: IDX.Utilities.Extensions
+    name: Extensions
+    href: IDX.Utilities.Extensions.html
+- uid: IDX.Utilities.Validations
+  commentId: N:IDX.Utilities.Validations
+  href: IDX.html
+  name: IDX.Utilities.Validations
+  nameWithType: IDX.Utilities.Validations
+  fullName: IDX.Utilities.Validations
+  spec.csharp:
+  - uid: IDX
+    name: IDX
+    href: IDX.html
+  - name: .
+  - uid: IDX.Utilities
+    name: Utilities
+    href: IDX.Utilities.html
+  - name: .
+  - uid: IDX.Utilities.Validations
+    name: Validations
+    href: IDX.Utilities.Validations.html
+  spec.vb:
+  - uid: IDX
+    name: IDX
+    href: IDX.html
+  - name: .
+  - uid: IDX.Utilities
+    name: Utilities
+    href: IDX.Utilities.html
+  - name: .
+  - uid: IDX.Utilities.Validations
+    name: Validations
+    href: IDX.Utilities.Validations.html
+- uid: IDX.Utilities.DataProcessor.CouchBaseHelper.IsConnected*
+  commentId: Overload:IDX.Utilities.DataProcessor.CouchBaseHelper.IsConnected
+  href: IDX.Utilities.DataProcessor.CouchBaseHelper.IsConnected.html#IDX_Utilities_DataProcessor_CouchBaseHelper_IsConnected
+  name: IsConnected
+  nameWithType: CouchBaseHelper.IsConnected
+  fullName: IDX.Utilities.DataProcessor.CouchBaseHelper.IsConnected
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: IDX.Utilities.DataProcessor.CouchBaseHelper.Dispose*
+  commentId: Overload:IDX.Utilities.DataProcessor.CouchBaseHelper.Dispose
+  href: IDX.Utilities.DataProcessor.CouchBaseHelper.Dispose.html#IDX_Utilities_DataProcessor_CouchBaseHelper_Dispose_System_Boolean_
+  name: Dispose
+  nameWithType: CouchBaseHelper.Dispose
+  fullName: IDX.Utilities.DataProcessor.CouchBaseHelper.Dispose
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+- uid: IDX.Utilities.DataProcessor.CouchBaseHelper.DisposeAsync*
+  commentId: Overload:IDX.Utilities.DataProcessor.CouchBaseHelper.DisposeAsync
+  href: IDX.Utilities.DataProcessor.CouchBaseHelper.DisposeAsync.html#IDX_Utilities_DataProcessor_CouchBaseHelper_DisposeAsync
+  name: DisposeAsync
+  nameWithType: CouchBaseHelper.DisposeAsync
+  fullName: IDX.Utilities.DataProcessor.CouchBaseHelper.DisposeAsync
+- uid: System.IAsyncDisposable.DisposeAsync
+  commentId: M:System.IAsyncDisposable.DisposeAsync
+  parent: System.IAsyncDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iasyncdisposable.disposeasync
+  name: DisposeAsync()
+  nameWithType: IAsyncDisposable.DisposeAsync()
+  fullName: System.IAsyncDisposable.DisposeAsync()
+  spec.csharp:
+  - uid: System.IAsyncDisposable.DisposeAsync
+    name: DisposeAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iasyncdisposable.disposeasync
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IAsyncDisposable.DisposeAsync
+    name: DisposeAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iasyncdisposable.disposeasync
+  - name: (
+  - name: )
+- uid: System.Threading.Tasks.ValueTask
+  commentId: T:System.Threading.Tasks.ValueTask
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask
+  name: ValueTask
+  nameWithType: ValueTask
+  fullName: System.Threading.Tasks.ValueTask
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: IDX.Utilities.DataProcessor.CouchBaseHelper
+  commentId: T:IDX.Utilities.DataProcessor.CouchBaseHelper
+  parent: IDX.Utilities.DataProcessor
+  href: IDX.Utilities.DataProcessor.CouchBaseHelper.html
+  name: CouchBaseHelper
+  nameWithType: CouchBaseHelper
+  fullName: IDX.Utilities.DataProcessor.CouchBaseHelper
+- uid: IDX.Utilities.DataProcessor.CouchBaseHelper.#ctor*
+  commentId: Overload:IDX.Utilities.DataProcessor.CouchBaseHelper.#ctor
+  href: IDX.Utilities.DataProcessor.CouchBaseHelper.-ctor.html#IDX_Utilities_DataProcessor_CouchBaseHelper__ctor_System_String_System_String_System_String_System_String_System_Byte___
+  name: CouchBaseHelper
+  nameWithType: CouchBaseHelper.CouchBaseHelper
+  fullName: IDX.Utilities.DataProcessor.CouchBaseHelper.CouchBaseHelper
+  nameWithType.vb: CouchBaseHelper.New
+  fullName.vb: IDX.Utilities.DataProcessor.CouchBaseHelper.New
+  name.vb: New
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Byte[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.byte
+  name: byte[]
+  nameWithType: byte[]
+  fullName: byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: (
+  - name: )
+- uid: IDX.Utilities.Models.CouchBaseConnectionString
+  commentId: T:IDX.Utilities.Models.CouchBaseConnectionString
+  parent: IDX.Utilities.Models
+  href: IDX.Utilities.Models.CouchBaseConnectionString.html
+  name: CouchBaseConnectionString
+  nameWithType: CouchBaseConnectionString
+  fullName: IDX.Utilities.Models.CouchBaseConnectionString
+- uid: IDX.Utilities.Models
+  commentId: N:IDX.Utilities.Models
+  href: IDX.html
+  name: IDX.Utilities.Models
+  nameWithType: IDX.Utilities.Models
+  fullName: IDX.Utilities.Models
+  spec.csharp:
+  - uid: IDX
+    name: IDX
+    href: IDX.html
+  - name: .
+  - uid: IDX.Utilities
+    name: Utilities
+    href: IDX.Utilities.html
+  - name: .
+  - uid: IDX.Utilities.Models
+    name: Models
+    href: IDX.Utilities.Models.html
+  spec.vb:
+  - uid: IDX
+    name: IDX
+    href: IDX.html
+  - name: .
+  - uid: IDX.Utilities
+    name: Utilities
+    href: IDX.Utilities.html
+  - name: .
+  - uid: IDX.Utilities.Models
+    name: Models
+    href: IDX.Utilities.Models.html
+- uid: IDX.Utilities.DataProcessor.CouchBaseHelper.ConnectAsync*
+  commentId: Overload:IDX.Utilities.DataProcessor.CouchBaseHelper.ConnectAsync
+  href: IDX.Utilities.DataProcessor.CouchBaseHelper.ConnectAsync.html#IDX_Utilities_DataProcessor_CouchBaseHelper_ConnectAsync_IDX_Utilities_Delegator_CommonCallback_
+  name: ConnectAsync
+  nameWithType: CouchBaseHelper.ConnectAsync
+  fullName: IDX.Utilities.DataProcessor.CouchBaseHelper.ConnectAsync
+- uid: IDX.Utilities.Delegator.CommonCallback
+  commentId: T:IDX.Utilities.Delegator.CommonCallback
+  parent: IDX.Utilities.Delegator
+  href: IDX.Utilities.Delegator.CommonCallback.html
+  name: CommonCallback
+  nameWithType: CommonCallback
+  fullName: IDX.Utilities.Delegator.CommonCallback
+- uid: System.Threading.Tasks.Task{IDX.Utilities.DataProcessor.CouchBaseHelper}
+  commentId: T:System.Threading.Tasks.Task{IDX.Utilities.DataProcessor.CouchBaseHelper}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<CouchBaseHelper>
+  nameWithType: Task<CouchBaseHelper>
+  fullName: System.Threading.Tasks.Task<IDX.Utilities.DataProcessor.CouchBaseHelper>
+  nameWithType.vb: Task(Of CouchBaseHelper)
+  fullName.vb: System.Threading.Tasks.Task(Of IDX.Utilities.DataProcessor.CouchBaseHelper)
+  name.vb: Task(Of CouchBaseHelper)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: IDX.Utilities.DataProcessor.CouchBaseHelper
+    name: CouchBaseHelper
+    href: IDX.Utilities.DataProcessor.CouchBaseHelper.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: IDX.Utilities.DataProcessor.CouchBaseHelper
+    name: CouchBaseHelper
+    href: IDX.Utilities.DataProcessor.CouchBaseHelper.html
+  - name: )
+- uid: IDX.Utilities.Delegator
+  commentId: N:IDX.Utilities.Delegator
+  href: IDX.html
+  name: IDX.Utilities.Delegator
+  nameWithType: IDX.Utilities.Delegator
+  fullName: IDX.Utilities.Delegator
+  spec.csharp:
+  - uid: IDX
+    name: IDX
+    href: IDX.html
+  - name: .
+  - uid: IDX.Utilities
+    name: Utilities
+    href: IDX.Utilities.html
+  - name: .
+  - uid: IDX.Utilities.Delegator
+    name: Delegator
+    href: IDX.Utilities.Delegator.html
+  spec.vb:
+  - uid: IDX
+    name: IDX
+    href: IDX.html
+  - name: .
+  - uid: IDX.Utilities
+    name: Utilities
+    href: IDX.Utilities.html
+  - name: .
+  - uid: IDX.Utilities.Delegator
+    name: Delegator
+    href: IDX.Utilities.Delegator.html
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.InvalidOperationException
+  commentId: T:System.InvalidOperationException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.invalidoperationexception
+  name: InvalidOperationException
+  nameWithType: InvalidOperationException
+  fullName: System.InvalidOperationException
+- uid: IDX.Utilities.DataProcessor.CouchBaseHelper.ValidateQuery*
+  commentId: Overload:IDX.Utilities.DataProcessor.CouchBaseHelper.ValidateQuery
+  href: IDX.Utilities.DataProcessor.CouchBaseHelper.ValidateQuery.html#IDX_Utilities_DataProcessor_CouchBaseHelper_ValidateQuery_System_String_IDX_Utilities_Delegator_CallbackValidateQuery_
+  name: ValidateQuery
+  nameWithType: CouchBaseHelper.ValidateQuery
+  fullName: IDX.Utilities.DataProcessor.CouchBaseHelper.ValidateQuery
+- uid: IDX.Utilities.Delegator.CallbackValidateQuery
+  commentId: T:IDX.Utilities.Delegator.CallbackValidateQuery
+  parent: IDX.Utilities.Delegator
+  href: IDX.Utilities.Delegator.CallbackValidateQuery.html
+  name: CallbackValidateQuery
+  nameWithType: CallbackValidateQuery
+  fullName: IDX.Utilities.Delegator.CallbackValidateQuery
+- uid: IDX.Utilities.DataProcessor.CouchBaseHelper.ExecuteQuery*
+  commentId: Overload:IDX.Utilities.DataProcessor.CouchBaseHelper.ExecuteQuery
+  href: IDX.Utilities.DataProcessor.CouchBaseHelper.ExecuteQuery.html#IDX_Utilities_DataProcessor_CouchBaseHelper_ExecuteQuery_System_String_IDX_Utilities_Delegator_CallbackExecuteQuery_
+  name: ExecuteQuery
+  nameWithType: CouchBaseHelper.ExecuteQuery
+  fullName: IDX.Utilities.DataProcessor.CouchBaseHelper.ExecuteQuery
+- uid: IDX.Utilities.Delegator.CallbackExecuteQuery
+  commentId: T:IDX.Utilities.Delegator.CallbackExecuteQuery
+  parent: IDX.Utilities.Delegator
+  href: IDX.Utilities.Delegator.CallbackExecuteQuery.html
+  name: CallbackExecuteQuery
+  nameWithType: CallbackExecuteQuery
+  fullName: IDX.Utilities.Delegator.CallbackExecuteQuery
+- uid: IDX.Utilities.DataProcessor.CouchBaseHelper.ExecuteScalar*
+  commentId: Overload:IDX.Utilities.DataProcessor.CouchBaseHelper.ExecuteScalar
+  href: IDX.Utilities.DataProcessor.CouchBaseHelper.ExecuteScalar.html#IDX_Utilities_DataProcessor_CouchBaseHelper_ExecuteScalar__1_System_String_IDX_Utilities_Delegator_CallbackExecuteScalar___0__
+  name: ExecuteScalar
+  nameWithType: CouchBaseHelper.ExecuteScalar
+  fullName: IDX.Utilities.DataProcessor.CouchBaseHelper.ExecuteScalar
+- uid: IDX.Utilities.Delegator.CallbackExecuteScalar{{T}}
+  commentId: T:IDX.Utilities.Delegator.CallbackExecuteScalar{``0}
+  parent: IDX.Utilities.Delegator
+  definition: IDX.Utilities.Delegator.CallbackExecuteScalar`1
+  href: IDX.Utilities.Delegator.CallbackExecuteScalar-1.html
+  name: CallbackExecuteScalar<T>
+  nameWithType: CallbackExecuteScalar<T>
+  fullName: IDX.Utilities.Delegator.CallbackExecuteScalar<T>
+  nameWithType.vb: CallbackExecuteScalar(Of T)
+  fullName.vb: IDX.Utilities.Delegator.CallbackExecuteScalar(Of T)
+  name.vb: CallbackExecuteScalar(Of T)
+  spec.csharp:
+  - uid: IDX.Utilities.Delegator.CallbackExecuteScalar`1
+    name: CallbackExecuteScalar
+    href: IDX.Utilities.Delegator.CallbackExecuteScalar-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: IDX.Utilities.Delegator.CallbackExecuteScalar`1
+    name: CallbackExecuteScalar
+    href: IDX.Utilities.Delegator.CallbackExecuteScalar-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: IDX.Utilities.Delegator.CallbackExecuteScalar`1
+  commentId: T:IDX.Utilities.Delegator.CallbackExecuteScalar`1
+  href: IDX.Utilities.Delegator.CallbackExecuteScalar-1.html
+  name: CallbackExecuteScalar<T>
+  nameWithType: CallbackExecuteScalar<T>
+  fullName: IDX.Utilities.Delegator.CallbackExecuteScalar<T>
+  nameWithType.vb: CallbackExecuteScalar(Of T)
+  fullName.vb: IDX.Utilities.Delegator.CallbackExecuteScalar(Of T)
+  name.vb: CallbackExecuteScalar(Of T)
+  spec.csharp:
+  - uid: IDX.Utilities.Delegator.CallbackExecuteScalar`1
+    name: CallbackExecuteScalar
+    href: IDX.Utilities.Delegator.CallbackExecuteScalar-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: IDX.Utilities.Delegator.CallbackExecuteScalar`1
+    name: CallbackExecuteScalar
+    href: IDX.Utilities.Delegator.CallbackExecuteScalar-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: IDX.Utilities.DataProcessor.CouchBaseHelper.ExecuteNonQuery*
+  commentId: Overload:IDX.Utilities.DataProcessor.CouchBaseHelper.ExecuteNonQuery
+  href: IDX.Utilities.DataProcessor.CouchBaseHelper.ExecuteNonQuery.html#IDX_Utilities_DataProcessor_CouchBaseHelper_ExecuteNonQuery_System_String_IDX_Utilities_Delegator_CallbackExecuteNonQuery_
+  name: ExecuteNonQuery
+  nameWithType: CouchBaseHelper.ExecuteNonQuery
+  fullName: IDX.Utilities.DataProcessor.CouchBaseHelper.ExecuteNonQuery
+- uid: IDX.Utilities.Delegator.CallbackExecuteNonQuery
+  commentId: T:IDX.Utilities.Delegator.CallbackExecuteNonQuery
+  parent: IDX.Utilities.Delegator
+  href: IDX.Utilities.Delegator.CallbackExecuteNonQuery.html
+  name: CallbackExecuteNonQuery
+  nameWithType: CallbackExecuteNonQuery
+  fullName: IDX.Utilities.Delegator.CallbackExecuteNonQuery
+memberLayout: SeparatePages

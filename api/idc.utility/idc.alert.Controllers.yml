@@ -1,0 +1,93 @@
+### YamlMime:ManagedReference
+items:
+- uid: idc.alert.Controllers
+  commentId: N:idc.alert.Controllers
+  id: Controllers
+  parent: idc.alert
+  children:
+  - idc.alert.Controllers.AlertMgtController
+  - idc.alert.Controllers.DemoController
+  - idc.alert.Controllers.DemoController.SampleModel
+  - idc.alert.Controllers.TestController
+  langs:
+  - csharp
+  - vb
+  name: idc.alert.Controllers
+  nameWithType: idc.alert.Controllers
+  fullName: idc.alert.Controllers
+  type: Namespace
+  assemblies:
+  - idc.alert
+references:
+- uid: idc.alert.Controllers.AlertMgtController
+  commentId: T:idc.alert.Controllers.AlertMgtController
+  href: idc.alert.Controllers.AlertMgtController.html
+  name: AlertMgtController
+  nameWithType: AlertMgtController
+  fullName: idc.alert.Controllers.AlertMgtController
+- uid: idc.alert.Controllers.DemoController
+  commentId: T:idc.alert.Controllers.DemoController
+  href: idc.alert.Controllers.DemoController.html
+  name: DemoController
+  nameWithType: DemoController
+  fullName: idc.alert.Controllers.DemoController
+- uid: idc.alert.Controllers.DemoController.SampleModel
+  commentId: T:idc.alert.Controllers.DemoController.SampleModel
+  parent: idc.alert.Controllers
+  href: idc.alert.Controllers.DemoController.html
+  name: DemoController.SampleModel
+  nameWithType: DemoController.SampleModel
+  fullName: idc.alert.Controllers.DemoController.SampleModel
+  spec.csharp:
+  - uid: idc.alert.Controllers.DemoController
+    name: DemoController
+    href: idc.alert.Controllers.DemoController.html
+  - name: .
+  - uid: idc.alert.Controllers.DemoController.SampleModel
+    name: SampleModel
+    href: idc.alert.Controllers.DemoController.SampleModel.html
+  spec.vb:
+  - uid: idc.alert.Controllers.DemoController
+    name: DemoController
+    href: idc.alert.Controllers.DemoController.html
+  - name: .
+  - uid: idc.alert.Controllers.DemoController.SampleModel
+    name: SampleModel
+    href: idc.alert.Controllers.DemoController.SampleModel.html
+- uid: idc.alert.Controllers.TestController
+  commentId: T:idc.alert.Controllers.TestController
+  href: idc.alert.Controllers.TestController.html
+  name: TestController
+  nameWithType: TestController
+  fullName: idc.alert.Controllers.TestController
+- uid: idc.alert.Controllers
+  commentId: N:idc.alert.Controllers
+  href: idc.html
+  name: idc.alert.Controllers
+  nameWithType: idc.alert.Controllers
+  fullName: idc.alert.Controllers
+  spec.csharp:
+  - uid: idc
+    name: idc
+    href: idc.html
+  - name: .
+  - uid: idc.alert
+    name: alert
+    href: idc.alert.html
+  - name: .
+  - uid: idc.alert.Controllers
+    name: Controllers
+    href: idc.alert.Controllers.html
+  spec.vb:
+  - uid: idc
+    name: idc
+    href: idc.html
+  - name: .
+  - uid: idc.alert
+    name: alert
+    href: idc.alert.html
+  - name: .
+  - uid: idc.alert.Controllers
+    name: Controllers
+    href: idc.alert.Controllers.html
+memberLayout: SeparatePages

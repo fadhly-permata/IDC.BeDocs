@@ -1,0 +1,2667 @@
+### YamlMime:ManagedReference
+items:
+- uid: IDX.Utilities.Extensions.StringExtensions
+  commentId: T:IDX.Utilities.Extensions.StringExtensions
+  id: StringExtensions
+  parent: IDX.Utilities.Extensions
+  children:
+  - IDX.Utilities.Extensions.StringExtensions.BindWith(System.String,System.Collections.Generic.Dictionary{System.String,System.Object})
+  - IDX.Utilities.Extensions.StringExtensions.ChangeCase(System.String,IDX.Utilities.Extensions.StringExtensions.StringCaseType)
+  - IDX.Utilities.Extensions.StringExtensions.ConvertJsonStringAs``1(System.String)
+  - IDX.Utilities.Extensions.StringExtensions.CountOccurrences(System.String,System.String)
+  - IDX.Utilities.Extensions.StringExtensions.GetAlphaNumericOnly(System.String)
+  - IDX.Utilities.Extensions.StringExtensions.GetNumericOnly(System.String)
+  - IDX.Utilities.Extensions.StringExtensions.IsAlpha(System.String)
+  - IDX.Utilities.Extensions.StringExtensions.IsAlphaNumeric(System.String)
+  - IDX.Utilities.Extensions.StringExtensions.IsDateTime(System.String,System.String)
+  - IDX.Utilities.Extensions.StringExtensions.IsInteger(System.String)
+  - IDX.Utilities.Extensions.StringExtensions.IsNumeric(System.String)
+  - IDX.Utilities.Extensions.StringExtensions.IsValidEmailAddress(System.String)
+  - IDX.Utilities.Extensions.StringExtensions.IsValidIPv4(System.String)
+  - IDX.Utilities.Extensions.StringExtensions.IsValidRegex(System.String,System.String)
+  - IDX.Utilities.Extensions.StringExtensions.IsValidUrl(System.String)
+  - IDX.Utilities.Extensions.StringExtensions.Left(System.String,System.Int32)
+  - IDX.Utilities.Extensions.StringExtensions.PadLeftByChar(System.String,System.Char,System.Int32)
+  - IDX.Utilities.Extensions.StringExtensions.PadRightByChar(System.String,System.Char,System.Int32)
+  - IDX.Utilities.Extensions.StringExtensions.Repeat(System.String,System.Int32)
+  - IDX.Utilities.Extensions.StringExtensions.Reverse(System.String)
+  - IDX.Utilities.Extensions.StringExtensions.Right(System.String,System.Int32)
+  - IDX.Utilities.Extensions.StringExtensions.SplitTo``1(System.String,System.Char[])
+  - IDX.Utilities.Extensions.StringExtensions.SplitTo``1(System.String,System.StringSplitOptions,System.Char[])
+  - IDX.Utilities.Extensions.StringExtensions.ToBoolean(System.String)
+  - IDX.Utilities.Extensions.StringExtensions.ToDecimal(System.String)
+  - IDX.Utilities.Extensions.StringExtensions.ToEnum``1(System.String,``0)
+  - IDX.Utilities.Extensions.StringExtensions.ToInt16(System.String)
+  - IDX.Utilities.Extensions.StringExtensions.ToInt32(System.String)
+  - IDX.Utilities.Extensions.StringExtensions.ToInt64(System.String)
+  - IDX.Utilities.Extensions.StringExtensions.TrimChars(System.String,System.String)
+  - IDX.Utilities.Extensions.StringExtensions.Truncate(System.String,System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: StringExtensions
+  nameWithType: StringExtensions
+  fullName: IDX.Utilities.Extensions.StringExtensions
+  type: Class
+  source:
+    id: StringExtensions
+    path: System.Text.RegularExpressions.Generator/System.Text.RegularExpressions.Generator.RegexGenerator/RegexGenerator.g.cs
+    startLine: 55
+  assemblies:
+  - IDX.Utilities
+  namespace: IDX.Utilities.Extensions
+  summary: Extension methods for strings.
+  example: []
+  syntax:
+    content: public static class StringExtensions
+    content.vb: Public Module StringExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: IDX.Utilities.Extensions.StringExtensions.CountOccurrences(System.String,System.String)
+  commentId: M:IDX.Utilities.Extensions.StringExtensions.CountOccurrences(System.String,System.String)
+  id: CountOccurrences(System.String,System.String)
+  isExtensionMethod: true
+  parent: IDX.Utilities.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: CountOccurrences(string, string)
+  nameWithType: StringExtensions.CountOccurrences(string, string)
+  fullName: IDX.Utilities.Extensions.StringExtensions.CountOccurrences(string, string)
+  type: Method
+  source:
+    remote:
+      path: Extensions/StringExtension.cs
+      branch: Research_Documentation
+      repo: https://scm.idecision.ai/idecision_source_net8/idc.utility.git
+    id: CountOccurrences
+    path: ../../../-Repo/idc.utility/Extensions/StringExtension.cs
+    startLine: 77
+  assemblies:
+  - IDX.Utilities
+  namespace: IDX.Utilities.Extensions
+  summary: Counts the number of occurrences of a substring in a string.
+  example:
+  - >-
+    <pre><code class="lang-csharp">var text = "I like watching movies.";
+
+    var result = text.CountOccurrences("o");
+
+    Console.WriteLine($"The number of occurrences of 'o' in the text is: {result}");</code></pre>
+  syntax:
+    content: public static int CountOccurrences(this string val, string stringToMatch)
+    parameters:
+    - id: val
+      type: System.String
+      description: The string to search in.
+    - id: stringToMatch
+      type: System.String
+      description: The substring to search for.
+    return:
+      type: System.Int32
+      description: The number of occurrences of the substring in the string.
+    content.vb: Public Shared Function CountOccurrences(val As String, stringToMatch As String) As Integer
+  overload: IDX.Utilities.Extensions.StringExtensions.CountOccurrences*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when <code class="paramref">val</code> or <code class="paramref">stringToMatch</code> is null.
+  nameWithType.vb: StringExtensions.CountOccurrences(String, String)
+  fullName.vb: IDX.Utilities.Extensions.StringExtensions.CountOccurrences(String, String)
+  name.vb: CountOccurrences(String, String)
+- uid: IDX.Utilities.Extensions.StringExtensions.IsAlpha(System.String)
+  commentId: M:IDX.Utilities.Extensions.StringExtensions.IsAlpha(System.String)
+  id: IsAlpha(System.String)
+  isExtensionMethod: true
+  parent: IDX.Utilities.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: IsAlpha(string)
+  nameWithType: StringExtensions.IsAlpha(string)
+  fullName: IDX.Utilities.Extensions.StringExtensions.IsAlpha(string)
+  type: Method
+  source:
+    remote:
+      path: Extensions/StringExtension.cs
+      branch: Research_Documentation
+      repo: https://scm.idecision.ai/idecision_source_net8/idc.utility.git
+    id: IsAlpha
+    path: ../../../-Repo/idc.utility/Extensions/StringExtension.cs
+    startLine: 94
+  assemblies:
+  - IDX.Utilities
+  namespace: IDX.Utilities.Extensions
+  summary: Checks if a string contains only alphabetic characters.
+  example:
+  - >-
+    <pre><code class="lang-csharp">string text = "John";
+
+    var result = text.IsAlpha();
+
+    Console.WriteLine($"The result is: {result}");</code></pre>
+  syntax:
+    content: public static bool IsAlpha(this string val)
+    parameters:
+    - id: val
+      type: System.String
+    return:
+      type: System.Boolean
+      description: True if the string contains only alphabetic characters, otherwise false.
+    content.vb: Public Shared Function IsAlpha(val As String) As Boolean
+  overload: IDX.Utilities.Extensions.StringExtensions.IsAlpha*
+  nameWithType.vb: StringExtensions.IsAlpha(String)
+  fullName.vb: IDX.Utilities.Extensions.StringExtensions.IsAlpha(String)
+  name.vb: IsAlpha(String)
+- uid: IDX.Utilities.Extensions.StringExtensions.IsAlphaNumeric(System.String)
+  commentId: M:IDX.Utilities.Extensions.StringExtensions.IsAlphaNumeric(System.String)
+  id: IsAlphaNumeric(System.String)
+  isExtensionMethod: true
+  parent: IDX.Utilities.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: IsAlphaNumeric(string)
+  nameWithType: StringExtensions.IsAlphaNumeric(string)
+  fullName: IDX.Utilities.Extensions.StringExtensions.IsAlphaNumeric(string)
+  type: Method
+  source:
+    remote:
+      path: Extensions/StringExtension.cs
+      branch: Research_Documentation
+      repo: https://scm.idecision.ai/idecision_source_net8/idc.utility.git
+    id: IsAlphaNumeric
+    path: ../../../-Repo/idc.utility/Extensions/StringExtension.cs
+    startLine: 109
+  assemblies:
+  - IDX.Utilities
+  namespace: IDX.Utilities.Extensions
+  summary: Checks if a string is alphanumeric.
+  example:
+  - >-
+    <pre><code class="lang-csharp">string text = "John123";
+
+    var result = text.IsAlphaNumeric();
+
+    Console.WriteLine($"The result is: {result}");</code></pre>
+  syntax:
+    content: public static bool IsAlphaNumeric(this string val)
+    parameters:
+    - id: val
+      type: System.String
+      description: The string to check.
+    return:
+      type: System.Boolean
+      description: True if the string is alphanumeric, false otherwise.
+    content.vb: Public Shared Function IsAlphaNumeric(val As String) As Boolean
+  overload: IDX.Utilities.Extensions.StringExtensions.IsAlphaNumeric*
+  nameWithType.vb: StringExtensions.IsAlphaNumeric(String)
+  fullName.vb: IDX.Utilities.Extensions.StringExtensions.IsAlphaNumeric(String)
+  name.vb: IsAlphaNumeric(String)
+- uid: IDX.Utilities.Extensions.StringExtensions.IsDateTime(System.String,System.String)
+  commentId: M:IDX.Utilities.Extensions.StringExtensions.IsDateTime(System.String,System.String)
+  id: IsDateTime(System.String,System.String)
+  isExtensionMethod: true
+  parent: IDX.Utilities.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: IsDateTime(string, string)
+  nameWithType: StringExtensions.IsDateTime(string, string)
+  fullName: IDX.Utilities.Extensions.StringExtensions.IsDateTime(string, string)
+  type: Method
+  source:
+    remote:
+      path: Extensions/StringExtension.cs
+      branch: Research_Documentation
+      repo: https://scm.idecision.ai/idecision_source_net8/idc.utility.git
+    id: IsDateTime
+    path: ../../../-Repo/idc.utility/Extensions/StringExtension.cs
+    startLine: 126
+  assemblies:
+  - IDX.Utilities
+  namespace: IDX.Utilities.Extensions
+  summary: Checks if the given string can be parsed as a valid DateTime using the specified date format.
+  example:
+  - >-
+    <pre><code class="lang-csharp">string data = "2022-01-01";
+
+    string dateFormat = "yyyy-MM-dd";
+
+    var result = data.IsDateTime(dateFormat);
+
+    Console.WriteLine($"The result is: {result}");</code></pre>
+  syntax:
+    content: public static bool IsDateTime(this string data, string dateFormat)
+    parameters:
+    - id: data
+      type: System.String
+      description: The string to be checked.
+    - id: dateFormat
+      type: System.String
+      description: The date format to use for parsing.
+    return:
+      type: System.Boolean
+      description: True if the string can be parsed as a valid DateTime using the specified date format, false otherwise.
+    content.vb: Public Shared Function IsDateTime(data As String, dateFormat As String) As Boolean
+  overload: IDX.Utilities.Extensions.StringExtensions.IsDateTime*
+  nameWithType.vb: StringExtensions.IsDateTime(String, String)
+  fullName.vb: IDX.Utilities.Extensions.StringExtensions.IsDateTime(String, String)
+  name.vb: IsDateTime(String, String)
+- uid: IDX.Utilities.Extensions.StringExtensions.IsInteger(System.String)
+  commentId: M:IDX.Utilities.Extensions.StringExtensions.IsInteger(System.String)
+  id: IsInteger(System.String)
+  isExtensionMethod: true
+  parent: IDX.Utilities.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: IsInteger(string)
+  nameWithType: StringExtensions.IsInteger(string)
+  fullName: IDX.Utilities.Extensions.StringExtensions.IsInteger(string)
+  type: Method
+  source:
+    remote:
+      path: Extensions/StringExtension.cs
+      branch: Research_Documentation
+      repo: https://scm.idecision.ai/idecision_source_net8/idc.utility.git
+    id: IsInteger
+    path: ../../../-Repo/idc.utility/Extensions/StringExtension.cs
+    startLine: 148
+  assemblies:
+  - IDX.Utilities
+  namespace: IDX.Utilities.Extensions
+  summary: Checks if a string value is a valid integer.
+  example:
+  - >-
+    <pre><code class="lang-csharp">string data = "123";
+
+    var result = data.IsInteger();
+
+    Console.WriteLine($"The result is: {result}");</code></pre>
+  syntax:
+    content: public static bool IsInteger(this string val)
+    parameters:
+    - id: val
+      type: System.String
+      description: The string value to check.
+    return:
+      type: System.Boolean
+      description: True if the string value is a valid integer, otherwise false.
+    content.vb: Public Shared Function IsInteger(val As String) As Boolean
+  overload: IDX.Utilities.Extensions.StringExtensions.IsInteger*
+  nameWithType.vb: StringExtensions.IsInteger(String)
+  fullName.vb: IDX.Utilities.Extensions.StringExtensions.IsInteger(String)
+  name.vb: IsInteger(String)
+- uid: IDX.Utilities.Extensions.StringExtensions.IsNumeric(System.String)
+  commentId: M:IDX.Utilities.Extensions.StringExtensions.IsNumeric(System.String)
+  id: IsNumeric(System.String)
+  isExtensionMethod: true
+  parent: IDX.Utilities.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: IsNumeric(string)
+  nameWithType: StringExtensions.IsNumeric(string)
+  fullName: IDX.Utilities.Extensions.StringExtensions.IsNumeric(string)
+  type: Method
+  source:
+    remote:
+      path: Extensions/StringExtension.cs
+      branch: Research_Documentation
+      repo: https://scm.idecision.ai/idecision_source_net8/idc.utility.git
+    id: IsNumeric
+    path: ../../../-Repo/idc.utility/Extensions/StringExtension.cs
+    startLine: 174
+  assemblies:
+  - IDX.Utilities
+  namespace: IDX.Utilities.Extensions
+  summary: Checks if a string is numeric.
+  example:
+  - >-
+    <pre><code class="lang-csharp">var result1 = "123".IsNumeric();
+
+    Console.WriteLine($"The result is: {result1}");
+
+
+    var result2 = "123.456".IsNumeric();
+
+    Console.WriteLine($"The result is: {result2}");
+
+
+    var result3 = "123abc".IsNumeric();
+
+    Console.WriteLine($"The result is: {result3}");</code></pre>
+  syntax:
+    content: public static bool IsNumeric(this string val)
+    parameters:
+    - id: val
+      type: System.String
+      description: The string to check.
+    return:
+      type: System.Boolean
+      description: True if the string is numeric, otherwise false.
+    content.vb: Public Shared Function IsNumeric(val As String) As Boolean
+  overload: IDX.Utilities.Extensions.StringExtensions.IsNumeric*
+  nameWithType.vb: StringExtensions.IsNumeric(String)
+  fullName.vb: IDX.Utilities.Extensions.StringExtensions.IsNumeric(String)
+  name.vb: IsNumeric(String)
+- uid: IDX.Utilities.Extensions.StringExtensions.IsValidRegex(System.String,System.String)
+  commentId: M:IDX.Utilities.Extensions.StringExtensions.IsValidRegex(System.String,System.String)
+  id: IsValidRegex(System.String,System.String)
+  isExtensionMethod: true
+  parent: IDX.Utilities.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: IsValidRegex(string, string)
+  nameWithType: StringExtensions.IsValidRegex(string, string)
+  fullName: IDX.Utilities.Extensions.StringExtensions.IsValidRegex(string, string)
+  type: Method
+  source:
+    remote:
+      path: Extensions/StringExtension.cs
+      branch: Research_Documentation
+      repo: https://scm.idecision.ai/idecision_source_net8/idc.utility.git
+    id: IsValidRegex
+    path: ../../../-Repo/idc.utility/Extensions/StringExtension.cs
+    startLine: 198
+  assemblies:
+  - IDX.Utilities
+  namespace: IDX.Utilities.Extensions
+  summary: Checks if a string value is a valid regex pattern.
+  example:
+  - >-
+    <pre><code class="lang-csharp">var val = "^(https?:\\/\\/)([\\da-z\\.-]+)\\.([a-z\\.]{2,6})([\\/\\w \\.-]*)*\\/?$";
+
+    var pattern = "^(https?:\\/\\/)([\\da-z\\.-]+)\\.([a-z\\.]{2,6})([\\/\\w \\.-]*)*\\/?$";
+
+    var result = val.IsValidRegex(pattern);
+
+    Console.WriteLine($"The result is: {result}");</code></pre>
+  syntax:
+    content: public static bool IsValidRegex(this string val, string pattern)
+    parameters:
+    - id: val
+      type: System.String
+      description: The string value to be checked.
+    - id: pattern
+      type: System.String
+      description: The regex pattern to match against the value.
+    return:
+      type: System.Boolean
+      description: True if the value is a valid regex pattern, false otherwise.
+    content.vb: Public Shared Function IsValidRegex(val As String, pattern As String) As Boolean
+  overload: IDX.Utilities.Extensions.StringExtensions.IsValidRegex*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown if the value is null or empty.
+  nameWithType.vb: StringExtensions.IsValidRegex(String, String)
+  fullName.vb: IDX.Utilities.Extensions.StringExtensions.IsValidRegex(String, String)
+  name.vb: IsValidRegex(String, String)
+- uid: IDX.Utilities.Extensions.StringExtensions.IsValidEmailAddress(System.String)
+  commentId: M:IDX.Utilities.Extensions.StringExtensions.IsValidEmailAddress(System.String)
+  id: IsValidEmailAddress(System.String)
+  isExtensionMethod: true
+  parent: IDX.Utilities.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: IsValidEmailAddress(string)
+  nameWithType: StringExtensions.IsValidEmailAddress(string)
+  fullName: IDX.Utilities.Extensions.StringExtensions.IsValidEmailAddress(string)
+  type: Method
+  source:
+    remote:
+      path: Extensions/StringExtension.cs
+      branch: Research_Documentation
+      repo: https://scm.idecision.ai/idecision_source_net8/idc.utility.git
+    id: IsValidEmailAddress
+    path: ../../../-Repo/idc.utility/Extensions/StringExtension.cs
+    startLine: 218
+  assemblies:
+  - IDX.Utilities
+  namespace: IDX.Utilities.Extensions
+  summary: Checks if the given string is a valid email address.
+  example:
+  - >-
+    <pre><code class="lang-csharp">var result1 = "john.doe@example.com".IsValidEmailAddress();
+
+    Console.WriteLine($"The result is: {result1}");
+
+
+    var result2 = "john.doe@example".IsValidEmailAddress();
+
+    Console.WriteLine($"The result is: {result2}");
+
+
+    var result3 = "john.doe@example.com.au".IsValidEmailAddress();
+
+    Console.WriteLine($"The result is: {result3}");</code></pre>
+  syntax:
+    content: public static bool IsValidEmailAddress(this string email)
+    parameters:
+    - id: email
+      type: System.String
+      description: The string to check.
+    return:
+      type: System.Boolean
+      description: True if the string is a valid email address, false otherwise.
+    content.vb: Public Shared Function IsValidEmailAddress(email As String) As Boolean
+  overload: IDX.Utilities.Extensions.StringExtensions.IsValidEmailAddress*
+  nameWithType.vb: StringExtensions.IsValidEmailAddress(String)
+  fullName.vb: IDX.Utilities.Extensions.StringExtensions.IsValidEmailAddress(String)
+  name.vb: IsValidEmailAddress(String)
+- uid: IDX.Utilities.Extensions.StringExtensions.IsValidIPv4(System.String)
+  commentId: M:IDX.Utilities.Extensions.StringExtensions.IsValidIPv4(System.String)
+  id: IsValidIPv4(System.String)
+  isExtensionMethod: true
+  parent: IDX.Utilities.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: IsValidIPv4(string)
+  nameWithType: StringExtensions.IsValidIPv4(string)
+  fullName: IDX.Utilities.Extensions.StringExtensions.IsValidIPv4(string)
+  type: Method
+  source:
+    remote:
+      path: Extensions/StringExtension.cs
+      branch: Research_Documentation
+      repo: https://scm.idecision.ai/idecision_source_net8/idc.utility.git
+    id: IsValidIPv4
+    path: ../../../-Repo/idc.utility/Extensions/StringExtension.cs
+    startLine: 241
+  assemblies:
+  - IDX.Utilities
+  namespace: IDX.Utilities.Extensions
+  summary: Checks if the given string is a valid IPv4 address.
+  example:
+  - >-
+    <pre><code class="lang-csharp">var result1 = "192.168.0.1".IsValidIPv4();
+
+    Console.WriteLine($"The result is: {result1}");
+
+
+    var result2 = "255.255.255.255".IsValidIPv4();
+
+    Console.WriteLine($"The result is: {result2}");
+
+
+    var result3 = "256.0.0.1".IsValidIPv4();
+
+    Console.WriteLine($"The result is: {result3}");</code></pre>
+  syntax:
+    content: public static bool IsValidIPv4(this string val)
+    parameters:
+    - id: val
+      type: System.String
+      description: The string to check.
+    return:
+      type: System.Boolean
+      description: True if the string is a valid IPv4 address, false otherwise.
+    content.vb: Public Shared Function IsValidIPv4(val As String) As Boolean
+  overload: IDX.Utilities.Extensions.StringExtensions.IsValidIPv4*
+  nameWithType.vb: StringExtensions.IsValidIPv4(String)
+  fullName.vb: IDX.Utilities.Extensions.StringExtensions.IsValidIPv4(String)
+  name.vb: IsValidIPv4(String)
+- uid: IDX.Utilities.Extensions.StringExtensions.IsValidUrl(System.String)
+  commentId: M:IDX.Utilities.Extensions.StringExtensions.IsValidUrl(System.String)
+  id: IsValidUrl(System.String)
+  isExtensionMethod: true
+  parent: IDX.Utilities.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: IsValidUrl(string)
+  nameWithType: StringExtensions.IsValidUrl(string)
+  fullName: IDX.Utilities.Extensions.StringExtensions.IsValidUrl(string)
+  type: Method
+  source:
+    remote:
+      path: Extensions/StringExtension.cs
+      branch: Research_Documentation
+      repo: https://scm.idecision.ai/idecision_source_net8/idc.utility.git
+    id: IsValidUrl
+    path: ../../../-Repo/idc.utility/Extensions/StringExtension.cs
+    startLine: 264
+  assemblies:
+  - IDX.Utilities
+  namespace: IDX.Utilities.Extensions
+  summary: Checks if the given string is a valid URL.
+  example:
+  - >-
+    <pre><code class="lang-csharp">var result1 = "https://www.example.com".IsValidUrl();
+
+    Console.WriteLine($"The result is: {result1}");
+
+
+    var result2 = "ftp://example.com".IsValidUrl();
+
+    Console.WriteLine($"The result is: {result2}");
+
+
+    var result3 = "invalid url".IsValidUrl();
+
+    Console.WriteLine($"The result is: {result3}");</code></pre>
+  syntax:
+    content: public static bool IsValidUrl(this string text)
+    parameters:
+    - id: text
+      type: System.String
+      description: The string to check.
+    return:
+      type: System.Boolean
+      description: True if the string is a valid URL, false otherwise.
+    content.vb: Public Shared Function IsValidUrl(text As String) As Boolean
+  overload: IDX.Utilities.Extensions.StringExtensions.IsValidUrl*
+  nameWithType.vb: StringExtensions.IsValidUrl(String)
+  fullName.vb: IDX.Utilities.Extensions.StringExtensions.IsValidUrl(String)
+  name.vb: IsValidUrl(String)
+- uid: IDX.Utilities.Extensions.StringExtensions.ChangeCase(System.String,IDX.Utilities.Extensions.StringExtensions.StringCaseType)
+  commentId: M:IDX.Utilities.Extensions.StringExtensions.ChangeCase(System.String,IDX.Utilities.Extensions.StringExtensions.StringCaseType)
+  id: ChangeCase(System.String,IDX.Utilities.Extensions.StringExtensions.StringCaseType)
+  isExtensionMethod: true
+  parent: IDX.Utilities.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: ChangeCase(string, StringCaseType)
+  nameWithType: StringExtensions.ChangeCase(string, StringExtensions.StringCaseType)
+  fullName: IDX.Utilities.Extensions.StringExtensions.ChangeCase(string, IDX.Utilities.Extensions.StringExtensions.StringCaseType)
+  type: Method
+  source:
+    remote:
+      path: Extensions/StringExtension.cs
+      branch: Research_Documentation
+      repo: https://scm.idecision.ai/idecision_source_net8/idc.utility.git
+    id: ChangeCase
+    path: ../../../-Repo/idc.utility/Extensions/StringExtension.cs
+    startLine: 292
+  assemblies:
+  - IDX.Utilities
+  namespace: IDX.Utilities.Extensions
+  summary: Changes the case of a string based on the specified case type.
+  example:
+  - >-
+    <pre><code class="lang-csharp">var result1 = "THIS IS A TEST".ChangeCase(StringCaseType.FirstCharacterUpperCase);
+
+    Console.WriteLine($"The result is: {result1}");
+
+
+    var result2 = "this is a test".ChangeCase(StringCaseType.TitleCase);
+
+    Console.WriteLine($"The result is: {result2}");
+
+
+    var result3 = "This is a test".ChangeCase(StringCaseType.LowerCase);
+
+    Console.WriteLine($"The result is: {result3}");
+
+
+    var result4 = "THIS IS A TEST".ChangeCase(StringCaseType.UpperCase);
+
+    Console.WriteLine($"The result is: {result4}");
+
+
+    var result5 = "This is a test.".ChangeCase(StringCaseType.SentenceCapitalize);
+
+    Console.WriteLine($"The result is: {result5}");</code></pre>
+  syntax:
+    content: public static string ChangeCase(this string source, StringExtensions.StringCaseType caseType)
+    parameters:
+    - id: source
+      type: System.String
+      description: The source string.
+    - id: caseType
+      type: IDX.Utilities.Extensions.StringExtensions.StringCaseType
+      description: The case type to apply.
+    return:
+      type: System.String
+      description: The string with the case applied.
+    content.vb: Public Shared Function ChangeCase(source As String, caseType As StringExtensions.StringCaseType) As String
+  overload: IDX.Utilities.Extensions.StringExtensions.ChangeCase*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when the source string is null.
+  nameWithType.vb: StringExtensions.ChangeCase(String, StringExtensions.StringCaseType)
+  fullName.vb: IDX.Utilities.Extensions.StringExtensions.ChangeCase(String, IDX.Utilities.Extensions.StringExtensions.StringCaseType)
+  name.vb: ChangeCase(String, StringCaseType)
+- uid: IDX.Utilities.Extensions.StringExtensions.GetAlphaNumericOnly(System.String)
+  commentId: M:IDX.Utilities.Extensions.StringExtensions.GetAlphaNumericOnly(System.String)
+  id: GetAlphaNumericOnly(System.String)
+  isExtensionMethod: true
+  parent: IDX.Utilities.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetAlphaNumericOnly(string)
+  nameWithType: StringExtensions.GetAlphaNumericOnly(string)
+  fullName: IDX.Utilities.Extensions.StringExtensions.GetAlphaNumericOnly(string)
+  type: Method
+  source:
+    remote:
+      path: Extensions/StringExtension.cs
+      branch: Research_Documentation
+      repo: https://scm.idecision.ai/idecision_source_net8/idc.utility.git
+    id: GetAlphaNumericOnly
+    path: ../../../-Repo/idc.utility/Extensions/StringExtension.cs
+    startLine: 347
+  assemblies:
+  - IDX.Utilities
+  namespace: IDX.Utilities.Extensions
+  summary: Returns a new string containing only the alphanumeric characters in the current string.
+  example:
+  - >-
+    <pre><code class="lang-csharp">var result = "ABC123!@#".GetAlphaNumericOnly();
+
+    Console.WriteLine(result); // Output: ABC123</code></pre>
+  syntax:
+    content: public static string GetAlphaNumericOnly(this string source)
+    parameters:
+    - id: source
+      type: System.String
+      description: The string to get alphanumeric characters from.
+    return:
+      type: System.String
+      description: A new string containing only alphanumeric characters.
+    content.vb: Public Shared Function GetAlphaNumericOnly(source As String) As String
+  overload: IDX.Utilities.Extensions.StringExtensions.GetAlphaNumericOnly*
+  nameWithType.vb: StringExtensions.GetAlphaNumericOnly(String)
+  fullName.vb: IDX.Utilities.Extensions.StringExtensions.GetAlphaNumericOnly(String)
+  name.vb: GetAlphaNumericOnly(String)
+- uid: IDX.Utilities.Extensions.StringExtensions.GetNumericOnly(System.String)
+  commentId: M:IDX.Utilities.Extensions.StringExtensions.GetNumericOnly(System.String)
+  id: GetNumericOnly(System.String)
+  isExtensionMethod: true
+  parent: IDX.Utilities.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetNumericOnly(string)
+  nameWithType: StringExtensions.GetNumericOnly(string)
+  fullName: IDX.Utilities.Extensions.StringExtensions.GetNumericOnly(string)
+  type: Method
+  source:
+    remote:
+      path: Extensions/StringExtension.cs
+      branch: Research_Documentation
+      repo: https://scm.idecision.ai/idecision_source_net8/idc.utility.git
+    id: GetNumericOnly
+    path: ../../../-Repo/idc.utility/Extensions/StringExtension.cs
+    startLine: 361
+  assemblies:
+  - IDX.Utilities
+  namespace: IDX.Utilities.Extensions
+  summary: Returns a new string containing only the numeric characters in the current string.
+  example:
+  - >-
+    <pre><code class="lang-csharp">var result = "123abc456def".GetNumericOnly();
+
+    Console.WriteLine(result); // Output: 123456</code></pre>
+  syntax:
+    content: public static string GetNumericOnly(this string source)
+    parameters:
+    - id: source
+      type: System.String
+      description: The string to get numeric characters from.
+    return:
+      type: System.String
+      description: A new string containing only numeric characters.
+    content.vb: Public Shared Function GetNumericOnly(source As String) As String
+  overload: IDX.Utilities.Extensions.StringExtensions.GetNumericOnly*
+  nameWithType.vb: StringExtensions.GetNumericOnly(String)
+  fullName.vb: IDX.Utilities.Extensions.StringExtensions.GetNumericOnly(String)
+  name.vb: GetNumericOnly(String)
+- uid: IDX.Utilities.Extensions.StringExtensions.Repeat(System.String,System.Int32)
+  commentId: M:IDX.Utilities.Extensions.StringExtensions.Repeat(System.String,System.Int32)
+  id: Repeat(System.String,System.Int32)
+  isExtensionMethod: true
+  parent: IDX.Utilities.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: Repeat(string, int)
+  nameWithType: StringExtensions.Repeat(string, int)
+  fullName: IDX.Utilities.Extensions.StringExtensions.Repeat(string, int)
+  type: Method
+  source:
+    remote:
+      path: Extensions/StringExtension.cs
+      branch: Research_Documentation
+      repo: https://scm.idecision.ai/idecision_source_net8/idc.utility.git
+    id: Repeat
+    path: ../../../-Repo/idc.utility/Extensions/StringExtension.cs
+    startLine: 379
+  assemblies:
+  - IDX.Utilities
+  namespace: IDX.Utilities.Extensions
+  summary: Repeats a string for the specified number of times.
+  example:
+  - >-
+    <pre><code class="lang-csharp">var result1 = "abc".Repeat();
+
+    Console.WriteLine(result1); // Output: abcabc
+
+
+    var result2 = "xyz".Repeat(3);
+
+    Console.WriteLine(result2); // Output: xyzxyzxyz</code></pre>
+  syntax:
+    content: public static string Repeat(this string source, int count = 2)
+    parameters:
+    - id: source
+      type: System.String
+      description: The string to repeat.
+    - id: count
+      type: System.Int32
+      description: The number of times to repeat the string. Default is 2.
+    return:
+      type: System.String
+      description: The repeated string.
+    content.vb: Public Shared Function Repeat(source As String, count As Integer = 2) As String
+  overload: IDX.Utilities.Extensions.StringExtensions.Repeat*
+  nameWithType.vb: StringExtensions.Repeat(String, Integer)
+  fullName.vb: IDX.Utilities.Extensions.StringExtensions.Repeat(String, Integer)
+  name.vb: Repeat(String, Integer)
+- uid: IDX.Utilities.Extensions.StringExtensions.Left(System.String,System.Int32)
+  commentId: M:IDX.Utilities.Extensions.StringExtensions.Left(System.String,System.Int32)
+  id: Left(System.String,System.Int32)
+  isExtensionMethod: true
+  parent: IDX.Utilities.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: Left(string, int)
+  nameWithType: StringExtensions.Left(string, int)
+  fullName: IDX.Utilities.Extensions.StringExtensions.Left(string, int)
+  type: Method
+  source:
+    remote:
+      path: Extensions/StringExtension.cs
+      branch: Research_Documentation
+      repo: https://scm.idecision.ai/idecision_source_net8/idc.utility.git
+    id: Left
+    path: ../../../-Repo/idc.utility/Extensions/StringExtension.cs
+    startLine: 397
+  assemblies:
+  - IDX.Utilities
+  namespace: IDX.Utilities.Extensions
+  summary: Retrieves a specified number of characters from the beginning of a string.
+  example:
+  - >-
+    <pre><code class="lang-csharp">var result1 = "1234567890".Left(5);
+
+    Console.WriteLine(result1); // Output: 12345
+
+
+    var result2 = "1234567890".Left(15);
+
+    Console.WriteLine(result2); // Output: 1234567890</code></pre>
+  syntax:
+    content: public static string Left(this string source, int length)
+    parameters:
+    - id: source
+      type: System.String
+      description: The string to retrieve characters from.
+    - id: length
+      type: System.Int32
+      description: The number of characters to retrieve.
+    return:
+      type: System.String
+      description: The retrieved characters.
+    content.vb: Public Shared Function Left(source As String, length As Integer) As String
+  overload: IDX.Utilities.Extensions.StringExtensions.Left*
+  nameWithType.vb: StringExtensions.Left(String, Integer)
+  fullName.vb: IDX.Utilities.Extensions.StringExtensions.Left(String, Integer)
+  name.vb: Left(String, Integer)
+- uid: IDX.Utilities.Extensions.StringExtensions.Right(System.String,System.Int32)
+  commentId: M:IDX.Utilities.Extensions.StringExtensions.Right(System.String,System.Int32)
+  id: Right(System.String,System.Int32)
+  isExtensionMethod: true
+  parent: IDX.Utilities.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: Right(string, int)
+  nameWithType: StringExtensions.Right(string, int)
+  fullName: IDX.Utilities.Extensions.StringExtensions.Right(string, int)
+  type: Method
+  source:
+    remote:
+      path: Extensions/StringExtension.cs
+      branch: Research_Documentation
+      repo: https://scm.idecision.ai/idecision_source_net8/idc.utility.git
+    id: Right
+    path: ../../../-Repo/idc.utility/Extensions/StringExtension.cs
+    startLine: 420
+  assemblies:
+  - IDX.Utilities
+  namespace: IDX.Utilities.Extensions
+  summary: Retrieves a specified number of characters from the end of a string.
+  example:
+  - >-
+    <pre><code class="lang-csharp">var result1 = "1234567890".Right(5);
+
+    Console.WriteLine(result1); // Output: 67890
+
+
+    var result2 = "1234567890".Right(15);
+
+    Console.WriteLine(result2); // Output: 1234567890</code></pre>
+  syntax:
+    content: public static string Right(this string source, int length)
+    parameters:
+    - id: source
+      type: System.String
+      description: The string to retrieve characters from.
+    - id: length
+      type: System.Int32
+      description: The number of characters to retrieve.
+    return:
+      type: System.String
+      description: The retrieved characters.
+    content.vb: Public Shared Function Right(source As String, length As Integer) As String
+  overload: IDX.Utilities.Extensions.StringExtensions.Right*
+  nameWithType.vb: StringExtensions.Right(String, Integer)
+  fullName.vb: IDX.Utilities.Extensions.StringExtensions.Right(String, Integer)
+  name.vb: Right(String, Integer)
+- uid: IDX.Utilities.Extensions.StringExtensions.PadLeftByChar(System.String,System.Char,System.Int32)
+  commentId: M:IDX.Utilities.Extensions.StringExtensions.PadLeftByChar(System.String,System.Char,System.Int32)
+  id: PadLeftByChar(System.String,System.Char,System.Int32)
+  isExtensionMethod: true
+  parent: IDX.Utilities.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: PadLeftByChar(string, char, int)
+  nameWithType: StringExtensions.PadLeftByChar(string, char, int)
+  fullName: IDX.Utilities.Extensions.StringExtensions.PadLeftByChar(string, char, int)
+  type: Method
+  source:
+    remote:
+      path: Extensions/StringExtension.cs
+      branch: Research_Documentation
+      repo: https://scm.idecision.ai/idecision_source_net8/idc.utility.git
+    id: PadLeftByChar
+    path: ../../../-Repo/idc.utility/Extensions/StringExtension.cs
+    startLine: 445
+  assemblies:
+  - IDX.Utilities
+  namespace: IDX.Utilities.Extensions
+  summary: Pads the beginning of a string with the specified character.
+  example:
+  - >-
+    <pre><code class="lang-csharp">var result1 = "123".PadLeftByChar();
+
+    Console.WriteLine(result1); // Output:  123
+
+
+    var result2 = "123".PadLeftByChar('*', 3);
+
+    Console.WriteLine(result2); // Output: ***123</code></pre>
+  syntax:
+    content: public static string PadLeftByChar(this string source, char chr = ' ', int length = 1)
+    parameters:
+    - id: source
+      type: System.String
+      description: The string to pad.
+    - id: chr
+      type: System.Char
+      description: The character to use for padding. Default is a space.
+    - id: length
+      type: System.Int32
+      description: The number of characters to pad. Default is 1.
+    return:
+      type: System.String
+      description: The padded string.
+    content.vb: Public Shared Function PadLeftByChar(source As String, chr As Char = " "c, length As Integer = 1) As String
+  overload: IDX.Utilities.Extensions.StringExtensions.PadLeftByChar*
+  nameWithType.vb: StringExtensions.PadLeftByChar(String, Char, Integer)
+  fullName.vb: IDX.Utilities.Extensions.StringExtensions.PadLeftByChar(String, Char, Integer)
+  name.vb: PadLeftByChar(String, Char, Integer)
+- uid: IDX.Utilities.Extensions.StringExtensions.PadRightByChar(System.String,System.Char,System.Int32)
+  commentId: M:IDX.Utilities.Extensions.StringExtensions.PadRightByChar(System.String,System.Char,System.Int32)
+  id: PadRightByChar(System.String,System.Char,System.Int32)
+  isExtensionMethod: true
+  parent: IDX.Utilities.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: PadRightByChar(string, char, int)
+  nameWithType: StringExtensions.PadRightByChar(string, char, int)
+  fullName: IDX.Utilities.Extensions.StringExtensions.PadRightByChar(string, char, int)
+  type: Method
+  source:
+    remote:
+      path: Extensions/StringExtension.cs
+      branch: Research_Documentation
+      repo: https://scm.idecision.ai/idecision_source_net8/idc.utility.git
+    id: PadRightByChar
+    path: ../../../-Repo/idc.utility/Extensions/StringExtension.cs
+    startLine: 466
+  assemblies:
+  - IDX.Utilities
+  namespace: IDX.Utilities.Extensions
+  summary: Pads the end of a string with the specified character.
+  example:
+  - >-
+    <pre><code class="lang-csharp">var result1 = "123".PadRightByChar();
+
+    Console.WriteLine(result1); // Output: 123 
+
+
+    var result2 = "123".PadRightByChar('*', 3);
+
+    Console.WriteLine(result2); // Output: 123***</code></pre>
+  syntax:
+    content: public static string PadRightByChar(this string source, char chr = ' ', int length = 1)
+    parameters:
+    - id: source
+      type: System.String
+      description: The string to pad.
+    - id: chr
+      type: System.Char
+      description: The character to use for padding. Default is a space.
+    - id: length
+      type: System.Int32
+      description: The number of characters to pad. Default is 1.
+    return:
+      type: System.String
+      description: The padded string.
+    content.vb: Public Shared Function PadRightByChar(source As String, chr As Char = " "c, length As Integer = 1) As String
+  overload: IDX.Utilities.Extensions.StringExtensions.PadRightByChar*
+  nameWithType.vb: StringExtensions.PadRightByChar(String, Char, Integer)
+  fullName.vb: IDX.Utilities.Extensions.StringExtensions.PadRightByChar(String, Char, Integer)
+  name.vb: PadRightByChar(String, Char, Integer)
+- uid: IDX.Utilities.Extensions.StringExtensions.Reverse(System.String)
+  commentId: M:IDX.Utilities.Extensions.StringExtensions.Reverse(System.String)
+  id: Reverse(System.String)
+  isExtensionMethod: true
+  parent: IDX.Utilities.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: Reverse(string)
+  nameWithType: StringExtensions.Reverse(string)
+  fullName: IDX.Utilities.Extensions.StringExtensions.Reverse(string)
+  type: Method
+  source:
+    remote:
+      path: Extensions/StringExtension.cs
+      branch: Research_Documentation
+      repo: https://scm.idecision.ai/idecision_source_net8/idc.utility.git
+    id: Reverse
+    path: ../../../-Repo/idc.utility/Extensions/StringExtension.cs
+    startLine: 485
+  assemblies:
+  - IDX.Utilities
+  namespace: IDX.Utilities.Extensions
+  summary: Reverses the characters in the given string.
+  example:
+  - >-
+    <pre><code class="lang-csharp">var result1 = "123".Reverse();
+
+    Console.WriteLine(result1); // Output: 321
+
+
+    var result2 = "Hello World!".Reverse();
+
+    Console.WriteLine(result2); // Output: !dlroW olleH</code></pre>
+  syntax:
+    content: public static string Reverse(this string source)
+    parameters:
+    - id: source
+      type: System.String
+      description: The string to reverse.
+    return:
+      type: System.String
+      description: A new string that is equivalent to the input string, but with characters in reverse order.
+    content.vb: Public Shared Function Reverse(source As String) As String
+  overload: IDX.Utilities.Extensions.StringExtensions.Reverse*
+  nameWithType.vb: StringExtensions.Reverse(String)
+  fullName.vb: IDX.Utilities.Extensions.StringExtensions.Reverse(String)
+  name.vb: Reverse(String)
+- uid: IDX.Utilities.Extensions.StringExtensions.TrimChars(System.String,System.String)
+  commentId: M:IDX.Utilities.Extensions.StringExtensions.TrimChars(System.String,System.String)
+  id: TrimChars(System.String,System.String)
+  isExtensionMethod: true
+  parent: IDX.Utilities.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: TrimChars(string, string)
+  nameWithType: StringExtensions.TrimChars(string, string)
+  fullName: IDX.Utilities.Extensions.StringExtensions.TrimChars(string, string)
+  type: Method
+  source:
+    remote:
+      path: Extensions/StringExtension.cs
+      branch: Research_Documentation
+      repo: https://scm.idecision.ai/idecision_source_net8/idc.utility.git
+    id: TrimChars
+    path: ../../../-Repo/idc.utility/Extensions/StringExtension.cs
+    startLine: 503
+  assemblies:
+  - IDX.Utilities
+  namespace: IDX.Utilities.Extensions
+  summary: Removes characters from the beginning and end of the given string that match the specified regular expression pattern.
+  example:
+  - >-
+    <pre><code class="lang-csharp">var result1 = "   Hello World!   ".TrimChars(@"^\s+|\s+$");
+
+    Console.WriteLine(result1); // Output: Hello World!
+
+
+    var result2 = "123abc456".TrimChars(@"^\d+|\d+$");
+
+    Console.WriteLine(result2); // Output: abc</code></pre>
+  syntax:
+    content: public static string TrimChars(this string source, string regexPattern)
+    parameters:
+    - id: source
+      type: System.String
+      description: The string to trim.
+    - id: regexPattern
+      type: System.String
+      description: The regular expression pattern to match.
+    return:
+      type: System.String
+      description: A new string that is equivalent to the input string, but with characters matching the specified pattern removed from the beginning and end.
+    content.vb: Public Shared Function TrimChars(source As String, regexPattern As String) As String
+  overload: IDX.Utilities.Extensions.StringExtensions.TrimChars*
+  nameWithType.vb: StringExtensions.TrimChars(String, String)
+  fullName.vb: IDX.Utilities.Extensions.StringExtensions.TrimChars(String, String)
+  name.vb: TrimChars(String, String)
+- uid: IDX.Utilities.Extensions.StringExtensions.Truncate(System.String,System.Int32)
+  commentId: M:IDX.Utilities.Extensions.StringExtensions.Truncate(System.String,System.Int32)
+  id: Truncate(System.String,System.Int32)
+  isExtensionMethod: true
+  parent: IDX.Utilities.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: Truncate(string, int)
+  nameWithType: StringExtensions.Truncate(string, int)
+  fullName: IDX.Utilities.Extensions.StringExtensions.Truncate(string, int)
+  type: Method
+  source:
+    remote:
+      path: Extensions/StringExtension.cs
+      branch: Research_Documentation
+      repo: https://scm.idecision.ai/idecision_source_net8/idc.utility.git
+    id: Truncate
+    path: ../../../-Repo/idc.utility/Extensions/StringExtension.cs
+    startLine: 523
+  assemblies:
+  - IDX.Utilities
+  namespace: IDX.Utilities.Extensions
+  summary: Truncates the input string to the specified maximum length, adding ellipsis if necessary.
+  example:
+  - >-
+    <pre><code class="lang-csharp">var result1 = "1234567890".Truncate(5);
+
+    Console.WriteLine(result1); // Output: 12345...
+
+
+    var result2 = "ABC".Truncate(10);
+
+    Console.WriteLine(result2); // Output: ABC</code></pre>
+  syntax:
+    content: public static string Truncate(this string s, int maxLength)
+    parameters:
+    - id: s
+      type: System.String
+      description: The input string to truncate.
+    - id: maxLength
+      type: System.Int32
+      description: The maximum length of the truncated string.
+    return:
+      type: System.String
+      description: The truncated string.
+    content.vb: Public Shared Function Truncate(s As String, maxLength As Integer) As String
+  overload: IDX.Utilities.Extensions.StringExtensions.Truncate*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when the input string is null.
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: Thrown when the maximum length is less than or equal to zero.
+  nameWithType.vb: StringExtensions.Truncate(String, Integer)
+  fullName.vb: IDX.Utilities.Extensions.StringExtensions.Truncate(String, Integer)
+  name.vb: Truncate(String, Integer)
+- uid: IDX.Utilities.Extensions.StringExtensions.SplitTo``1(System.String,System.Char[])
+  commentId: M:IDX.Utilities.Extensions.StringExtensions.SplitTo``1(System.String,System.Char[])
+  id: SplitTo``1(System.String,System.Char[])
+  isExtensionMethod: true
+  parent: IDX.Utilities.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: SplitTo<T>(string, params char[])
+  nameWithType: StringExtensions.SplitTo<T>(string, params char[])
+  fullName: IDX.Utilities.Extensions.StringExtensions.SplitTo<T>(string, params char[])
+  type: Method
+  source:
+    remote:
+      path: Extensions/StringExtension.cs
+      branch: Research_Documentation
+      repo: https://scm.idecision.ai/idecision_source_net8/idc.utility.git
+    id: SplitTo
+    path: ../../../-Repo/idc.utility/Extensions/StringExtension.cs
+    startLine: 553
+  assemblies:
+  - IDX.Utilities
+  namespace: IDX.Utilities.Extensions
+  summary: Splits a string into an enumerable of elements of type T using the specified separator characters.
+  example:
+  - >-
+    <pre><code class="lang-csharp">var result1 = "123,456,789".SplitTo&lt;int&gt;(',');
+
+    Console.WriteLine(string.Join(", ", result1)); // Output: 123, 456, 789
+
+
+    var result2 = "hello,world".SplitTo&lt;string&gt;(',');
+
+    Console.WriteLine(string.Join(", ", result2)); // Output: hello, world</code></pre>
+  syntax:
+    content: 'public static IEnumerable<T> SplitTo<T>(this string str, params char[] separator) where T : IConvertible'
+    parameters:
+    - id: str
+      type: System.String
+      description: The string to split.
+    - id: separator
+      type: System.Char[]
+      description: The separator characters.
+    typeParameters:
+    - id: T
+      description: The type to convert each element to.
+    return:
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: An enumerable of elements of type T.
+    content.vb: Public Shared Function SplitTo(Of T As IConvertible)(str As String, ParamArray separator As Char()) As IEnumerable(Of T)
+  overload: IDX.Utilities.Extensions.StringExtensions.SplitTo*
+  exceptions:
+  - type: System.InvalidCastException
+    commentId: T:System.InvalidCastException
+    description: Thrown when the conversion to type T fails.
+  nameWithType.vb: StringExtensions.SplitTo(Of T)(String, ParamArray Char())
+  fullName.vb: IDX.Utilities.Extensions.StringExtensions.SplitTo(Of T)(String, ParamArray Char())
+  name.vb: SplitTo(Of T)(String, ParamArray Char())
+- uid: IDX.Utilities.Extensions.StringExtensions.SplitTo``1(System.String,System.StringSplitOptions,System.Char[])
+  commentId: M:IDX.Utilities.Extensions.StringExtensions.SplitTo``1(System.String,System.StringSplitOptions,System.Char[])
+  id: SplitTo``1(System.String,System.StringSplitOptions,System.Char[])
+  isExtensionMethod: true
+  parent: IDX.Utilities.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: SplitTo<T>(string, StringSplitOptions, params char[])
+  nameWithType: StringExtensions.SplitTo<T>(string, StringSplitOptions, params char[])
+  fullName: IDX.Utilities.Extensions.StringExtensions.SplitTo<T>(string, System.StringSplitOptions, params char[])
+  type: Method
+  source:
+    remote:
+      path: Extensions/StringExtension.cs
+      branch: Research_Documentation
+      repo: https://scm.idecision.ai/idecision_source_net8/idc.utility.git
+    id: SplitTo
+    path: ../../../-Repo/idc.utility/Extensions/StringExtension.cs
+    startLine: 576
+  assemblies:
+  - IDX.Utilities
+  namespace: IDX.Utilities.Extensions
+  summary: Splits a string into an enumerable of elements of type T using the specified separator and options.
+  example:
+  - >-
+    <pre><code class="lang-csharp">var result1 = "123,456,789".SplitTo&lt;int&gt;(StringSplitOptions.RemoveEmptyEntries, ',');
+
+    Console.WriteLine(string.Join(", ", result1)); // Output: 123, 456, 789
+
+
+    var result2 = "  hello,  world  ".SplitTo&lt;string&gt;(StringSplitOptions.RemoveEmptyEntries, ',');
+
+    Console.WriteLine(string.Join(", ", result2)); // Output: hello, world</code></pre>
+  syntax:
+    content: 'public static IEnumerable<T> SplitTo<T>(this string str, StringSplitOptions options, params char[] separator) where T : IConvertible'
+    parameters:
+    - id: str
+      type: System.String
+      description: The string to split.
+    - id: options
+      type: System.StringSplitOptions
+      description: The string split options.
+    - id: separator
+      type: System.Char[]
+      description: The separator characters.
+    typeParameters:
+    - id: T
+      description: The type to convert the elements to.
+    return:
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: An enumerable of elements of type T.
+    content.vb: Public Shared Function SplitTo(Of T As IConvertible)(str As String, options As StringSplitOptions, ParamArray separator As Char()) As IEnumerable(Of T)
+  overload: IDX.Utilities.Extensions.StringExtensions.SplitTo*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when <code class="paramref">str</code> is null.
+  nameWithType.vb: StringExtensions.SplitTo(Of T)(String, StringSplitOptions, ParamArray Char())
+  fullName.vb: IDX.Utilities.Extensions.StringExtensions.SplitTo(Of T)(String, System.StringSplitOptions, ParamArray Char())
+  name.vb: SplitTo(Of T)(String, StringSplitOptions, ParamArray Char())
+- uid: IDX.Utilities.Extensions.StringExtensions.BindWith(System.String,System.Collections.Generic.Dictionary{System.String,System.Object})
+  commentId: M:IDX.Utilities.Extensions.StringExtensions.BindWith(System.String,System.Collections.Generic.Dictionary{System.String,System.Object})
+  id: BindWith(System.String,System.Collections.Generic.Dictionary{System.String,System.Object})
+  isExtensionMethod: true
+  parent: IDX.Utilities.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: BindWith(string, Dictionary<string, object>)
+  nameWithType: StringExtensions.BindWith(string, Dictionary<string, object>)
+  fullName: IDX.Utilities.Extensions.StringExtensions.BindWith(string, System.Collections.Generic.Dictionary<string, object>)
+  type: Method
+  source:
+    remote:
+      path: Extensions/StringExtension.cs
+      branch: Research_Documentation
+      repo: https://scm.idecision.ai/idecision_source_net8/idc.utility.git
+    id: BindWith
+    path: ../../../-Repo/idc.utility/Extensions/StringExtension.cs
+    startLine: 603
+  assemblies:
+  - IDX.Utilities
+  namespace: IDX.Utilities.Extensions
+  summary: Replaces placeholders in a string with corresponding values from a dictionary.
+  example:
+  - >-
+    <pre><code class="lang-csharp">var input = "Hello {name}, your age is {age}.";
+
+    var replacement = new Dictionary&lt;string, object&gt;
+
+    {
+        ["name"] = "John Doe",
+        ["age"] = 42
+    };
+
+    var result = input.BindWith(replacement);
+
+    Console.WriteLine(result); // Output: Hello John Doe, your age is 42.</code></pre>
+  syntax:
+    content: public static string BindWith(this string text, Dictionary<string, object> replacement)
+    parameters:
+    - id: text
+      type: System.String
+      description: The input string.
+    - id: replacement
+      type: System.Collections.Generic.Dictionary{System.String,System.Object}
+      description: The dictionary containing the placeholder-value pairs.
+    return:
+      type: System.String
+      description: A new string with placeholders replaced by corresponding values.
+    content.vb: Public Shared Function BindWith(text As String, replacement As Dictionary(Of String, Object)) As String
+  overload: IDX.Utilities.Extensions.StringExtensions.BindWith*
+  nameWithType.vb: StringExtensions.BindWith(String, Dictionary(Of String, Object))
+  fullName.vb: IDX.Utilities.Extensions.StringExtensions.BindWith(String, System.Collections.Generic.Dictionary(Of String, Object))
+  name.vb: BindWith(String, Dictionary(Of String, Object))
+- uid: IDX.Utilities.Extensions.StringExtensions.ToBoolean(System.String)
+  commentId: M:IDX.Utilities.Extensions.StringExtensions.ToBoolean(System.String)
+  id: ToBoolean(System.String)
+  isExtensionMethod: true
+  parent: IDX.Utilities.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToBoolean(string)
+  nameWithType: StringExtensions.ToBoolean(string)
+  fullName: IDX.Utilities.Extensions.StringExtensions.ToBoolean(string)
+  type: Method
+  source:
+    remote:
+      path: Extensions/StringExtension.cs
+      branch: Research_Documentation
+      repo: https://scm.idecision.ai/idecision_source_net8/idc.utility.git
+    id: ToBoolean
+    path: ../../../-Repo/idc.utility/Extensions/StringExtension.cs
+    startLine: 637
+  assemblies:
+  - IDX.Utilities
+  namespace: IDX.Utilities.Extensions
+  summary: Converts a string value to a boolean.
+  example:
+  - >-
+    <pre><code class="lang-csharp">var result1 = "true".ToBoolean();
+
+    Console.WriteLine(result1); // Output: True
+
+
+    var result2 = "false".ToBoolean();
+
+    Console.WriteLine(result2); // Output: False
+
+
+    var result3 = "y".ToBoolean();
+
+    Console.WriteLine(result3); // Output: True
+
+
+    var result4 = "n".ToBoolean();
+
+    Console.WriteLine(result4); // Output: False
+
+
+    try
+
+    {
+        var result5 = "123".ToBoolean();
+    }
+
+    catch (ArgumentException ex)
+
+    {
+        Console.WriteLine(ex.Message); // Output: Invalid boolean
+    }</code></pre>
+  syntax:
+    content: public static bool ToBoolean(this string value)
+    parameters:
+    - id: value
+      type: System.String
+      description: The string value to convert.
+    return:
+      type: System.Boolean
+      description: The converted boolean value.
+    content.vb: Public Shared Function ToBoolean(value As String) As Boolean
+  overload: IDX.Utilities.Extensions.StringExtensions.ToBoolean*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when the value is null, empty, or consists only of whitespace.
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Thrown when the value cannot be converted to a boolean.
+  nameWithType.vb: StringExtensions.ToBoolean(String)
+  fullName.vb: IDX.Utilities.Extensions.StringExtensions.ToBoolean(String)
+  name.vb: ToBoolean(String)
+- uid: IDX.Utilities.Extensions.StringExtensions.ToEnum``1(System.String,``0)
+  commentId: M:IDX.Utilities.Extensions.StringExtensions.ToEnum``1(System.String,``0)
+  id: ToEnum``1(System.String,``0)
+  isExtensionMethod: true
+  parent: IDX.Utilities.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToEnum<T>(string, T)
+  nameWithType: StringExtensions.ToEnum<T>(string, T)
+  fullName: IDX.Utilities.Extensions.StringExtensions.ToEnum<T>(string, T)
+  type: Method
+  source:
+    remote:
+      path: Extensions/StringExtension.cs
+      branch: Research_Documentation
+      repo: https://scm.idecision.ai/idecision_source_net8/idc.utility.git
+    id: ToEnum
+    path: ../../../-Repo/idc.utility/Extensions/StringExtension.cs
+    startLine: 687
+  assemblies:
+  - IDX.Utilities
+  namespace: IDX.Utilities.Extensions
+  summary: Converts a string value to an enum value of type T.
+  example:
+  - >-
+    <pre><code class="lang-csharp">[Flags]
+
+    public enum Day
+
+    {
+        None = 0b_0000_0000,
+        Monday = 0b_0000_0001,
+        Tuesday = 0b_0000_0010,
+        Wednesday = 0b_0000_0100,
+        Thursday = 0b_0000_1000,
+        Friday = 0b_0001_0000,
+        Saturday = 0b_0010_0000,
+        Sunday = 0b_0100_0000,
+        All = Monday | Tuesday | Wednesday | Thursday | Friday | Saturday | Sunday
+    }
+
+
+    var value = "Monday";
+
+    var result = value.ToEnum(Day.None);
+
+    Console.WriteLine($"The result is: {result.ToString()}");</code></pre>
+  syntax:
+    content: 'public static T ToEnum<T>(this string value, T defaultValue = default) where T : struct'
+    parameters:
+    - id: value
+      type: System.String
+      description: The string value to convert.
+    - id: defaultValue
+      type: '{T}'
+      description: The default value to return if the conversion fails.
+    typeParameters:
+    - id: T
+      description: The enum type.
+    return:
+      type: '{T}'
+      description: The converted enum value.
+    content.vb: Public Shared Function ToEnum(Of T As Structure)(value As String, defaultValue As T = Nothing) As T
+  overload: IDX.Utilities.Extensions.StringExtensions.ToEnum*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Thrown when the type T is not an enum type.
+  nameWithType.vb: StringExtensions.ToEnum(Of T)(String, T)
+  fullName.vb: IDX.Utilities.Extensions.StringExtensions.ToEnum(Of T)(String, T)
+  name.vb: ToEnum(Of T)(String, T)
+- uid: IDX.Utilities.Extensions.StringExtensions.ToDecimal(System.String)
+  commentId: M:IDX.Utilities.Extensions.StringExtensions.ToDecimal(System.String)
+  id: ToDecimal(System.String)
+  isExtensionMethod: true
+  parent: IDX.Utilities.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToDecimal(string)
+  nameWithType: StringExtensions.ToDecimal(string)
+  fullName: IDX.Utilities.Extensions.StringExtensions.ToDecimal(string)
+  type: Method
+  source:
+    remote:
+      path: Extensions/StringExtension.cs
+      branch: Research_Documentation
+      repo: https://scm.idecision.ai/idecision_source_net8/idc.utility.git
+    id: ToDecimal
+    path: ../../../-Repo/idc.utility/Extensions/StringExtension.cs
+    startLine: 719
+  assemblies:
+  - IDX.Utilities
+  namespace: IDX.Utilities.Extensions
+  summary: Converts a string to a decimal value.
+  example:
+  - >-
+    <pre><code class="lang-csharp">var result1 = "123.456".ToDecimal();
+
+    Console.WriteLine($"The result is: {result1}");
+
+
+    var result2 = "123abc".ToDecimal();
+
+    try
+
+    {
+        Console.WriteLine($"The result is: {result2}");
+    }
+
+    catch (FormatException ex)
+
+    {
+        Console.WriteLine(ex.Message); // Output: Input string was not in a correct format.
+    }</code></pre>
+  syntax:
+    content: public static decimal ToDecimal(this string value)
+    parameters:
+    - id: value
+      type: System.String
+      description: The string value to convert.
+    return:
+      type: System.Decimal
+      description: The decimal value of the string.
+    content.vb: Public Shared Function ToDecimal(value As String) As Decimal
+  overload: IDX.Utilities.Extensions.StringExtensions.ToDecimal*
+  exceptions:
+  - type: System.FormatException
+    commentId: T:System.FormatException
+    description: Thrown when the value cannot be parsed as a decimal.
+  nameWithType.vb: StringExtensions.ToDecimal(String)
+  fullName.vb: IDX.Utilities.Extensions.StringExtensions.ToDecimal(String)
+  name.vb: ToDecimal(String)
+- uid: IDX.Utilities.Extensions.StringExtensions.ToInt16(System.String)
+  commentId: M:IDX.Utilities.Extensions.StringExtensions.ToInt16(System.String)
+  id: ToInt16(System.String)
+  isExtensionMethod: true
+  parent: IDX.Utilities.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToInt16(string)
+  nameWithType: StringExtensions.ToInt16(string)
+  fullName: IDX.Utilities.Extensions.StringExtensions.ToInt16(string)
+  type: Method
+  source:
+    remote:
+      path: Extensions/StringExtension.cs
+      branch: Research_Documentation
+      repo: https://scm.idecision.ai/idecision_source_net8/idc.utility.git
+    id: ToInt16
+    path: ../../../-Repo/idc.utility/Extensions/StringExtension.cs
+    startLine: 758
+  assemblies:
+  - IDX.Utilities
+  namespace: IDX.Utilities.Extensions
+  summary: Converts a string to a 16-bit signed integer.
+  example:
+  - >-
+    <pre><code class="lang-csharp">var result1 = "123".ToInt16();
+
+    Console.WriteLine($"The result is: {result1}");
+
+
+    var result2 = "123abc".ToInt16();
+
+    try
+
+    {
+        Console.WriteLine($"The result is: {result2}");
+    }
+
+    catch (FormatException ex)
+
+    {
+        Console.WriteLine(ex.Message); // Output: Input string was not in a correct format.
+    }
+
+
+    var result3 = "123456".ToInt16();
+
+    try
+
+    {
+        Console.WriteLine($"The result is: {result3}");
+    }
+
+    catch (OverflowException ex)
+
+    {
+        Console.WriteLine(ex.Message); // Output: Value was either too large or too small for an Int16.
+    }</code></pre>
+  syntax:
+    content: public static short ToInt16(this string value)
+    parameters:
+    - id: value
+      type: System.String
+      description: The string value to convert.
+    return:
+      type: System.Int16
+      description: The converted 16-bit signed integer.
+    content.vb: Public Shared Function ToInt16(value As String) As Short
+  overload: IDX.Utilities.Extensions.StringExtensions.ToInt16*
+  exceptions:
+  - type: System.FormatException
+    commentId: T:System.FormatException
+    description: Thrown when the value cannot be parsed as a short.
+  - type: System.OverflowException
+    commentId: T:System.OverflowException
+    description: Thrown when the value represents a number that is less than <xref href="System.Int16.MinValue" data-throw-if-not-resolved="false"></xref> or greater than <xref href="System.Int16.MaxValue" data-throw-if-not-resolved="false"></xref>.
+  nameWithType.vb: StringExtensions.ToInt16(String)
+  fullName.vb: IDX.Utilities.Extensions.StringExtensions.ToInt16(String)
+  name.vb: ToInt16(String)
+- uid: IDX.Utilities.Extensions.StringExtensions.ToInt32(System.String)
+  commentId: M:IDX.Utilities.Extensions.StringExtensions.ToInt32(System.String)
+  id: ToInt32(System.String)
+  isExtensionMethod: true
+  parent: IDX.Utilities.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToInt32(string)
+  nameWithType: StringExtensions.ToInt32(string)
+  fullName: IDX.Utilities.Extensions.StringExtensions.ToInt32(string)
+  type: Method
+  source:
+    remote:
+      path: Extensions/StringExtension.cs
+      branch: Research_Documentation
+      repo: https://scm.idecision.ai/idecision_source_net8/idc.utility.git
+    id: ToInt32
+    path: ../../../-Repo/idc.utility/Extensions/StringExtension.cs
+    startLine: 798
+  assemblies:
+  - IDX.Utilities
+  namespace: IDX.Utilities.Extensions
+  summary: Converts a string representation of a number to its 32-bit signed integer equivalent.
+  example:
+  - >-
+    <pre><code class="lang-csharp">var result1 = "123".ToInt32();
+
+    Console.WriteLine($"The result is: {result1}");
+
+
+    var result2 = "456abc".ToInt32();
+
+    try
+
+    {
+        Console.WriteLine($"The result is: {result2}");
+    }
+
+    catch (FormatException ex)
+
+    {
+        Console.WriteLine(ex.Message); // Output: Input string was not in a correct format.
+    }
+
+
+    var result3 = "78901234".ToInt32();
+
+    try
+
+    {
+        Console.WriteLine($"The result is: {result3}");
+    }
+
+    catch (OverflowException ex)
+
+    {
+        Console.WriteLine(ex.Message); // Output: Value was either too large or too small for an Int32.
+    }</code></pre>
+  syntax:
+    content: public static int ToInt32(this string value)
+    parameters:
+    - id: value
+      type: System.String
+      description: The string to convert.
+    return:
+      type: System.Int32
+      description: The 32-bit signed integer equivalent to the number contained in the string, or 0 if the conversion fails.
+    content.vb: Public Shared Function ToInt32(value As String) As Integer
+  overload: IDX.Utilities.Extensions.StringExtensions.ToInt32*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when the value is null.
+  - type: System.FormatException
+    commentId: T:System.FormatException
+    description: Thrown when the value does not consist of an optional sign followed by a sequence of digits.
+  - type: System.OverflowException
+    commentId: T:System.OverflowException
+    description: Thrown when the value represents a number that is less than <xref href="System.Int32.MinValue" data-throw-if-not-resolved="false"></xref> or greater than <xref href="System.Int32.MaxValue" data-throw-if-not-resolved="false"></xref>.
+  nameWithType.vb: StringExtensions.ToInt32(String)
+  fullName.vb: IDX.Utilities.Extensions.StringExtensions.ToInt32(String)
+  name.vb: ToInt32(String)
+- uid: IDX.Utilities.Extensions.StringExtensions.ToInt64(System.String)
+  commentId: M:IDX.Utilities.Extensions.StringExtensions.ToInt64(System.String)
+  id: ToInt64(System.String)
+  isExtensionMethod: true
+  parent: IDX.Utilities.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToInt64(string)
+  nameWithType: StringExtensions.ToInt64(string)
+  fullName: IDX.Utilities.Extensions.StringExtensions.ToInt64(string)
+  type: Method
+  source:
+    remote:
+      path: Extensions/StringExtension.cs
+      branch: Research_Documentation
+      repo: https://scm.idecision.ai/idecision_source_net8/idc.utility.git
+    id: ToInt64
+    path: ../../../-Repo/idc.utility/Extensions/StringExtension.cs
+    startLine: 835
+  assemblies:
+  - IDX.Utilities
+  namespace: IDX.Utilities.Extensions
+  summary: Converts a string representation of a number to its 64-bit signed integer equivalent.
+  example:
+  - >-
+    <pre><code class="lang-csharp">var result1 = "123".ToInt64();
+
+    Console.WriteLine($"The result is: {result1}");
+
+
+    var result2 = "456abc".ToInt64();
+
+    try
+
+    {
+        Console.WriteLine($"The result is: {result2}");
+    }
+
+    catch (FormatException ex)
+
+    {
+        Console.WriteLine(ex.Message); // Output: Input string was not in a correct format.
+    }
+
+
+    var result3 = "789012345678901".ToInt64();
+
+    try
+
+    {
+        Console.WriteLine($"The result is: {result3}");
+    }
+
+    catch (OverflowException ex)
+
+    {
+        Console.WriteLine(ex.Message); // Output: Value was either too large or too small for an Int64.
+    }</code></pre>
+  syntax:
+    content: public static long ToInt64(this string value)
+    parameters:
+    - id: value
+      type: System.String
+      description: The string to convert.
+    return:
+      type: System.Int64
+      description: The 64-bit signed integer equivalent of the string representation, or zero if the conversion fails.
+    content.vb: Public Shared Function ToInt64(value As String) As Long
+  overload: IDX.Utilities.Extensions.StringExtensions.ToInt64*
+  nameWithType.vb: StringExtensions.ToInt64(String)
+  fullName.vb: IDX.Utilities.Extensions.StringExtensions.ToInt64(String)
+  name.vb: ToInt64(String)
+- uid: IDX.Utilities.Extensions.StringExtensions.ConvertJsonStringAs``1(System.String)
+  commentId: M:IDX.Utilities.Extensions.StringExtensions.ConvertJsonStringAs``1(System.String)
+  id: ConvertJsonStringAs``1(System.String)
+  isExtensionMethod: true
+  parent: IDX.Utilities.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: ConvertJsonStringAs<T>(string)
+  nameWithType: StringExtensions.ConvertJsonStringAs<T>(string)
+  fullName: IDX.Utilities.Extensions.StringExtensions.ConvertJsonStringAs<T>(string)
+  type: Method
+  source:
+    remote:
+      path: Extensions/StringExtension.cs
+      branch: Research_Documentation
+      repo: https://scm.idecision.ai/idecision_source_net8/idc.utility.git
+    id: ConvertJsonStringAs
+    path: ../../../-Repo/idc.utility/Extensions/StringExtension.cs
+    startLine: 855
+  assemblies:
+  - IDX.Utilities
+  namespace: IDX.Utilities.Extensions
+  summary: Converts a JSON string to an object of the specified type.
+  example:
+  - >-
+    <pre><code class="lang-csharp">var json = "{\"name\":\"John Doe\",\"age\":30,\"address\":{\"city\":\"NY\"}}";
+
+    var result = json.ConvertJsonStringAs&lt;Person&gt;();
+
+    Console.WriteLine($"Name: {result.Name}, Age: {result.Age}, City: {result.Address.City}");</code></pre>
+  syntax:
+    content: public static T? ConvertJsonStringAs<T>(this string source)
+    parameters:
+    - id: source
+      type: System.String
+      description: The JSON string to deserialize.
+    typeParameters:
+    - id: T
+      description: The type of the object to deserialize.
+    return:
+      type: '{T}'
+      description: An object of the specified type deserialized from the JSON string, or null if the JSON string is null or cannot be deserialized.
+    content.vb: Public Shared Function ConvertJsonStringAs(Of T)(source As String) As T
+  overload: IDX.Utilities.Extensions.StringExtensions.ConvertJsonStringAs*
+  exceptions:
+  - type: System.Text.Json.JsonException
+    commentId: T:System.Text.Json.JsonException
+    description: Thrown when there is an error during deserialization.
+  nameWithType.vb: StringExtensions.ConvertJsonStringAs(Of T)(String)
+  fullName.vb: IDX.Utilities.Extensions.StringExtensions.ConvertJsonStringAs(Of T)(String)
+  name.vb: ConvertJsonStringAs(Of T)(String)
+references:
+- uid: IDX.Utilities.Extensions
+  commentId: N:IDX.Utilities.Extensions
+  href: IDX.html
+  name: IDX.Utilities.Extensions
+  nameWithType: IDX.Utilities.Extensions
+  fullName: IDX.Utilities.Extensions
+  spec.csharp:
+  - uid: IDX
+    name: IDX
+    href: IDX.html
+  - name: .
+  - uid: IDX.Utilities
+    name: Utilities
+    href: IDX.Utilities.html
+  - name: .
+  - uid: IDX.Utilities.Extensions
+    name: Extensions
+    href: IDX.Utilities.Extensions.html
+  spec.vb:
+  - uid: IDX
+    name: IDX
+    href: IDX.html
+  - name: .
+  - uid: IDX.Utilities
+    name: Utilities
+    href: IDX.Utilities.html
+  - name: .
+  - uid: IDX.Utilities.Extensions
+    name: Extensions
+    href: IDX.Utilities.Extensions.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+  name: ArgumentNullException
+  nameWithType: ArgumentNullException
+  fullName: System.ArgumentNullException
+- uid: IDX.Utilities.Extensions.StringExtensions.CountOccurrences*
+  commentId: Overload:IDX.Utilities.Extensions.StringExtensions.CountOccurrences
+  href: IDX.Utilities.Extensions.StringExtensions.CountOccurrences.html#IDX_Utilities_Extensions_StringExtensions_CountOccurrences_System_String_System_String_
+  name: CountOccurrences
+  nameWithType: StringExtensions.CountOccurrences
+  fullName: IDX.Utilities.Extensions.StringExtensions.CountOccurrences
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: IDX.Utilities.Extensions.StringExtensions.IsAlpha*
+  commentId: Overload:IDX.Utilities.Extensions.StringExtensions.IsAlpha
+  href: IDX.Utilities.Extensions.StringExtensions.IsAlpha.html#IDX_Utilities_Extensions_StringExtensions_IsAlpha_System_String_
+  name: IsAlpha
+  nameWithType: StringExtensions.IsAlpha
+  fullName: IDX.Utilities.Extensions.StringExtensions.IsAlpha
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: IDX.Utilities.Extensions.StringExtensions.IsAlphaNumeric*
+  commentId: Overload:IDX.Utilities.Extensions.StringExtensions.IsAlphaNumeric
+  href: IDX.Utilities.Extensions.StringExtensions.IsAlphaNumeric.html#IDX_Utilities_Extensions_StringExtensions_IsAlphaNumeric_System_String_
+  name: IsAlphaNumeric
+  nameWithType: StringExtensions.IsAlphaNumeric
+  fullName: IDX.Utilities.Extensions.StringExtensions.IsAlphaNumeric
+- uid: IDX.Utilities.Extensions.StringExtensions.IsDateTime*
+  commentId: Overload:IDX.Utilities.Extensions.StringExtensions.IsDateTime
+  href: IDX.Utilities.Extensions.StringExtensions.IsDateTime.html#IDX_Utilities_Extensions_StringExtensions_IsDateTime_System_String_System_String_
+  name: IsDateTime
+  nameWithType: StringExtensions.IsDateTime
+  fullName: IDX.Utilities.Extensions.StringExtensions.IsDateTime
+- uid: IDX.Utilities.Extensions.StringExtensions.IsInteger*
+  commentId: Overload:IDX.Utilities.Extensions.StringExtensions.IsInteger
+  href: IDX.Utilities.Extensions.StringExtensions.IsInteger.html#IDX_Utilities_Extensions_StringExtensions_IsInteger_System_String_
+  name: IsInteger
+  nameWithType: StringExtensions.IsInteger
+  fullName: IDX.Utilities.Extensions.StringExtensions.IsInteger
+- uid: IDX.Utilities.Extensions.StringExtensions.IsNumeric*
+  commentId: Overload:IDX.Utilities.Extensions.StringExtensions.IsNumeric
+  href: IDX.Utilities.Extensions.StringExtensions.IsNumeric.html#IDX_Utilities_Extensions_StringExtensions_IsNumeric_System_String_
+  name: IsNumeric
+  nameWithType: StringExtensions.IsNumeric
+  fullName: IDX.Utilities.Extensions.StringExtensions.IsNumeric
+- uid: IDX.Utilities.Extensions.StringExtensions.IsValidRegex*
+  commentId: Overload:IDX.Utilities.Extensions.StringExtensions.IsValidRegex
+  href: IDX.Utilities.Extensions.StringExtensions.IsValidRegex.html#IDX_Utilities_Extensions_StringExtensions_IsValidRegex_System_String_System_String_
+  name: IsValidRegex
+  nameWithType: StringExtensions.IsValidRegex
+  fullName: IDX.Utilities.Extensions.StringExtensions.IsValidRegex
+- uid: IDX.Utilities.Extensions.StringExtensions.IsValidEmailAddress*
+  commentId: Overload:IDX.Utilities.Extensions.StringExtensions.IsValidEmailAddress
+  href: IDX.Utilities.Extensions.StringExtensions.IsValidEmailAddress.html#IDX_Utilities_Extensions_StringExtensions_IsValidEmailAddress_System_String_
+  name: IsValidEmailAddress
+  nameWithType: StringExtensions.IsValidEmailAddress
+  fullName: IDX.Utilities.Extensions.StringExtensions.IsValidEmailAddress
+- uid: IDX.Utilities.Extensions.StringExtensions.IsValidIPv4*
+  commentId: Overload:IDX.Utilities.Extensions.StringExtensions.IsValidIPv4
+  href: IDX.Utilities.Extensions.StringExtensions.IsValidIPv4.html#IDX_Utilities_Extensions_StringExtensions_IsValidIPv4_System_String_
+  name: IsValidIPv4
+  nameWithType: StringExtensions.IsValidIPv4
+  fullName: IDX.Utilities.Extensions.StringExtensions.IsValidIPv4
+- uid: IDX.Utilities.Extensions.StringExtensions.IsValidUrl*
+  commentId: Overload:IDX.Utilities.Extensions.StringExtensions.IsValidUrl
+  href: IDX.Utilities.Extensions.StringExtensions.IsValidUrl.html#IDX_Utilities_Extensions_StringExtensions_IsValidUrl_System_String_
+  name: IsValidUrl
+  nameWithType: StringExtensions.IsValidUrl
+  fullName: IDX.Utilities.Extensions.StringExtensions.IsValidUrl
+- uid: IDX.Utilities.Extensions.StringExtensions.ChangeCase*
+  commentId: Overload:IDX.Utilities.Extensions.StringExtensions.ChangeCase
+  href: IDX.Utilities.Extensions.StringExtensions.ChangeCase.html#IDX_Utilities_Extensions_StringExtensions_ChangeCase_System_String_IDX_Utilities_Extensions_StringExtensions_StringCaseType_
+  name: ChangeCase
+  nameWithType: StringExtensions.ChangeCase
+  fullName: IDX.Utilities.Extensions.StringExtensions.ChangeCase
+- uid: IDX.Utilities.Extensions.StringExtensions.StringCaseType
+  commentId: T:IDX.Utilities.Extensions.StringExtensions.StringCaseType
+  parent: IDX.Utilities.Extensions
+  href: IDX.Utilities.Extensions.StringExtensions.html
+  name: StringExtensions.StringCaseType
+  nameWithType: StringExtensions.StringCaseType
+  fullName: IDX.Utilities.Extensions.StringExtensions.StringCaseType
+  spec.csharp:
+  - uid: IDX.Utilities.Extensions.StringExtensions
+    name: StringExtensions
+    href: IDX.Utilities.Extensions.StringExtensions.html
+  - name: .
+  - uid: IDX.Utilities.Extensions.StringExtensions.StringCaseType
+    name: StringCaseType
+    href: IDX.Utilities.Extensions.StringExtensions.StringCaseType.html
+  spec.vb:
+  - uid: IDX.Utilities.Extensions.StringExtensions
+    name: StringExtensions
+    href: IDX.Utilities.Extensions.StringExtensions.html
+  - name: .
+  - uid: IDX.Utilities.Extensions.StringExtensions.StringCaseType
+    name: StringCaseType
+    href: IDX.Utilities.Extensions.StringExtensions.StringCaseType.html
+- uid: IDX.Utilities.Extensions.StringExtensions.GetAlphaNumericOnly*
+  commentId: Overload:IDX.Utilities.Extensions.StringExtensions.GetAlphaNumericOnly
+  href: IDX.Utilities.Extensions.StringExtensions.GetAlphaNumericOnly.html#IDX_Utilities_Extensions_StringExtensions_GetAlphaNumericOnly_System_String_
+  name: GetAlphaNumericOnly
+  nameWithType: StringExtensions.GetAlphaNumericOnly
+  fullName: IDX.Utilities.Extensions.StringExtensions.GetAlphaNumericOnly
+- uid: IDX.Utilities.Extensions.StringExtensions.GetNumericOnly*
+  commentId: Overload:IDX.Utilities.Extensions.StringExtensions.GetNumericOnly
+  href: IDX.Utilities.Extensions.StringExtensions.GetNumericOnly.html#IDX_Utilities_Extensions_StringExtensions_GetNumericOnly_System_String_
+  name: GetNumericOnly
+  nameWithType: StringExtensions.GetNumericOnly
+  fullName: IDX.Utilities.Extensions.StringExtensions.GetNumericOnly
+- uid: IDX.Utilities.Extensions.StringExtensions.Repeat*
+  commentId: Overload:IDX.Utilities.Extensions.StringExtensions.Repeat
+  href: IDX.Utilities.Extensions.StringExtensions.Repeat.html#IDX_Utilities_Extensions_StringExtensions_Repeat_System_String_System_Int32_
+  name: Repeat
+  nameWithType: StringExtensions.Repeat
+  fullName: IDX.Utilities.Extensions.StringExtensions.Repeat
+- uid: IDX.Utilities.Extensions.StringExtensions.Left*
+  commentId: Overload:IDX.Utilities.Extensions.StringExtensions.Left
+  href: IDX.Utilities.Extensions.StringExtensions.Left.html#IDX_Utilities_Extensions_StringExtensions_Left_System_String_System_Int32_
+  name: Left
+  nameWithType: StringExtensions.Left
+  fullName: IDX.Utilities.Extensions.StringExtensions.Left
+- uid: IDX.Utilities.Extensions.StringExtensions.Right*
+  commentId: Overload:IDX.Utilities.Extensions.StringExtensions.Right
+  href: IDX.Utilities.Extensions.StringExtensions.Right.html#IDX_Utilities_Extensions_StringExtensions_Right_System_String_System_Int32_
+  name: Right
+  nameWithType: StringExtensions.Right
+  fullName: IDX.Utilities.Extensions.StringExtensions.Right
+- uid: IDX.Utilities.Extensions.StringExtensions.PadLeftByChar*
+  commentId: Overload:IDX.Utilities.Extensions.StringExtensions.PadLeftByChar
+  href: IDX.Utilities.Extensions.StringExtensions.PadLeftByChar.html#IDX_Utilities_Extensions_StringExtensions_PadLeftByChar_System_String_System_Char_System_Int32_
+  name: PadLeftByChar
+  nameWithType: StringExtensions.PadLeftByChar
+  fullName: IDX.Utilities.Extensions.StringExtensions.PadLeftByChar
+- uid: System.Char
+  commentId: T:System.Char
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.char
+  name: char
+  nameWithType: char
+  fullName: char
+  nameWithType.vb: Char
+  fullName.vb: Char
+  name.vb: Char
+- uid: IDX.Utilities.Extensions.StringExtensions.PadRightByChar*
+  commentId: Overload:IDX.Utilities.Extensions.StringExtensions.PadRightByChar
+  href: IDX.Utilities.Extensions.StringExtensions.PadRightByChar.html#IDX_Utilities_Extensions_StringExtensions_PadRightByChar_System_String_System_Char_System_Int32_
+  name: PadRightByChar
+  nameWithType: StringExtensions.PadRightByChar
+  fullName: IDX.Utilities.Extensions.StringExtensions.PadRightByChar
+- uid: IDX.Utilities.Extensions.StringExtensions.Reverse*
+  commentId: Overload:IDX.Utilities.Extensions.StringExtensions.Reverse
+  href: IDX.Utilities.Extensions.StringExtensions.Reverse.html#IDX_Utilities_Extensions_StringExtensions_Reverse_System_String_
+  name: Reverse
+  nameWithType: StringExtensions.Reverse
+  fullName: IDX.Utilities.Extensions.StringExtensions.Reverse
+- uid: IDX.Utilities.Extensions.StringExtensions.TrimChars*
+  commentId: Overload:IDX.Utilities.Extensions.StringExtensions.TrimChars
+  href: IDX.Utilities.Extensions.StringExtensions.TrimChars.html#IDX_Utilities_Extensions_StringExtensions_TrimChars_System_String_System_String_
+  name: TrimChars
+  nameWithType: StringExtensions.TrimChars
+  fullName: IDX.Utilities.Extensions.StringExtensions.TrimChars
+- uid: System.ArgumentOutOfRangeException
+  commentId: T:System.ArgumentOutOfRangeException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception
+  name: ArgumentOutOfRangeException
+  nameWithType: ArgumentOutOfRangeException
+  fullName: System.ArgumentOutOfRangeException
+- uid: IDX.Utilities.Extensions.StringExtensions.Truncate*
+  commentId: Overload:IDX.Utilities.Extensions.StringExtensions.Truncate
+  href: IDX.Utilities.Extensions.StringExtensions.Truncate.html#IDX_Utilities_Extensions_StringExtensions_Truncate_System_String_System_Int32_
+  name: Truncate
+  nameWithType: StringExtensions.Truncate
+  fullName: IDX.Utilities.Extensions.StringExtensions.Truncate
+- uid: System.InvalidCastException
+  commentId: T:System.InvalidCastException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.invalidcastexception
+  name: InvalidCastException
+  nameWithType: InvalidCastException
+  fullName: System.InvalidCastException
+- uid: IDX.Utilities.Extensions.StringExtensions.SplitTo*
+  commentId: Overload:IDX.Utilities.Extensions.StringExtensions.SplitTo
+  href: IDX.Utilities.Extensions.StringExtensions.SplitTo.html#IDX_Utilities_Extensions_StringExtensions_SplitTo__1_System_String_System_Char___
+  name: SplitTo
+  nameWithType: StringExtensions.SplitTo
+  fullName: IDX.Utilities.Extensions.StringExtensions.SplitTo
+- uid: System.Char[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.char
+  name: char[]
+  nameWithType: char[]
+  fullName: char[]
+  nameWithType.vb: Char()
+  fullName.vb: Char()
+  name.vb: Char()
+  spec.csharp:
+  - uid: System.Char
+    name: char
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.char
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Char
+    name: Char
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.char
+  - name: (
+  - name: )
+- uid: System.Collections.Generic.IEnumerable{{T}}
+  commentId: T:System.Collections.Generic.IEnumerable{``0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.StringSplitOptions
+  commentId: T:System.StringSplitOptions
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.stringsplitoptions
+  name: StringSplitOptions
+  nameWithType: StringSplitOptions
+  fullName: System.StringSplitOptions
+- uid: IDX.Utilities.Extensions.StringExtensions.BindWith*
+  commentId: Overload:IDX.Utilities.Extensions.StringExtensions.BindWith
+  href: IDX.Utilities.Extensions.StringExtensions.BindWith.html#IDX_Utilities_Extensions_StringExtensions_BindWith_System_String_System_Collections_Generic_Dictionary_System_String_System_Object__
+  name: BindWith
+  nameWithType: StringExtensions.BindWith
+  fullName: IDX.Utilities.Extensions.StringExtensions.BindWith
+- uid: System.Collections.Generic.Dictionary{System.String,System.Object}
+  commentId: T:System.Collections.Generic.Dictionary{System.String,System.Object}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<string, object>
+  nameWithType: Dictionary<string, object>
+  fullName: System.Collections.Generic.Dictionary<string, object>
+  nameWithType.vb: Dictionary(Of String, Object)
+  fullName.vb: System.Collections.Generic.Dictionary(Of String, Object)
+  name.vb: Dictionary(Of String, Object)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.ArgumentException
+  commentId: T:System.ArgumentException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentexception
+  name: ArgumentException
+  nameWithType: ArgumentException
+  fullName: System.ArgumentException
+- uid: IDX.Utilities.Extensions.StringExtensions.ToBoolean*
+  commentId: Overload:IDX.Utilities.Extensions.StringExtensions.ToBoolean
+  href: IDX.Utilities.Extensions.StringExtensions.ToBoolean.html#IDX_Utilities_Extensions_StringExtensions_ToBoolean_System_String_
+  name: ToBoolean
+  nameWithType: StringExtensions.ToBoolean
+  fullName: IDX.Utilities.Extensions.StringExtensions.ToBoolean
+- uid: IDX.Utilities.Extensions.StringExtensions.ToEnum*
+  commentId: Overload:IDX.Utilities.Extensions.StringExtensions.ToEnum
+  href: IDX.Utilities.Extensions.StringExtensions.ToEnum.html#IDX_Utilities_Extensions_StringExtensions_ToEnum__1_System_String___0_
+  name: ToEnum
+  nameWithType: StringExtensions.ToEnum
+  fullName: IDX.Utilities.Extensions.StringExtensions.ToEnum
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: System.FormatException
+  commentId: T:System.FormatException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.formatexception
+  name: FormatException
+  nameWithType: FormatException
+  fullName: System.FormatException
+- uid: IDX.Utilities.Extensions.StringExtensions.ToDecimal*
+  commentId: Overload:IDX.Utilities.Extensions.StringExtensions.ToDecimal
+  href: IDX.Utilities.Extensions.StringExtensions.ToDecimal.html#IDX_Utilities_Extensions_StringExtensions_ToDecimal_System_String_
+  name: ToDecimal
+  nameWithType: StringExtensions.ToDecimal
+  fullName: IDX.Utilities.Extensions.StringExtensions.ToDecimal
+- uid: System.Decimal
+  commentId: T:System.Decimal
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.decimal
+  name: decimal
+  nameWithType: decimal
+  fullName: decimal
+  nameWithType.vb: Decimal
+  fullName.vb: Decimal
+  name.vb: Decimal
+- uid: System.Int16.MinValue
+  commentId: F:System.Int16.MinValue
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int16.minvalue
+  name: MinValue
+  nameWithType: short.MinValue
+  fullName: short.MinValue
+  nameWithType.vb: Short.MinValue
+  fullName.vb: Short.MinValue
+- uid: System.Int16.MaxValue
+  commentId: F:System.Int16.MaxValue
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int16.maxvalue
+  name: MaxValue
+  nameWithType: short.MaxValue
+  fullName: short.MaxValue
+  nameWithType.vb: Short.MaxValue
+  fullName.vb: Short.MaxValue
+- uid: System.OverflowException
+  commentId: T:System.OverflowException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.overflowexception
+  name: OverflowException
+  nameWithType: OverflowException
+  fullName: System.OverflowException
+- uid: IDX.Utilities.Extensions.StringExtensions.ToInt16*
+  commentId: Overload:IDX.Utilities.Extensions.StringExtensions.ToInt16
+  href: IDX.Utilities.Extensions.StringExtensions.ToInt16.html#IDX_Utilities_Extensions_StringExtensions_ToInt16_System_String_
+  name: ToInt16
+  nameWithType: StringExtensions.ToInt16
+  fullName: IDX.Utilities.Extensions.StringExtensions.ToInt16
+- uid: System.Int16
+  commentId: T:System.Int16
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int16
+  name: short
+  nameWithType: short
+  fullName: short
+  nameWithType.vb: Short
+  fullName.vb: Short
+  name.vb: Short
+- uid: System.Int32.MinValue
+  commentId: F:System.Int32.MinValue
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32.minvalue
+  name: MinValue
+  nameWithType: int.MinValue
+  fullName: int.MinValue
+  nameWithType.vb: Integer.MinValue
+  fullName.vb: Integer.MinValue
+- uid: System.Int32.MaxValue
+  commentId: F:System.Int32.MaxValue
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32.maxvalue
+  name: MaxValue
+  nameWithType: int.MaxValue
+  fullName: int.MaxValue
+  nameWithType.vb: Integer.MaxValue
+  fullName.vb: Integer.MaxValue
+- uid: IDX.Utilities.Extensions.StringExtensions.ToInt32*
+  commentId: Overload:IDX.Utilities.Extensions.StringExtensions.ToInt32
+  href: IDX.Utilities.Extensions.StringExtensions.ToInt32.html#IDX_Utilities_Extensions_StringExtensions_ToInt32_System_String_
+  name: ToInt32
+  nameWithType: StringExtensions.ToInt32
+  fullName: IDX.Utilities.Extensions.StringExtensions.ToInt32
+- uid: IDX.Utilities.Extensions.StringExtensions.ToInt64*
+  commentId: Overload:IDX.Utilities.Extensions.StringExtensions.ToInt64
+  href: IDX.Utilities.Extensions.StringExtensions.ToInt64.html#IDX_Utilities_Extensions_StringExtensions_ToInt64_System_String_
+  name: ToInt64
+  nameWithType: StringExtensions.ToInt64
+  fullName: IDX.Utilities.Extensions.StringExtensions.ToInt64
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: System.Text.Json.JsonException
+  commentId: T:System.Text.Json.JsonException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.text.json.jsonexception
+  name: JsonException
+  nameWithType: JsonException
+  fullName: System.Text.Json.JsonException
+- uid: IDX.Utilities.Extensions.StringExtensions.ConvertJsonStringAs*
+  commentId: Overload:IDX.Utilities.Extensions.StringExtensions.ConvertJsonStringAs
+  href: IDX.Utilities.Extensions.StringExtensions.ConvertJsonStringAs.html#IDX_Utilities_Extensions_StringExtensions_ConvertJsonStringAs__1_System_String_
+  name: ConvertJsonStringAs
+  nameWithType: StringExtensions.ConvertJsonStringAs
+  fullName: IDX.Utilities.Extensions.StringExtensions.ConvertJsonStringAs
+memberLayout: SeparatePages

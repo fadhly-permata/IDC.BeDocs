@@ -1,0 +1,48 @@
+### YamlMime:ManagedReference
+items:
+- uid: idc.alert.Utilities.Logics
+  commentId: N:idc.alert.Utilities.Logics
+  id: Logics
+  parent: idc.alert.Utilities
+  children:
+  - idc.alert.Utilities.Logics.AlertManagement
+  - idc.alert.Utilities.Logics.AlertManagement.CouchDataLayer
+  langs:
+  - csharp
+  - vb
+  name: idc.alert.Utilities.Logics
+  nameWithType: idc.alert.Utilities.Logics
+  fullName: idc.alert.Utilities.Logics
+  type: Namespace
+  assemblies:
+  - idc.alert
+references:
+- uid: idc.alert.Utilities.Logics.AlertManagement
+  commentId: T:idc.alert.Utilities.Logics.AlertManagement
+  href: idc.alert.Utilities.Logics.AlertManagement.html
+  name: AlertManagement
+  nameWithType: AlertManagement
+  fullName: idc.alert.Utilities.Logics.AlertManagement
+- uid: idc.alert.Utilities.Logics.AlertManagement.CouchDataLayer
+  commentId: T:idc.alert.Utilities.Logics.AlertManagement.CouchDataLayer
+  href: idc.alert.Utilities.Logics.AlertManagement.html
+  name: AlertManagement.CouchDataLayer
+  nameWithType: AlertManagement.CouchDataLayer
+  fullName: idc.alert.Utilities.Logics.AlertManagement.CouchDataLayer
+  spec.csharp:
+  - uid: idc.alert.Utilities.Logics.AlertManagement
+    name: AlertManagement
+    href: idc.alert.Utilities.Logics.AlertManagement.html
+  - name: .
+  - uid: idc.alert.Utilities.Logics.AlertManagement.CouchDataLayer
+    name: CouchDataLayer
+    href: idc.alert.Utilities.Logics.AlertManagement.CouchDataLayer.html
+  spec.vb:
+  - uid: idc.alert.Utilities.Logics.AlertManagement
+    name: AlertManagement
+    href: idc.alert.Utilities.Logics.AlertManagement.html
+  - name: .
+  - uid: idc.alert.Utilities.Logics.AlertManagement.CouchDataLayer
+    name: CouchDataLayer
+    href: idc.alert.Utilities.Logics.AlertManagement.CouchDataLayer.html
+memberLayout: SeparatePages

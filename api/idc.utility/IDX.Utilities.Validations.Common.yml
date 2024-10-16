@@ -1,0 +1,960 @@
+### YamlMime:ManagedReference
+items:
+- uid: IDX.Utilities.Validations.Common
+  commentId: T:IDX.Utilities.Validations.Common
+  id: Common
+  parent: IDX.Utilities.Validations
+  children:
+  - IDX.Utilities.Validations.Common.EnsureFilePath(System.String,System.String)
+  - IDX.Utilities.Validations.Common.EnsureModel(IDX.Utilities.Encryptor)
+  - IDX.Utilities.Validations.Common.EnsureModel(IDX.Utilities.Models.CommonConnectionString)
+  - IDX.Utilities.Validations.Common.EnsureModel(IDX.Utilities.Models.CouchBaseConnectionString)
+  - IDX.Utilities.Validations.Common.EnsureModel(IDX.Utilities.Models.PgSqlDataProcessor.PagingRequest)
+  - IDX.Utilities.Validations.Common.EnsureModel(IDX.Utilities.Models.PgSqlDataProcessor.SPCallInfo)
+  - IDX.Utilities.Validations.Common.EnsureModel(IDX.Utilities.Models.PgSqlDataProcessor.SPParameter)
+  - IDX.Utilities.Validations.Common.EnsureNotNull(System.Object,System.String,System.String)
+  - IDX.Utilities.Validations.Common.EnsureNotNullOrWhiteSpace(System.String,System.String,System.String)
+  langs:
+  - csharp
+  - vb
+  name: Common
+  nameWithType: Common
+  fullName: IDX.Utilities.Validations.Common
+  type: Class
+  source:
+    remote:
+      path: Validations/Common.cs
+      branch: Research_Documentation
+      repo: https://scm.idecision.ai/idecision_source_net8/idc.utility.git
+    id: Common
+    path: ../../../-Repo/idc.utility/Validations/Common.cs
+    startLine: 16
+  assemblies:
+  - IDX.Utilities
+  namespace: IDX.Utilities.Validations
+  summary: Provides common validation methods.
+  example:
+  - >-
+    <pre><code class="lang-csharp">var value = "";
+
+    value.EnsureNotNullOrWhiteSpace(nameof(value));</code></pre>
+  syntax:
+    content: public static class Common
+    content.vb: Public Module Common
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: IDX.Utilities.Validations.Common.EnsureNotNullOrWhiteSpace(System.String,System.String,System.String)
+  commentId: M:IDX.Utilities.Validations.Common.EnsureNotNullOrWhiteSpace(System.String,System.String,System.String)
+  id: EnsureNotNullOrWhiteSpace(System.String,System.String,System.String)
+  isExtensionMethod: true
+  parent: IDX.Utilities.Validations.Common
+  langs:
+  - csharp
+  - vb
+  name: EnsureNotNullOrWhiteSpace(string?, string, string)
+  nameWithType: Common.EnsureNotNullOrWhiteSpace(string?, string, string)
+  fullName: IDX.Utilities.Validations.Common.EnsureNotNullOrWhiteSpace(string?, string, string)
+  type: Method
+  source:
+    remote:
+      path: Validations/Common.cs
+      branch: Research_Documentation
+      repo: https://scm.idecision.ai/idecision_source_net8/idc.utility.git
+    id: EnsureNotNullOrWhiteSpace
+    path: ../../../-Repo/idc.utility/Validations/Common.cs
+    startLine: 32
+  assemblies:
+  - IDX.Utilities
+  namespace: IDX.Utilities.Validations
+  summary: Ensures that the specified argument is not null or white space.
+  example:
+  - >-
+    <pre><code class="lang-csharp">var value = "";
+
+    value.EnsureNotNullOrWhiteSpace(nameof(value));</code></pre>
+  syntax:
+    content: public static void EnsureNotNullOrWhiteSpace(this string? arg, string argName, string onNullMessage = "Parameter '{argName}' can not be null, empty, or constains only white space.")
+    parameters:
+    - id: arg
+      type: System.String
+      description: The argument value.
+    - id: argName
+      type: System.String
+      description: The name of the argument.
+    - id: onNullMessage
+      type: System.String
+      description: >-
+        The message to display if the argument is null or white space.
+            The default message is "Parameter '{argName}' can not be null, empty, or constains only white space."
+    content.vb: Public Shared Sub EnsureNotNullOrWhiteSpace(arg As String, argName As String, onNullMessage As String = "Parameter '{argName}' can not be null, empty, or constains only white space.")
+  overload: IDX.Utilities.Validations.Common.EnsureNotNullOrWhiteSpace*
+  exceptions:
+  - type: System.Exception
+    commentId: T:System.Exception
+    description: Thrown when the argument is null or white space.
+  nameWithType.vb: Common.EnsureNotNullOrWhiteSpace(String, String, String)
+  fullName.vb: IDX.Utilities.Validations.Common.EnsureNotNullOrWhiteSpace(String, String, String)
+  name.vb: EnsureNotNullOrWhiteSpace(String, String, String)
+- uid: IDX.Utilities.Validations.Common.EnsureNotNull(System.Object,System.String,System.String)
+  commentId: M:IDX.Utilities.Validations.Common.EnsureNotNull(System.Object,System.String,System.String)
+  id: EnsureNotNull(System.Object,System.String,System.String)
+  isExtensionMethod: true
+  parent: IDX.Utilities.Validations.Common
+  langs:
+  - csharp
+  - vb
+  name: EnsureNotNull(object?, string, string)
+  nameWithType: Common.EnsureNotNull(object?, string, string)
+  fullName: IDX.Utilities.Validations.Common.EnsureNotNull(object?, string, string)
+  type: Method
+  source:
+    remote:
+      path: Validations/Common.cs
+      branch: Research_Documentation
+      repo: https://scm.idecision.ai/idecision_source_net8/idc.utility.git
+    id: EnsureNotNull
+    path: ../../../-Repo/idc.utility/Validations/Common.cs
+    startLine: 57
+  assemblies:
+  - IDX.Utilities
+  namespace: IDX.Utilities.Validations
+  summary: Ensures that the specified argument is not null.
+  example:
+  - >-
+    <pre><code class="lang-csharp">var value = null;
+
+    value.EnsureNotNull(nameof(value));</code></pre>
+  syntax:
+    content: public static void EnsureNotNull(this object? arg, string argName, string onNullMessage = "Parameter '{argName}' can not be null.")
+    parameters:
+    - id: arg
+      type: System.Object
+      description: The argument value.
+    - id: argName
+      type: System.String
+      description: The name of the argument.
+    - id: onNullMessage
+      type: System.String
+      description: >-
+        The message to display if the argument is null.
+            The default message is "Parameter '{argName}' can not be null."
+    content.vb: Public Shared Sub EnsureNotNull(arg As Object, argName As String, onNullMessage As String = "Parameter '{argName}' can not be null.")
+  overload: IDX.Utilities.Validations.Common.EnsureNotNull*
+  exceptions:
+  - type: System.Exception
+    commentId: T:System.Exception
+    description: Thrown when the argument is null.
+  nameWithType.vb: Common.EnsureNotNull(Object, String, String)
+  fullName.vb: IDX.Utilities.Validations.Common.EnsureNotNull(Object, String, String)
+  name.vb: EnsureNotNull(Object, String, String)
+- uid: IDX.Utilities.Validations.Common.EnsureFilePath(System.String,System.String)
+  commentId: M:IDX.Utilities.Validations.Common.EnsureFilePath(System.String,System.String)
+  id: EnsureFilePath(System.String,System.String)
+  isExtensionMethod: true
+  parent: IDX.Utilities.Validations.Common
+  langs:
+  - csharp
+  - vb
+  name: EnsureFilePath(string, string)
+  nameWithType: Common.EnsureFilePath(string, string)
+  fullName: IDX.Utilities.Validations.Common.EnsureFilePath(string, string)
+  type: Method
+  source:
+    remote:
+      path: Validations/Common.cs
+      branch: Research_Documentation
+      repo: https://scm.idecision.ai/idecision_source_net8/idc.utility.git
+    id: EnsureFilePath
+    path: ../../../-Repo/idc.utility/Validations/Common.cs
+    startLine: 80
+  assemblies:
+  - IDX.Utilities
+  namespace: IDX.Utilities.Validations
+  summary: Ensures that the file exists at the specified file path.
+  example:
+  - >-
+    <pre><code class="lang-csharp">var filePath = "C:/my/path/to/file.txt";
+
+    filePath.EnsureFilePath();</code></pre>
+  syntax:
+    content: "public static void EnsureFilePath(this string filePath, string onNotFoundMessage = \"File cannot be found at the address: '{filePath}'.\")"
+    parameters:
+    - id: filePath
+      type: System.String
+      description: The path of the file to check.
+    - id: onNotFoundMessage
+      type: System.String
+      description: >-
+        The message to display if the file is not found.
+            The default message is "File cannot be found at the address: '{filePath}'".
+    content.vb: "Public Shared Sub EnsureFilePath(filePath As String, onNotFoundMessage As String = \"File cannot be found at the address: '{filePath}'.\")"
+  overload: IDX.Utilities.Validations.Common.EnsureFilePath*
+  exceptions:
+  - type: System.IO.FileNotFoundException
+    commentId: T:System.IO.FileNotFoundException
+    description: Thrown if the file does not exist.
+  nameWithType.vb: Common.EnsureFilePath(String, String)
+  fullName.vb: IDX.Utilities.Validations.Common.EnsureFilePath(String, String)
+  name.vb: EnsureFilePath(String, String)
+- uid: IDX.Utilities.Validations.Common.EnsureModel(IDX.Utilities.Models.CommonConnectionString)
+  commentId: M:IDX.Utilities.Validations.Common.EnsureModel(IDX.Utilities.Models.CommonConnectionString)
+  id: EnsureModel(IDX.Utilities.Models.CommonConnectionString)
+  isExtensionMethod: true
+  parent: IDX.Utilities.Validations.Common
+  langs:
+  - csharp
+  - vb
+  name: EnsureModel(CommonConnectionString)
+  nameWithType: Common.EnsureModel(CommonConnectionString)
+  fullName: IDX.Utilities.Validations.Common.EnsureModel(IDX.Utilities.Models.CommonConnectionString)
+  type: Method
+  source:
+    remote:
+      path: Validations/Common.cs
+      branch: Research_Documentation
+      repo: https://scm.idecision.ai/idecision_source_net8/idc.utility.git
+    id: EnsureModel
+    path: ../../../-Repo/idc.utility/Validations/Common.cs
+    startLine: 149
+  assemblies:
+  - IDX.Utilities
+  namespace: IDX.Utilities.Validations
+  summary: Ensures that the connection string is valid.
+  example:
+  - >-
+    <pre><code class="lang-csharp">var connectionString = new CommonConnectionString
+
+    {
+        Host = "localhost",
+        Username = "myuser",
+        Password = "mypassword",
+        Database = "mydb",
+        IntegratedSecurity = false,
+        Pooling = true,
+        MinPoolSize = 1,
+        MaxPoolSize = 10
+    };
+
+    connectionString.EnsureModel();</code></pre>
+  syntax:
+    content: public static void EnsureModel(this CommonConnectionString connectionString)
+    parameters:
+    - id: connectionString
+      type: IDX.Utilities.Models.CommonConnectionString
+      description: The connection string to validate.
+    content.vb: Public Shared Sub EnsureModel(connectionString As CommonConnectionString)
+  overload: IDX.Utilities.Validations.Common.EnsureModel*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Thrown if the connection string is not valid.
+- uid: IDX.Utilities.Validations.Common.EnsureModel(IDX.Utilities.Models.PgSqlDataProcessor.PagingRequest)
+  commentId: M:IDX.Utilities.Validations.Common.EnsureModel(IDX.Utilities.Models.PgSqlDataProcessor.PagingRequest)
+  id: EnsureModel(IDX.Utilities.Models.PgSqlDataProcessor.PagingRequest)
+  isExtensionMethod: true
+  parent: IDX.Utilities.Validations.Common
+  langs:
+  - csharp
+  - vb
+  name: EnsureModel(PagingRequest)
+  nameWithType: Common.EnsureModel(PagingRequest)
+  fullName: IDX.Utilities.Validations.Common.EnsureModel(IDX.Utilities.Models.PgSqlDataProcessor.PagingRequest)
+  type: Method
+  source:
+    remote:
+      path: Validations/Common.cs
+      branch: Research_Documentation
+      repo: https://scm.idecision.ai/idecision_source_net8/idc.utility.git
+    id: EnsureModel
+    path: ../../../-Repo/idc.utility/Validations/Common.cs
+    startLine: 177
+  assemblies:
+  - IDX.Utilities
+  namespace: IDX.Utilities.Validations
+  summary: Ensures that the paging request model is valid, throwing an exception if it is not.
+  example:
+  - >-
+    <pre><code class="lang-csharp">var pagingRequest = new PagingRequest
+
+    {
+        BTRequest = new BTRequest
+        {
+            Page = 1,
+            Limit = 10,
+            Sort = "id",
+            Order = BTRequest.BTOrderType.Asc
+        },
+        Fields = new[] { "id", "name", "age" },
+        Source = PagingRequest.SourceType.Table
+    };
+
+    pagingRequest.EnsureModel();</code></pre>
+  syntax:
+    content: public static void EnsureModel(this PagingRequest pagingRequest)
+    parameters:
+    - id: pagingRequest
+      type: IDX.Utilities.Models.PgSqlDataProcessor.PagingRequest
+      description: The paging request model to validate.
+    content.vb: Public Shared Sub EnsureModel(pagingRequest As PagingRequest)
+  overload: IDX.Utilities.Validations.Common.EnsureModel*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Thrown if the paging request model fails validation.
+- uid: IDX.Utilities.Validations.Common.EnsureModel(IDX.Utilities.Encryptor)
+  commentId: M:IDX.Utilities.Validations.Common.EnsureModel(IDX.Utilities.Encryptor)
+  id: EnsureModel(IDX.Utilities.Encryptor)
+  isExtensionMethod: true
+  parent: IDX.Utilities.Validations.Common
+  langs:
+  - csharp
+  - vb
+  name: EnsureModel(Encryptor)
+  nameWithType: Common.EnsureModel(Encryptor)
+  fullName: IDX.Utilities.Validations.Common.EnsureModel(IDX.Utilities.Encryptor)
+  type: Method
+  source:
+    remote:
+      path: Validations/Common.cs
+      branch: Research_Documentation
+      repo: https://scm.idecision.ai/idecision_source_net8/idc.utility.git
+    id: EnsureModel
+    path: ../../../-Repo/idc.utility/Validations/Common.cs
+    startLine: 194
+  assemblies:
+  - IDX.Utilities
+  namespace: IDX.Utilities.Validations
+  summary: Ensures that the encryptor object is valid, throwing an exception if it is not.
+  example:
+  - >-
+    <pre><code class="lang-csharp">Encryptor encryptor = new Encryptor();
+
+    encryptor.EnsureModel();</code></pre>
+  syntax:
+    content: public static void EnsureModel(this Encryptor encryptor)
+    parameters:
+    - id: encryptor
+      type: IDX.Utilities.Encryptor
+      description: The encryptor object to validate.
+    content.vb: Public Shared Sub EnsureModel(encryptor As Encryptor)
+  overload: IDX.Utilities.Validations.Common.EnsureModel*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Thrown if the encryptor object fails validation.
+- uid: IDX.Utilities.Validations.Common.EnsureModel(IDX.Utilities.Models.PgSqlDataProcessor.SPCallInfo)
+  commentId: M:IDX.Utilities.Validations.Common.EnsureModel(IDX.Utilities.Models.PgSqlDataProcessor.SPCallInfo)
+  id: EnsureModel(IDX.Utilities.Models.PgSqlDataProcessor.SPCallInfo)
+  isExtensionMethod: true
+  parent: IDX.Utilities.Validations.Common
+  langs:
+  - csharp
+  - vb
+  name: EnsureModel(SPCallInfo)
+  nameWithType: Common.EnsureModel(SPCallInfo)
+  fullName: IDX.Utilities.Validations.Common.EnsureModel(IDX.Utilities.Models.PgSqlDataProcessor.SPCallInfo)
+  type: Method
+  source:
+    remote:
+      path: Validations/Common.cs
+      branch: Research_Documentation
+      repo: https://scm.idecision.ai/idecision_source_net8/idc.utility.git
+    id: EnsureModel
+    path: ../../../-Repo/idc.utility/Validations/Common.cs
+    startLine: 225
+  assemblies:
+  - IDX.Utilities
+  namespace: IDX.Utilities.Validations
+  summary: Ensures the validity of the SPCallInfo object.
+  example:
+  - >-
+    <pre><code class="lang-csharp">var spCallInfo = new SPCallInfo
+
+    {
+        Schema = "public",
+        SPName = "get_data",
+        Parameters = new[]
+        {
+            new SPParameter
+            {
+                Name = "id",
+                Value = 1,
+                DataType = NpgsqlDbType.Integer
+            }
+        }
+    };
+
+
+    spCallInfo.EnsureModel();</code></pre>
+  syntax:
+    content: public static void EnsureModel(this SPCallInfo spCallInfo)
+    parameters:
+    - id: spCallInfo
+      type: IDX.Utilities.Models.PgSqlDataProcessor.SPCallInfo
+      description: The SPCallInfo object to validate.
+    content.vb: Public Shared Sub EnsureModel(spCallInfo As SPCallInfo)
+  overload: IDX.Utilities.Validations.Common.EnsureModel*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Thrown when the SPCallInfo object is invalid.
+- uid: IDX.Utilities.Validations.Common.EnsureModel(IDX.Utilities.Models.PgSqlDataProcessor.SPParameter)
+  commentId: M:IDX.Utilities.Validations.Common.EnsureModel(IDX.Utilities.Models.PgSqlDataProcessor.SPParameter)
+  id: EnsureModel(IDX.Utilities.Models.PgSqlDataProcessor.SPParameter)
+  isExtensionMethod: true
+  parent: IDX.Utilities.Validations.Common
+  langs:
+  - csharp
+  - vb
+  name: EnsureModel(SPParameter)
+  nameWithType: Common.EnsureModel(SPParameter)
+  fullName: IDX.Utilities.Validations.Common.EnsureModel(IDX.Utilities.Models.PgSqlDataProcessor.SPParameter)
+  type: Method
+  source:
+    remote:
+      path: Validations/Common.cs
+      branch: Research_Documentation
+      repo: https://scm.idecision.ai/idecision_source_net8/idc.utility.git
+    id: EnsureModel
+    path: ../../../-Repo/idc.utility/Validations/Common.cs
+    startLine: 247
+  assemblies:
+  - IDX.Utilities
+  namespace: IDX.Utilities.Validations
+  summary: Ensures that the specified stored procedure parameter is valid, throwing an exception if it is not.
+  example:
+  - >-
+    <pre><code class="lang-csharp">var spParam = new SPParameter
+
+    {
+        Name = "id",
+        Value = 1,
+        DataType = NpgsqlDbType.Integer
+    };
+
+    spParam.EnsureModel();</code></pre>
+  syntax:
+    content: public static void EnsureModel(this SPParameter spParameter)
+    parameters:
+    - id: spParameter
+      type: IDX.Utilities.Models.PgSqlDataProcessor.SPParameter
+      description: The stored procedure parameter to validate.
+    content.vb: Public Shared Sub EnsureModel(spParameter As SPParameter)
+  overload: IDX.Utilities.Validations.Common.EnsureModel*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Thrown if the stored procedure parameter fails validation.
+- uid: IDX.Utilities.Validations.Common.EnsureModel(IDX.Utilities.Models.CouchBaseConnectionString)
+  commentId: M:IDX.Utilities.Validations.Common.EnsureModel(IDX.Utilities.Models.CouchBaseConnectionString)
+  id: EnsureModel(IDX.Utilities.Models.CouchBaseConnectionString)
+  isExtensionMethod: true
+  parent: IDX.Utilities.Validations.Common
+  langs:
+  - csharp
+  - vb
+  name: EnsureModel(CouchBaseConnectionString)
+  nameWithType: Common.EnsureModel(CouchBaseConnectionString)
+  fullName: IDX.Utilities.Validations.Common.EnsureModel(IDX.Utilities.Models.CouchBaseConnectionString)
+  type: Method
+  source:
+    remote:
+      path: Validations/Common.cs
+      branch: Research_Documentation
+      repo: https://scm.idecision.ai/idecision_source_net8/idc.utility.git
+    id: EnsureModel
+    path: ../../../-Repo/idc.utility/Validations/Common.cs
+    startLine: 269
+  assemblies:
+  - IDX.Utilities
+  namespace: IDX.Utilities.Validations
+  summary: Ensures the model for the CouchBase connection string.
+  example:
+  - >-
+    <pre><code class="lang-csharp">var connectionString = new CouchBaseConnectionString
+
+    {
+        Host = "localhost",
+        Username = "Administrator",
+        Password = "password",
+    };
+
+    connectionString.EnsureModel();</code></pre>
+  syntax:
+    content: public static void EnsureModel(this CouchBaseConnectionString connectionString)
+    parameters:
+    - id: connectionString
+      type: IDX.Utilities.Models.CouchBaseConnectionString
+      description: The CouchBase connection string.
+    content.vb: Public Shared Sub EnsureModel(connectionString As CouchBaseConnectionString)
+  overload: IDX.Utilities.Validations.Common.EnsureModel*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Thrown if the model validation fails.
+references:
+- uid: IDX.Utilities.Validations
+  commentId: N:IDX.Utilities.Validations
+  href: IDX.html
+  name: IDX.Utilities.Validations
+  nameWithType: IDX.Utilities.Validations
+  fullName: IDX.Utilities.Validations
+  spec.csharp:
+  - uid: IDX
+    name: IDX
+    href: IDX.html
+  - name: .
+  - uid: IDX.Utilities
+    name: Utilities
+    href: IDX.Utilities.html
+  - name: .
+  - uid: IDX.Utilities.Validations
+    name: Validations
+    href: IDX.Utilities.Validations.html
+  spec.vb:
+  - uid: IDX
+    name: IDX
+    href: IDX.html
+  - name: .
+  - uid: IDX.Utilities
+    name: Utilities
+    href: IDX.Utilities.html
+  - name: .
+  - uid: IDX.Utilities.Validations
+    name: Validations
+    href: IDX.Utilities.Validations.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Exception
+  commentId: T:System.Exception
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception
+  name: Exception
+  nameWithType: Exception
+  fullName: System.Exception
+- uid: IDX.Utilities.Validations.Common.EnsureNotNullOrWhiteSpace*
+  commentId: Overload:IDX.Utilities.Validations.Common.EnsureNotNullOrWhiteSpace
+  href: IDX.Utilities.Validations.Common.EnsureNotNullOrWhiteSpace.html#IDX_Utilities_Validations_Common_EnsureNotNullOrWhiteSpace_System_String_System_String_System_String_
+  name: EnsureNotNullOrWhiteSpace
+  nameWithType: Common.EnsureNotNullOrWhiteSpace
+  fullName: IDX.Utilities.Validations.Common.EnsureNotNullOrWhiteSpace
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: IDX.Utilities.Validations.Common.EnsureNotNull*
+  commentId: Overload:IDX.Utilities.Validations.Common.EnsureNotNull
+  href: IDX.Utilities.Validations.Common.EnsureNotNull.html#IDX_Utilities_Validations_Common_EnsureNotNull_System_Object_System_String_System_String_
+  name: EnsureNotNull
+  nameWithType: Common.EnsureNotNull
+  fullName: IDX.Utilities.Validations.Common.EnsureNotNull
+- uid: System.IO.FileNotFoundException
+  commentId: T:System.IO.FileNotFoundException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.filenotfoundexception
+  name: FileNotFoundException
+  nameWithType: FileNotFoundException
+  fullName: System.IO.FileNotFoundException
+- uid: IDX.Utilities.Validations.Common.EnsureFilePath*
+  commentId: Overload:IDX.Utilities.Validations.Common.EnsureFilePath
+  href: IDX.Utilities.Validations.Common.EnsureFilePath.html#IDX_Utilities_Validations_Common_EnsureFilePath_System_String_System_String_
+  name: EnsureFilePath
+  nameWithType: Common.EnsureFilePath
+  fullName: IDX.Utilities.Validations.Common.EnsureFilePath
+- uid: System.ArgumentException
+  commentId: T:System.ArgumentException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentexception
+  name: ArgumentException
+  nameWithType: ArgumentException
+  fullName: System.ArgumentException
+- uid: IDX.Utilities.Validations.Common.EnsureModel*
+  commentId: Overload:IDX.Utilities.Validations.Common.EnsureModel
+  href: IDX.Utilities.Validations.Common.EnsureModel.html#IDX_Utilities_Validations_Common_EnsureModel_IDX_Utilities_Models_CommonConnectionString_
+  name: EnsureModel
+  nameWithType: Common.EnsureModel
+  fullName: IDX.Utilities.Validations.Common.EnsureModel
+- uid: IDX.Utilities.Models.CommonConnectionString
+  commentId: T:IDX.Utilities.Models.CommonConnectionString
+  parent: IDX.Utilities.Models
+  href: IDX.Utilities.Models.CommonConnectionString.html
+  name: CommonConnectionString
+  nameWithType: CommonConnectionString
+  fullName: IDX.Utilities.Models.CommonConnectionString
+- uid: IDX.Utilities.Models
+  commentId: N:IDX.Utilities.Models
+  href: IDX.html
+  name: IDX.Utilities.Models
+  nameWithType: IDX.Utilities.Models
+  fullName: IDX.Utilities.Models
+  spec.csharp:
+  - uid: IDX
+    name: IDX
+    href: IDX.html
+  - name: .
+  - uid: IDX.Utilities
+    name: Utilities
+    href: IDX.Utilities.html
+  - name: .
+  - uid: IDX.Utilities.Models
+    name: Models
+    href: IDX.Utilities.Models.html
+  spec.vb:
+  - uid: IDX
+    name: IDX
+    href: IDX.html
+  - name: .
+  - uid: IDX.Utilities
+    name: Utilities
+    href: IDX.Utilities.html
+  - name: .
+  - uid: IDX.Utilities.Models
+    name: Models
+    href: IDX.Utilities.Models.html
+- uid: IDX.Utilities.Models.PgSqlDataProcessor.PagingRequest
+  commentId: T:IDX.Utilities.Models.PgSqlDataProcessor.PagingRequest
+  parent: IDX.Utilities.Models.PgSqlDataProcessor
+  href: IDX.Utilities.Models.PgSqlDataProcessor.PagingRequest.html
+  name: PagingRequest
+  nameWithType: PagingRequest
+  fullName: IDX.Utilities.Models.PgSqlDataProcessor.PagingRequest
+- uid: IDX.Utilities.Models.PgSqlDataProcessor
+  commentId: N:IDX.Utilities.Models.PgSqlDataProcessor
+  href: IDX.html
+  name: IDX.Utilities.Models.PgSqlDataProcessor
+  nameWithType: IDX.Utilities.Models.PgSqlDataProcessor
+  fullName: IDX.Utilities.Models.PgSqlDataProcessor
+  spec.csharp:
+  - uid: IDX
+    name: IDX
+    href: IDX.html
+  - name: .
+  - uid: IDX.Utilities
+    name: Utilities
+    href: IDX.Utilities.html
+  - name: .
+  - uid: IDX.Utilities.Models
+    name: Models
+    href: IDX.Utilities.Models.html
+  - name: .
+  - uid: IDX.Utilities.Models.PgSqlDataProcessor
+    name: PgSqlDataProcessor
+    href: IDX.Utilities.Models.PgSqlDataProcessor.html
+  spec.vb:
+  - uid: IDX
+    name: IDX
+    href: IDX.html
+  - name: .
+  - uid: IDX.Utilities
+    name: Utilities
+    href: IDX.Utilities.html
+  - name: .
+  - uid: IDX.Utilities.Models
+    name: Models
+    href: IDX.Utilities.Models.html
+  - name: .
+  - uid: IDX.Utilities.Models.PgSqlDataProcessor
+    name: PgSqlDataProcessor
+    href: IDX.Utilities.Models.PgSqlDataProcessor.html
+- uid: IDX.Utilities.Encryptor
+  commentId: T:IDX.Utilities.Encryptor
+  parent: IDX.Utilities
+  href: IDX.Utilities.Encryptor.html
+  name: Encryptor
+  nameWithType: Encryptor
+  fullName: IDX.Utilities.Encryptor
+- uid: IDX.Utilities
+  commentId: N:IDX.Utilities
+  href: IDX.html
+  name: IDX.Utilities
+  nameWithType: IDX.Utilities
+  fullName: IDX.Utilities
+  spec.csharp:
+  - uid: IDX
+    name: IDX
+    href: IDX.html
+  - name: .
+  - uid: IDX.Utilities
+    name: Utilities
+    href: IDX.Utilities.html
+  spec.vb:
+  - uid: IDX
+    name: IDX
+    href: IDX.html
+  - name: .
+  - uid: IDX.Utilities
+    name: Utilities
+    href: IDX.Utilities.html
+- uid: IDX.Utilities.Models.PgSqlDataProcessor.SPCallInfo
+  commentId: T:IDX.Utilities.Models.PgSqlDataProcessor.SPCallInfo
+  parent: IDX.Utilities.Models.PgSqlDataProcessor
+  href: IDX.Utilities.Models.PgSqlDataProcessor.SPCallInfo.html
+  name: SPCallInfo
+  nameWithType: SPCallInfo
+  fullName: IDX.Utilities.Models.PgSqlDataProcessor.SPCallInfo
+- uid: IDX.Utilities.Models.PgSqlDataProcessor.SPParameter
+  commentId: T:IDX.Utilities.Models.PgSqlDataProcessor.SPParameter
+  parent: IDX.Utilities.Models.PgSqlDataProcessor
+  href: IDX.Utilities.Models.PgSqlDataProcessor.SPParameter.html
+  name: SPParameter
+  nameWithType: SPParameter
+  fullName: IDX.Utilities.Models.PgSqlDataProcessor.SPParameter
+- uid: IDX.Utilities.Models.CouchBaseConnectionString
+  commentId: T:IDX.Utilities.Models.CouchBaseConnectionString
+  parent: IDX.Utilities.Models
+  href: IDX.Utilities.Models.CouchBaseConnectionString.html
+  name: CouchBaseConnectionString
+  nameWithType: CouchBaseConnectionString
+  fullName: IDX.Utilities.Models.CouchBaseConnectionString
+memberLayout: SeparatePages
